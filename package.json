@@ -1,15 +1,31 @@
 {
-  "name": "nuxt-content-starter",
+  "name": "alberto-alejandro",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.3",
-    "nuxt": "^4.0.3"
-  }
+    "@nuxt/eslint": "1.9.0",
+    "@nuxt/image": "1.11.0",
+    "@nuxt/ui": "4.0.0-alpha.1",
+    "@unhead/vue": "^2.0.14",
+    "eslint": "^9.34.0",
+    "motion-v": "^1.7.1",
+    "nuxt": "^4.0.3",
+    "nuxt-og-image": "5.1.9",
+    "unstorage": "^1.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
 }
