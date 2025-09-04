@@ -1,7 +1,15 @@
 import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxt/eslint', '@nuxt/image', 'nuxt-og-image'],
+  modules: [
+    '@nuxt/content',
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    'nuxt-og-image',
+    '@vueuse/nuxt',
+    'motion-v/nuxt'
+  ],
   devtools: { enabled: true },
   app: {
     head: {
@@ -21,7 +29,14 @@ export default defineNuxtConfig({
     }
   },
   content: {
-    experimental: { nativeSqlite: true }
+    preview: {
+      api: 'https://api.nuxt.studio',
+      gitInfo: {
+        name: 'portfolio',
+        owner: 'albertoalejandro10',
+        url: 'https://github.com/albertoalejandro10/portfolio'
+      }
+    }
   },
   alias: {
     images: fileURLToPath(new URL('./assets/images', import.meta.url))
