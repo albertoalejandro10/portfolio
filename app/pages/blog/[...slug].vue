@@ -25,8 +25,6 @@ const { data: page } = await useAsyncData(path.value, async () => {
   watch: [locale, () => route.fullPath]
 })
 
-console.log(page.value)
-
 if (!page.value) {
   throw createError({
     statusCode: 404,
