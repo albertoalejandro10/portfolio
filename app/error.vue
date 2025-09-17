@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
+const { locale } = useI18n()
+
 defineProps({
   error: {
     type: Object as PropType<NuxtError>,
@@ -22,14 +24,14 @@ useSeoMeta({
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
     return Promise.all([
-      queryCollectionNavigation('blog')
+      queryCollectionNavigation(('blog_en'))
     ])
   }, {
     transform: data => data.flat()
   }),
   useLazyAsyncData('search', () => {
     return Promise.all([
-      queryCollectionSearchSections('blog')
+      queryCollectionSearchSections(('blog_en'))
     ])
   }, {
     server: false,
