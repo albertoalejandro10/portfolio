@@ -14,7 +14,7 @@ const path = computed(() => withLeadingSlash(joinURL(locale.value, ...slug.value
 const collection = computed(() => `blog_${locale.value}` as keyof Collections)
 
 const { data: page } = await useAsyncData(path.value, async () => {
-  const content = await queryCollection(collection.value).path(path.value).first() as Collections['blog_en'] | Collections['blog_es']
+  const content = await queryCollection(collection.value).path(`/${locale.value}/blog/${slug.value}`).first() as Collections['blog_en'] | Collections['blog_es']
 
   if (!content && locale.value !== 'en') {
     return await queryCollection('blog_en').path(withLeadingSlash(joinURL('en', ...slug.value))).first()
@@ -24,6 +24,8 @@ const { data: page } = await useAsyncData(path.value, async () => {
 }, {
   watch: [locale, () => route.fullPath]
 })
+
+console.log(page.value)
 
 if (!page.value) {
   throw createError({
@@ -48,7 +50,7 @@ const { data: surround } = await useAsyncData(`${path.value}-surround`, async ()
 }, { watch: [locale, () => route.fullPath] })
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
+const blogNavigation = computed(() => navigation.value.find(item => item.path === `${locale.value}/blog`)?.children || [])
 
 const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
 

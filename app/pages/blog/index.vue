@@ -24,9 +24,15 @@ if (!page.value) {
   })
 }
 
-const { data: posts } = await useAsyncData('blogs', () =>
-  queryCollection(`blog_${locale.value}`).order('date', 'DESC').all()
-)
+const { data: posts } = await useAsyncData('blogs', async () => {
+  const blogs = await queryCollection(`blog_${locale.value}`).order('date', 'DESC').all()
+  return blogs.map((post) => {
+    post.path = post.path.replace('/en/', '/')
+    return post
+  })
+}, {
+  watch: [locale]
+})
 
 if (!posts.value) {
   throw createError({

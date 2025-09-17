@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const { locale } = useI18n()
-
 defineProps({
   error: {
     type: Object as PropType<NuxtError>,
