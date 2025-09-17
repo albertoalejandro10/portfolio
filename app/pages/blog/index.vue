@@ -1,7 +1,21 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('blog-page', () => {
-  return queryCollection('pages').path('/blog').first()
+import type { Collections } from '@nuxt/content'
+
+const { locale } = useI18n()
+
+const collection = computed(() => `pages_${locale.value}` as keyof Collections)
+const { data: page } = await useAsyncData('blog-page', async () => {
+  const content = await queryCollection(collection.value).path(`/${locale.value}/blog`).first() as Collections['pages_en'] | Collections['pages_es']
+
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('pages_en').first()
+  }
+
+  return content
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -9,9 +23,11 @@ if (!page.value) {
     fatal: true
   })
 }
+
 const { data: posts } = await useAsyncData('blogs', () =>
-  queryCollection('blog').order('date', 'DESC').all()
+  queryCollection(`blog_${locale.value}`).order('date', 'DESC').all()
 )
+
 if (!posts.value) {
   throw createError({
     statusCode: 404,

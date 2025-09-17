@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexEnCollectionItem, IndexEsCollectionItem } from '@nuxt/content'
 
 const { footer, global } = useAppConfig()
 
 defineProps<{
-  page: IndexCollectionItem
+  page: IndexEnCollectionItem | IndexEsCollectionItem
 }>()
 </script>
 
@@ -158,7 +158,7 @@ defineProps<{
 
     <UMarquee
       pause-on-hover
-      class="py-2 -mx-4 sm:-mx-6 lg:-mx-8 [--duration:40s]"
+      class="py-2 -mx-8 sm:-mx-12 lg:-mx-16 [--duration:40s]"
     >
       <Motion
         v-for="(img, index) in page.hero.images"
@@ -178,13 +178,13 @@ defineProps<{
           delay: index * 0.1
         }"
       >
-        <img
+        <NuxtImg
           width="234"
           height="234"
-          class="rounded-lg"
+          class="rounded-lg aspect-square object-cover"
           :class="index % 2 === 0 ? '-rotate-2' : 'rotate-2'"
           v-bind="img"
-        >
+        />
       </Motion>
     </UMarquee>
   </UPageHero>

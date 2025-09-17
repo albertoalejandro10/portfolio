@@ -6,11 +6,14 @@ defineProps<{
 }>()
 </script>
 
+<!-- TODO: Create header for mobile -->
 <template>
   <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
     <UNavigationMenu
+      highlight
+      highlight-color="primary"
       :items="links"
-      variant="link"
+      variant="pill"
       color="neutral"
       class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
       :ui="{
@@ -19,7 +22,8 @@ defineProps<{
       }"
     >
       <template #list-trailing>
-        <ColorModeButton />
+        <SettingsColorMode />
+        <SettingsLanguageToggle />
       </template>
     </UNavigationMenu>
   </div>

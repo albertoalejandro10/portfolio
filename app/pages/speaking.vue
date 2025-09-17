@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Collections } from '@nuxt/content'
+
 type Event = {
   title: string
   date: string
@@ -7,9 +9,21 @@ type Event = {
   category: 'Conference' | 'Live talk' | 'Podcast'
 }
 
-const { data: page } = await useAsyncData('speaking', () => {
-  return queryCollection('speaking').first()
+const { locale } = useI18n()
+
+const collection = computed(() => `speaking_${locale.value}` as keyof Collections)
+const { data: page } = await useAsyncData('speaking', async () => {
+  const content = await queryCollection(collection.value).first() as Collections['speaking_en'] | Collections['speaking_es']
+
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('speaking_en').first()
+  }
+
+  return content
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -17,13 +31,6 @@ if (!page.value) {
     fatal: true
   })
 }
-
-useSeoMeta({
-  title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
-})
 
 const { global } = useAppConfig()
 
@@ -43,6 +50,13 @@ const groupedEvents = computed((): Record<Event['category'], Event[]> => {
 function formatDate(dateString: string): string {
   return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'long' })
 }
+
+useSeoMeta({
+  title: page.value?.seo?.title || page.value?.title,
+  ogTitle: page.value?.seo?.title || page.value?.title,
+  description: page.value?.seo?.description || page.value?.description,
+  ogDescription: page.value?.seo?.description || page.value?.description
+})
 </script>
 
 <template>

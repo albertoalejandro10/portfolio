@@ -1,7 +1,21 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => {
-  return queryCollection('index').first()
+import type { Collections } from '@nuxt/content'
+
+const { locale } = useI18n()
+
+const collection = computed(() => `index_${locale.value}` as keyof Collections)
+const { data: page } = await useAsyncData('index', async () => {
+  const content = await queryCollection(collection.value).first() as Collections['index_en'] | Collections['index_es']
+
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('index_en').first()
+  }
+
+  return content
+}, {
+  watch: [locale]
 })
+
 if (!page.value) {
   throw createError({
     statusCode: 404,

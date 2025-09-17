@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexEnCollectionItem, IndexEsCollectionItem } from '@nuxt/content'
 
 const props = defineProps<{
-  page: IndexCollectionItem
+  page: IndexEnCollectionItem | IndexEsCollectionItem
 }>()
 
 const items = computed(() => {

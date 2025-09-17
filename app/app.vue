@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+
 const colorMode = useColorMode()
 
 const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
@@ -13,7 +15,7 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: locale.value || 'en'
   }
 })
 
@@ -27,14 +29,14 @@ useSeoMeta({
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
     return Promise.all([
-      queryCollectionNavigation('blog')
+      queryCollectionNavigation(`blog_${locale.value}`)
     ])
   }, {
     transform: data => data.flat()
   }),
   useLazyAsyncData('search', () => {
     return Promise.all([
-      queryCollectionSearchSections('blog')
+      queryCollectionSearchSections(`blog_${locale.value}`)
     ])
   }, {
     server: false,

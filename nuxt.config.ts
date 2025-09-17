@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-og-image',
     '@vueuse/nuxt',
-    'motion-v/nuxt'
+    'motion-v/nuxt',
+    '@nuxtjs/i18n'
   ],
   devtools: { enabled: true },
   app: {
@@ -49,5 +50,13 @@ export default defineNuxtConfig({
       ],
       crawlLinks: true
     }
+  },
+  i18n: {
+    locales: [
+      { code: 'en', name: 'English', language: 'en-US' },
+      { code: 'es', name: 'Español', language: 'es-ES' }
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default'
   }
 })

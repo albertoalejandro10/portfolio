@@ -1,19 +1,51 @@
 <script setup lang="ts">
-import type { ContentNavigationItem } from '@nuxt/content'
+import { withLeadingSlash, joinURL } from 'ufo'
+
+import type { ContentNavigationItem, Collections } from '@nuxt/content'
 import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
 
 const route = useRoute()
+const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
-)
-if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
+const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
+const path = computed(() => withLeadingSlash(joinURL(locale.value, ...slug.value)))
+
+const collection = computed(() => `blog_${locale.value}` as keyof Collections)
+
+const { data: page } = await useAsyncData(path.value, async () => {
+  const content = await queryCollection(collection.value).path(path.value).first() as Collections['blog_en'] | Collections['blog_es']
+
+  if (!content && locale.value !== 'en') {
+    return await queryCollection('blog_en').path(withLeadingSlash(joinURL('en', ...slug.value))).first()
+  }
+
+  return content
+}, {
+  watch: [locale, () => route.fullPath]
+})
+
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
+}
+
+const { data: surround } = await useAsyncData(`${path.value}-surround`, async () => {
+  const content = await queryCollectionItemSurroundings(`blog_${locale.value}`, path.value, {
     fields: ['description']
   })
-)
+
+  if (!content && locale.value !== 'en') {
+    return await queryCollectionItemSurroundings('blog_en', withLeadingSlash(joinURL('en', ...slug.value)), {
+      fields: ['description']
+    })
+  }
+
+  return content
+}, { watch: [locale, () => route.fullPath] })
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
 const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
