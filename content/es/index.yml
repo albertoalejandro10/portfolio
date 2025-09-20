@@ -44,10 +44,10 @@ experience:
         url: "https://www.evolutionadvance.com/"
         color: "#FFFFFF"
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!"
     author:
-      name: "Sarah Chen"
-      description: "Product Director at Bloom Finance"
+      name: "Lupo Burbano"
+      description: "CEO at Latlus, Italy"
       avatar:
         src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80"
         srcset: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x"
@@ -56,38 +56,38 @@ blog:
   description: "Some of my recent thoughts"
 faq:
   title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  description: Answers to common questions about my Vue.js/Nuxt.js services, process, and approach.
   categories:
-    - title: Services & Process
+    - title: Vue.js & Nuxt.js Expertise
       questions:
-        - label: What services do you offer?
+        - label: What technologies do you specialize in?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            I specialize in Vue.js and Nuxt.js, building highly interactive, responsive, and performance-optimized web applications. My expertise includes reusable components, Vue Router, Pinia, server-side rendering (SSR), and static site generation (SSG).
+        - label: What makes your approach unique?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            I focus on modular, scalable architecture and seamless API integrations. My goal is to deliver blazing fast, modern UIs that work smoothly across all devices, with a strong emphasis on clean code and maintainability.
+        - label: Can you help with performance and SEO?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Absolutely! I leverage Nuxt.js SSR and SSG to boost SEO and performance, ensuring quick load times and a smooth user experience—even on mobile or slow networks.
+    - title: Working Together
       questions:
-        - label: How much does a project typically cost?
+        - label: What is your process when working with clients?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            My approach is client-centered: I listen carefully, communicate clearly, and tailor solutions to your specific needs. I prioritize transparency, regular updates, and collaborative problem-solving throughout the project.
+        - label: How do you ensure quality?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
+            I maintain high standards through clean code, comprehensive testing, and proactive debugging. This ensures issues are caught early, resulting in faster and smoother project delivery.
+        - label: What is your availability and rate?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            My standard rate is $15/hr. I am available for both short-term and long-term projects, and I’m committed to delivering value and results for every client.
+    - title: Project Details
       questions:
-        - label: What do you enjoy most about your work?
+        - label: What types of projects do you take on?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            I work on a variety of web projects, from landing pages to complex web applications. Whether you need a new build, a redesign, or performance optimization, I can help bring your vision to life.
+        - label: How do you handle API integrations?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            I have extensive experience integrating RESTful APIs to deliver dynamic, real-time data in a flawless and responsive way, ensuring your app is both powerful and user-friendly.
+        - label: How do we get started?
+          content: |
+            Just reach out! We’ll discuss your goals, requirements, and timeline. I’ll provide a clear plan and estimate, and we’ll move forward together to create a high-performance, visually stunning web application.
