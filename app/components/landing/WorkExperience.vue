@@ -1,9 +1,33 @@
 <script setup lang="ts">
 import type { IndexEnCollectionItem, IndexEsCollectionItem } from '@nuxt/content'
 
+const colorMode = useColorMode()
+
 defineProps<{
   page: IndexEnCollectionItem | IndexEsCollectionItem
 }>()
+
+// Function to detect if a color is light/white
+const isLightColor = (color: string): boolean => {
+  const lightColors = ['#FFFFFF', '#ffffff', 'white', '#FFF', '#fff']
+  return lightColors.includes(color.toLowerCase())
+}
+
+// Computed property to get the appropriate text color
+const getTextColor = (companyColor: string) => {
+  // If company color is white/light and we're in light mode, use dark text
+  if (isLightColor(companyColor) && colorMode.value === 'light') {
+    return '#000000'
+  }
+
+  // If company color is white/light and we're in dark mode, keep it white
+  if (isLightColor(companyColor) && colorMode.value === 'dark') {
+    return '#FFFFFF'
+  }
+
+  // Otherwise use the company color
+  return companyColor
+}
 </script>
 
 <template>
@@ -40,10 +64,16 @@ defineProps<{
             </span>
             <div
               class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
+              :style="{ color: getTextColor(experience.company.color) }"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
+              <NuxtImg
+                :src="experience.company.logo"
+                width="16"
+                height="16"
+                alt="Company Logo"
+                class="rounded-full"
+              />
             </div>
           </ULink>
         </Motion>

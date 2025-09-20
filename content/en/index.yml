@@ -1,36 +1,22 @@
 seo:
-  title: "Alberto Alejandro - Frontend Developer"
-  description: "Welcome to my portfolio! I'm Alberto Alejandro, a frontend developer based in Venezuela. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Alberto Alejandro Frontend Developer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Venezuela, bringing ideas to life through code and creativity."
+  title: "Emma Thompson - UX/UI Designer"
+  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
+title: "Hey, I'm Emma Thompson UX/UI Designer"
+description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
 hero:
   links:
     - label: "Use this template"
       to: https://github.com/nuxt-ui-templates/portfolio
       color: "neutral"
   images:
-    - src: https://picsum.photos/468/468?random=1
+    - src: /hero/random-1.avif
       alt: Random Image 1
-    - src: https://picsum.photos/468/468?random=2
+    - src: /hero/random-2.avif
       alt: Random Image 2
-    - src: https://picsum.photos/468/468?random=3
-      alt: Random Image 3
-    - src: https://picsum.photos/468/468?random=4
-      alt: Random Image 4
-    - src: https://picsum.photos/468/468?random=5
-      alt: Random Image 5
-    - src: https://picsum.photos/468/468?random=6
-      alt: Random Image 6
-    - src: https://picsum.photos/468/468?random=6
-      alt: Random Image 6
-    - src: https://picsum.photos/468/468?random=7
-      alt: Random Image 7
-    - src: https://picsum.photos/468/468?random=8
-      alt: Random Image 8
 about:
   title: "About Me"
   description: |
-    As a Frontend Developer with 4 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
+    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
     My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
 experience:
   title: Work Experience

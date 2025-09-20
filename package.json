@@ -14,6 +14,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
+    "@iconify-json/circle-flags": "^1.2.8",
     "@iconify-json/lucide": "^1.2.64",
     "@iconify-json/simple-icons": "^1.2.49",
     "@nuxt/content": "^3.6.3",
@@ -50,6 +51,11 @@
       "esbuild",
       "vue-demi"
     ]
+  },
+  "vite": {
+    "build": {
+      "sourcemap": true
+    }
   },
   "packageManager": "pnpm@10.15.1"
 }

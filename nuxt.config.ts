@@ -1,5 +1,3 @@
-import { fileURLToPath } from 'node:url'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
@@ -38,9 +36,6 @@ export default defineNuxtConfig({
         url: 'https://github.com/albertoalejandro10/portfolio'
       }
     }
-  },
-  alias: {
-    images: fileURLToPath(new URL('./assets/images', import.meta.url))
   },
   compatibilityDate: '2025-09-03',
   nitro: {
