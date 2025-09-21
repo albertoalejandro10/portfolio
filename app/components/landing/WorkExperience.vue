@@ -81,7 +81,3 @@ const getTextColor = (companyColor: string) => {
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>
