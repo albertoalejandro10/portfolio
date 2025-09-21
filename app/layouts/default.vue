@@ -10,4 +10,5 @@ const navLinks = useLinks()
       <AppFooter />
     </UContainer>
   </div>
+  <Background />
 </template>

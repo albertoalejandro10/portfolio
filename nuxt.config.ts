@@ -19,7 +19,10 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Alberto Alejandro' }
       ]
     },
-    pageTransition: true
+    pageTransition: {
+      name: 'rotate',
+      mode: 'out-in'
+    }
   },
   css: ['~/assets/css/main.css'],
   router: {
