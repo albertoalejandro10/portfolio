@@ -35,7 +35,7 @@ const switchLocale = () => {
       @click="switchLocale"
     >
       <UIcon
-        :name="`i-circle-flags-${currentLocale?.code}`"
+        :name="currentLocale?.code === 'en' ? 'i-circle-flags-en' : 'i-circle-flags-es'"
       />
     </UButton>
   </ClientOnly>
