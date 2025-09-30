@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxt/image',
     'nuxt-og-image',
@@ -41,6 +42,10 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2025-09-03',
+  icon: {
+    collections: ['lucide', 'circle-flags', 'simple-icons'],
+    provider: 'iconify'
+  },
   nitro: {
     prerender: {
       routes: [

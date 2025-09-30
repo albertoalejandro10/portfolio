@@ -47,10 +47,10 @@ const startViewTransition = (event: MouseEvent) => {
   <ClientOnly>
     <UButton
       :aria-label="`Switch to ${nextTheme} mode`"
-      :icon="nextTheme === 'dark' ? 'i-lucide-sun' : 'i-lucide-moon'"
+      :icon="`i-lucide-${nextTheme === 'dark' ? 'sun' : 'moon'}`"
       color="neutral"
       variant="ghost"
-      size="sm"
+      size="md"
       class="rounded-full"
       @click="startViewTransition"
     />
