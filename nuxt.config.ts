@@ -42,10 +42,6 @@ export default defineNuxtConfig({
     }
   },
   compatibilityDate: '2025-09-03',
-  icon: {
-    collections: ['lucide', 'circle-flags', 'simple-icons'],
-    provider: 'iconify'
-  },
   nitro: {
     prerender: {
       routes: [
@@ -61,5 +57,9 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default'
+  },
+  icon: {
+    collections: ['lucide', 'circle-flags', 'simple-icons'],
+    provider: 'iconify'
   }
 })
