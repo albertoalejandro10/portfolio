@@ -2,6 +2,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxt/image',
     'nuxt-og-image',
@@ -56,5 +57,9 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     strategy: 'prefix_except_default'
+  },
+  icon: {
+    collections: ['lucide', 'circle-flags', 'simple-icons'],
+    provider: 'iconify'
   }
 })
