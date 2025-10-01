@@ -11,12 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
   devtools: { enabled: true },
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark',
-    storage: 'localStorage',
-    storageKey: 'nuxt-color-mode'
-  },
   app: {
     head: {
       title: 'Alberto Alejandro',
@@ -36,6 +30,12 @@ export default defineNuxtConfig({
     options: {
       scrollBehaviorType: 'smooth'
     }
+  },
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+    storage: 'localStorage',
+    storageKey: 'nuxt-color-mode'
   },
   content: {
     preview: {

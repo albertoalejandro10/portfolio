@@ -9,7 +9,7 @@ const isVisible = ref(false)
 const spotlightStyle = computed(() => ({
   left: mouseX.value - 100 + 'px',
   top: mouseY.value - 100 + 'px',
-  opacity: isVisible.value ? 1 : 0,
+  opacity: isVisible.value ? 1 : 0
 }))
 
 const handleMouseMove = (e: MouseEvent) => {
