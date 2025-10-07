@@ -117,7 +117,6 @@ useSeoMeta({
             >
           </UPageCard>
         </Motion>
-
       </ClientOnly>
     </UPageSection>
   </UPage>
