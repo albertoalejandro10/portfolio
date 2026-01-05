@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog"
+  },
+  "general": {
+
+  },
+  "error": {
+    "title": "Page Not Found",
+    "description": "I am sorry but this page could not be found.",
+    "backHome": "Go Back Home"
+  }
+}

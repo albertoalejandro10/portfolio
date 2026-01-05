@@ -57,14 +57,14 @@ useSeoMeta({
       :description="page.description"
       :links="page.links"
       :ui="{
-        title: '!mx-0 text-left',
-        description: '!mx-0 text-left',
+        title: 'mx-0! text-left',
+        description: 'mx-0! text-left',
         links: 'justify-start'
       }"
     />
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: 'pt-0!'
       }"
     >
       <UBlogPosts orientation="vertical">
@@ -73,7 +73,7 @@ useSeoMeta({
             v-for="(post, index) in posts"
             :key="index"
             :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-            :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
+            :while-in-view="({ opacity: 1, transform: 'translateY(0)' } as any)"
             :transition="{ delay: 0.2 * index }"
             :in-view-options="{ once: true }"
           >
