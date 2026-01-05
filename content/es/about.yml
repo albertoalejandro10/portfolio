@@ -1,25 +1,27 @@
-title: About Me
-description: Learn more about my journey as a Boston-based UX/UI Designer & Front-End Developer, my design philosophy, and my passion for crafting intuitive digital experiences.
+title: Sobre mí
+description: Aprende más sobre mi trayectoria como Ingeniero de Sistemas y Desarrollador Frontend, mi pasión por construir tecnología y mis intereses fuera del trabajo.
 content: |
-  Hi, I'm **Emma Thompson**, a UX/UI Designer and Front-End Developer based right here in Boston. For the past six years, I've been immersed in the world of digital product creation, focusing on building experiences that are not just functional, but genuinely intuitive and engaging for users.
+  Hola, soy **Alberto Alejandro**, un Ingeniero de Sistemas y Desarrollador Frontend con sede en Venezuela. Nacido y moldeado por la curiosidad, siempre me he sentido atraído por la forma en que funcionan las cosas, especialmente en el mundo digital. Con el tiempo, esa curiosidad se convirtió en una pasión por construir tecnología que sea útil y significativa.
 
-  My path started at **Boston University**, where I earned a degree in Interactive Design. It was there I discovered my dual passion for the visual language of design and the logical puzzle of code. Since then, I've honed my skills in both areas, believing that the best digital products are born from a deep understanding of both aesthetics and implementation.
+  Mi formación en ingeniería de sistemas me dio una base sólida en lógica, desarrollo de software, bases de datos y cómo se conectan los sistemas.
 
-  ### My Design Philosophy
+  ### Lo que me motiva
 
-  My design philosophy is rooted in **empathy** and **problem-solving**. I believe great design starts with understanding the 'why' – the user's needs, motivations, and pain points. I use research, iterative prototyping (often with tools like Figma), and user testing to ensure the solutions I build are truly effective.
+  Lo que más me motiva es crear herramientas que hagan la vida cotidiana más fluida y resolver problemas reales con soluciones reflexivas.
 
-  I strive to create interfaces that feel effortless, where functionality and beauty work hand-in-hand. Whether I'm crafting pixel-perfect UIs or writing clean Vue.js/Nuxt.js code, my focus is always on creating value for the end-user.
+  ### Mi rol e intereses
 
-  ### What Drives Me
+  Aunque he evolucionado hacia un rol centrado en el frontend, disfruto colaborando en el diseño del backend, participando en revisiones de código y aprendiendo cómo encaja cada parte de una aplicación. Últimamente, he estado explorando Go para entender mejor el rendimiento, la concurrencia y la arquitectura backend limpia.
 
-  What keeps me excited about this work is the constant learning and the challenge of translating complex ideas into simple, elegant solutions. There's nothing more rewarding than seeing a design come to life and knowing it's making someone's digital interaction easier or more enjoyable.
+  ### Fuera del trabajo
 
-  ### Beyond the Screen
+  Fuera del trabajo, encuentro creatividad y desafío en juegos de estrategia como Age of Empires II o el ritmo rápido de Valorant. Me mantengo con los pies en la tierra a través del deporte: jugando al fútbol o saliendo a correr para resetearme y recargarme.
 
-  When I'm not designing or coding, you might find me exploring Boston's latest coffee shops, hiking nearby trails, or occasionally contributing to open-source projects.
+  ### Siempre aprendiendo
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
+  Siempre estoy aprendiendo, siempre construyendo y siempre curioso por lo que viene después.
+
+  Gracias por pasar. Siéntete libre de explorar mis [proyectos](/projects) o [ponte en contacto](/#contact) si quieres colaborar.
 images:
   - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
     alt: My coffee workspace

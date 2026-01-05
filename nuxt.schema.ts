@@ -14,6 +14,13 @@ export default defineNuxtSchema({
           icon: 'lucide:calendar',
           default: 'https://cal.com/'
         }),
+        quickChatLink: field({
+          type: 'string',
+          title: 'Quick Chat link',
+          description: 'Your quick chat link.',
+          icon: 'lucide:chat',
+          default: 'https://cal.com/'
+        }),
         available: field({
           type: 'boolean',
           title: 'Available',
