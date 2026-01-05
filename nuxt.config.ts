@@ -40,6 +40,9 @@ export default defineNuxtConfig({
     preference: 'dark',
     fallback: 'dark'
   },
+  image: {
+    provider: 'none'
+  },
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
