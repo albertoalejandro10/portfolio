@@ -18,10 +18,10 @@ importers:
         specifier: 1.2.82
         version: 1.2.82
       '@iconify-json/material-icon-theme':
-        specifier: ^1.2.45
+        specifier: 1.2.45
         version: 1.2.45
       '@iconify-json/mdi':
-        specifier: ^1.2.3
+        specifier: 1.2.3
         version: 1.2.3
       '@iconify-json/simple-icons':
         specifier: 1.2.64
