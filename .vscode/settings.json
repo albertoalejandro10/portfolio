@@ -10,7 +10,7 @@
     ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll": "never",
+    "source.fixAll": "always",
     "source.fixAll.eslint": "explicit"
   }
 }

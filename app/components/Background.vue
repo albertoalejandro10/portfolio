@@ -39,7 +39,7 @@ onUnmounted(() => {
       class="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#22c55e_100%)] dark:hidden opacity-40"
     />
     <div
-      class="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#22c55e_100%)] hidden dark:block opacity-10"
+      class="fixed inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#22c55e_100%)] hidden dark:block opacity-10 will-change-auto"
     />
     <!-- Spotlight effect -->
     <div
@@ -48,7 +48,7 @@ onUnmounted(() => {
       :style="spotlightStyle"
     >
       <div
-        class="h-[200px] w-[200px] rounded-full bg-green-500/40 dark:bg-green-500/20 blur-[100px]"
+        class="h-50 w-50 rounded-full bg-green-500/40 dark:bg-green-500/20 blur-[100px]"
       />
     </div>
   </Teleport>
