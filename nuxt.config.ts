@@ -82,6 +82,9 @@ export default defineNuxtConfig({
     collections: ['lucide', 'circle-flags', 'simple-icons'],
     provider: 'iconify'
   },
+  image: {
+    provider: 'none'
+  },
   ogImage: { enabled: false },
   studio: {
     route: '/_studio',
