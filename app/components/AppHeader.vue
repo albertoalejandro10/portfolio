@@ -8,7 +8,7 @@ defineProps<{
 
 <!-- TODO: Create header for mobile -->
 <template>
-  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
+  <div class="fixed top-2 sm:top-4 left-0 right-0 z-10 flex justify-center">
     <UNavigationMenu
       highlight
       highlight-color="primary"
@@ -21,6 +21,14 @@ defineProps<{
         linkLeadingIcon: 'hidden'
       }"
     >
+      <template #list-leading>
+        <UColorModeAvatar
+          alt="logo"
+          class="bg-transparent"
+          light="/logo-dark.svg"
+          dark="/logo.svg"
+        />
+      </template>
       <template #list-trailing>
         <SettingsColorMode />
         <SettingsLanguageToggle />

@@ -1,43 +1,23 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
 
-const navLinks = useLinks()
+defineProps<{
+  error: NuxtError
+}>()
 
-defineProps({
-  error: {
-    type: Object as PropType<NuxtError>,
-    required: true
-  }
-})
+const { t, locale } = useI18n()
+const navLinks = useLinks()
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: locale.value
   }
 })
 
 useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  title: t('error.title'),
+  description: t('error.description')
 })
-
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
-    return Promise.all([
-      queryCollectionNavigation(('blog_en'))
-    ])
-  }, {
-    transform: data => data.flat()
-  }),
-  useLazyAsyncData('search', () => {
-    return Promise.all([
-      queryCollectionSearchSections(('blog_en'))
-    ])
-  }, {
-    server: false,
-    transform: data => data.flat()
-  })
-])
 </script>
 
 <template>
@@ -47,23 +27,27 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     <UMain>
       <UContainer>
         <UPage>
-          <UError :error="error" />
+          <UError
+            :error="{
+              statusCode: error.statusCode,
+              statusMessage: t('error.title'),
+              message: t('error.description'),
+              error: error.error
+            }"
+            :clear="{
+              label: t('error.backHome'),
+              color: 'primary',
+              variant: 'outline',
+              size: 'xl',
+              icon: 'i-lucide-arrow-left',
+              class: 'rounded-full',
+              to: $localePath('/')
+            }"
+          />
         </UPage>
       </UContainer>
     </UMain>
 
     <AppFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch
-        :files="files"
-        shortcut="meta_k"
-        :navigation="navigation"
-        :links="navLinks"
-        :fuse="{ resultLimit: 42 }"
-      />
-    </ClientOnly>
-
-    <UToaster />
   </div>
 </template>

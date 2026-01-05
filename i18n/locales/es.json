@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "blog": "Blog"
+  },
+  "general": {
+  },
+  "error": {
+    "title": "Página no encontrada",
+    "description": "Lo siento, pero esta página no pudo ser encontrada.",
+    "backHome": "Volver al inicio"
+  }
+}

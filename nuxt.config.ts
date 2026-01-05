@@ -8,9 +8,14 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@vueuse/nuxt',
     'motion-v/nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    'nuxt-studio',
+    '@nuxt/hints'
   ],
-  devtools: { enabled: true },
+  ssr: false,
+  devtools: {
+    enabled: true
+  },
   app: {
     head: {
       title: 'Alberto Alejandro',
@@ -33,9 +38,7 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'dark',
-    fallback: 'dark',
-    storage: 'localStorage',
-    storageKey: 'nuxt-color-mode'
+    fallback: 'dark'
   },
   content: {
     preview: {
@@ -47,7 +50,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  compatibilityDate: '2025-09-03',
+  compatibilityDate: '2026-01-01',
   nitro: {
     prerender: {
       routes: [
@@ -57,15 +60,36 @@ export default defineNuxtConfig({
     }
   },
   i18n: {
-    locales: [
-      { code: 'en', name: 'English', language: 'en-US' },
-      { code: 'es', name: 'Español', language: 'es-ES' }
-    ],
+    langDir: 'locales',
+    strategy: 'prefix_and_default',
     defaultLocale: 'en',
-    strategy: 'prefix_except_default'
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        language: 'en',
+        file: 'en.json'
+      },
+      {
+        code: 'es',
+        name: 'Español',
+        language: 'es',
+        file: 'es.json'
+      }
+    ]
   },
   icon: {
     collections: ['lucide', 'circle-flags', 'simple-icons'],
     provider: 'iconify'
+  },
+  ogImage: { enabled: false },
+  studio: {
+    route: '/_studio',
+    repository: {
+      provider: 'github',
+      owner: 'albertoalejandro10',
+      repo: 'portfolio',
+      branch: 'main'
+    }
   }
 })
