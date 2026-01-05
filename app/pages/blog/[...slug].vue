@@ -73,14 +73,6 @@ useSeoMeta({
 })
 
 const articleLink = computed(() => `${window?.location}`)
-
-const formatDate = (dateString: string) => {
-  return new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric'
-  })
-}
 </script>
 
 <template>
