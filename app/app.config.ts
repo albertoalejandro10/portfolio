@@ -26,7 +26,7 @@ export default defineAppConfig({
     },
     pageSection: {
       slots: {
-        container: 'py-4 sm:py-8 lg:py-16',
+        container: 'py-4 sm:py-8 lg:py-16'
       }
     }
   },
