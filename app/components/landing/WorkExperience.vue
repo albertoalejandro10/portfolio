@@ -38,7 +38,7 @@ const getTextColor = (companyColor: string) => {
         v-for="(experience, index) in page.experience.items"
         :key="index"
         :initial="{ opacity: 0, y: 20 }"
-        :while-in-view="{ opacity: 1, y: 0 }"
+        :while-in-view="({ opacity: 1, y: 0 } as any)"
         :transition="{ delay: 0.4 + 0.2 * index }"
         :in-view-options="{ once: true }"
         class="text-muted flex items-center text-nowrap gap-2"
