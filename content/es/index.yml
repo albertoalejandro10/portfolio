@@ -1,42 +1,37 @@
 seo:
   title: "Alberto Alejandro - Frontend Developer & Systems Engineer"
   description: "Welcome to my portfolio! I'm Alberto Alejandro, a Frontend Developer & Systems Engineer based in Venezuela. Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps."
-title: "Hey, I'm Alberto Alejandro Frontend Developer & Systems Engineer"
-description: "Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps using modular architecture and clean, maintainable code. Based in Venezuela, creating smooth, reliable digital experiences."
+title: "Alberto Alejandro"
+role: "Desarrollador Frontend & Ingeniero de Sistemas"
+description: "Especializado en Vue.js y Nuxt.js, con un enfoque en la creación de aplicaciones web rápidas y amigables con el SEO utilizando arquitectura modular y código limpio y mantenible. Con sede en Venezuela, creando experiencias digitales fluidas y confiables."
 hero:
   links:
-    - label: "Curriculum"
-      to: https://drive.google.com/file/d/1Ys0_ggN6ba93flOG6g4AmilziL9BClu7/view
+    - label: "Currículum"
+      icon: "i-lucide-download"
+      to: https://drive.google.com/file/d/11mNy3tdo80HSSnOmI1g5J4qO2P4iAeNc/view?usp=sharing
       color: "neutral"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
 about:
-  title: "About Me"
+  title: "Sobre mí"
   description: |
-    Born in Venezuela and shaped by curiosity, I've always been drawn to the way things work—especially in the digital world. Over the years, that curiosity turned into a passion for building technology that's both useful and meaningful.
-    My background in systems engineering gave me a solid foundation in logic, software development, databases, and how systems connect. What drives me most is creating tools that make everyday life smoother and solving real problems with thoughtful solutions.
-    Although I've grown into a frontend-focused role, I enjoy collaborating on backend design, participating in code reviews, and learning how every part of an application fits together. I'm always learning, always building, and always curious about what's next.
+    Soy venezolano, tengo formación en ingeniería de sistemas y ahora trabajo como desarrollador frontend con Vue.js y Nuxt.js. Desarrollo aplicaciones web prácticas y centradas en el usuario, colaboro con el diseño backend y las revisiones de código cuando es necesario, y sigo aprendiendo para mejorar mi forma de resolver problemas reales.
 experience:
-  title: Work Experience
+  title: Experiencia Laboral
   items:
-    - position: "Nuxt Developer at"
-      date: "2024 - Present"
+    - position: "Nuxt Dev en"
+      date: "2024 - 2026"
       company:
         name: Takumi Software
         logo: /logos/takumi-software.png
         url: "https://takumisoftware.com/"
         color: "#8f1529"
-    - position: "JavaScript Developer at"
+    - position: "JavaScript Dev en"
       date: "2022 - 2024"
       company:
         name: Softsystems SRL
         logo: "/logos/sgnla.png"
         url: "https://sgnla.com/"
         color: "#1682B0"
-    - position: "WordPress Developer at"
+    - position: "WordPress Dev en"
       date: "2021 - 2022"
       company:
         name: Evolution Advance
@@ -44,50 +39,50 @@ experience:
         url: "https://www.evolutionadvance.com/"
         color: "#FFFFFF"
 testimonials:
-  - quote: "Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!"
+  - quote: "Trabajar con este freelancer fue una excelente experiencia. Fue diligente y perceptivo, comprendiendo rápidamente las direcciones proporcionadas. Su flexibilidad y disposición para entender el alcance del trabajo fueron realmente impresionantes. A lo largo del proyecto, siempre fue amable, cortés y profesional. No dudaría en trabajar con él nuevamente en el futuro. ¡Altamente recomendado!"
     author:
       name: "Lupo Burbano"
-      description: "CEO at Latlus, Italy"
+      description: "CEO en Latlus, Italia"
       avatar:
         src: "https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc"
         srcset: "https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc 2x"
 blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  title: "Ultimas Publicaciones"
+  description: "Algunos de mis pensamientos recientes"
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my Vue.js/Nuxt.js services, process, and approach.
+  title: Preguntas Frecuentes
+  description: Respuestas a preguntas comunes sobre mis servicios, procesos y enfoques en Vue.js/Nuxt.js.
   categories:
-    - title: Vue.js & Nuxt.js Expertise
+    - title: Experiencia en Vue.js & Nuxt.js
       questions:
-        - label: What technologies do you specialize in?
+        - label: ¿En qué tecnologías te especializas?
           content: |
-            I specialize in Vue.js and Nuxt.js, building highly interactive, responsive, and performance-optimized web applications. My expertise includes reusable components, Vue Router, Pinia, server-side rendering (SSR), and static site generation (SSG).
-        - label: What makes your approach unique?
+            Me especializo en Vue.js y Nuxt.js, construyendo aplicaciones web altamente interactivas, responsivas y optimizadas para el rendimiento. Mi experiencia incluye componentes reutilizables, Vue Router, Pinia, renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG).
+        - label: ¿Qué hace que tu enfoque sea único?
           content: |
-            I focus on modular, scalable architecture and seamless API integrations. My goal is to deliver blazing fast, modern UIs that work smoothly across all devices, with a strong emphasis on clean code and maintainability.
-        - label: Can you help with performance and SEO?
+            Me enfoco en una arquitectura modular y escalable, así como en integraciones de API sin problemas. Mi objetivo es ofrecer interfaces de usuario modernas y ultrarrápidas que funcionen sin problemas en todos los dispositivos, con un fuerte énfasis en el código limpio y el mantenimiento.
+        - label: ¿Puedes ayudar con el rendimiento y SEO?
           content: |
-            Absolutely! I leverage Nuxt.js SSR and SSG to boost SEO and performance, ensuring quick load times and a smooth user experience—even on mobile or slow networks.
-    - title: Working Together
+            ¡Absolutamente! Aprovecho SSR y SSG de Nuxt.js para mejorar el SEO y el rendimiento, asegurando tiempos de carga rápidos y una experiencia de usuario fluida, incluso en redes móviles o lentas.
+    - title: Colaborando Juntos
       questions:
-        - label: What is your process when working with clients?
+        - label: ¿Cuál es tu proceso al trabajar con clientes?
           content: |
-            My approach is client-centered: I listen carefully, communicate clearly, and tailor solutions to your specific needs. I prioritize transparency, regular updates, and collaborative problem-solving throughout the project.
-        - label: How do you ensure quality?
+            Mi enfoque está centrado en el cliente: escucho atentamente, comunico claramente y adapto soluciones a tus necesidades específicas. Priorizo la transparencia, las actualizaciones regulares y la resolución colaborativa de problemas a lo largo del proyecto.
+        - label: ¿Cómo aseguras la calidad?
           content: |
-            I maintain high standards through clean code, comprehensive testing, and proactive debugging. This ensures issues are caught early, resulting in faster and smoother project delivery.
-        - label: What is your availability and rate?
+            Mantengo altos estándares a través de código limpio, pruebas exhaustivas y depuración proactiva. Esto asegura que los problemas se detecten temprano, lo que resulta en una entrega de proyectos más rápida y fluida.
+        - label: ¿Cuál es tu disponibilidad y tarifa?
           content: |
-            My standard rate is $15/hr. I am available for both short-term and long-term projects, and I’m committed to delivering value and results for every client.
-    - title: Project Details
+            Mi tarifa estándar es de $15/hora. Estoy disponible para proyectos tanto a corto como a largo plazo, y estoy comprometido a ofrecer valor y resultados para cada cliente.
+    - title: Detalles del Proyecto
       questions:
-        - label: What types of projects do you take on?
+        - label: ¿Qué tipos de proyectos realizas?
           content: |
-            I work on a variety of web projects, from landing pages to complex web applications. Whether you need a new build, a redesign, or performance optimization, I can help bring your vision to life.
-        - label: How do you handle API integrations?
+            Trabajo en una variedad de proyectos web, desde páginas de destino hasta aplicaciones web complejas. Ya sea que necesites una nueva construcción, un rediseño o una optimización del rendimiento, puedo ayudar a dar vida a tu visión.
+        - label: ¿Cómo manejas las integraciones de API?
           content: |
-            I have extensive experience integrating RESTful APIs to deliver dynamic, real-time data in a flawless and responsive way, ensuring your app is both powerful and user-friendly.
-        - label: How do we get started?
+            Tengo una amplia experiencia integrando APIs RESTful para ofrecer datos dinámicos y en tiempo real de manera fluida y receptiva, asegurando que tu aplicación sea potente y fácil de usar.
+        - label: ¿Cómo comenzamos?
           content: |
-            Just reach out! We’ll discuss your goals, requirements, and timeline. I’ll provide a clear plan and estimate, and we’ll move forward together to create a high-performance, visually stunning web application.
+            ¡Simplemente contáctame! Discutiremos tus objetivos, requisitos y cronograma. Proporcionaré un plan claro y una estimación, y avanzaremos juntos para crear una aplicación web de alto rendimiento y visualmente impresionante.

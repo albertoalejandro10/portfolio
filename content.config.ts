@@ -40,6 +40,7 @@ export default defineContentConfig({
       type: 'page',
       source: 'en/index.yml',
       schema: z.object({
+        role: z.string().optional(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())
@@ -77,6 +78,7 @@ export default defineContentConfig({
       type: 'page',
       source: 'es/index.yml',
       schema: z.object({
+        role: z.string().optional(),
         hero: z.object({
           links: z.array(createButtonSchema()),
           images: z.array(createImageSchema())

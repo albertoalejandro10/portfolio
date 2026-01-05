@@ -1,12 +1,13 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      dark: 'https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&v=beta&t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4',
+      light: 'https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&v=beta&t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
-    email: 'ui-pro@nuxt.com',
+    meetingLink: 'https://cal.com/alberto-alejandro/30-minute-meeting-consultation-work-session',
+    quickChatLink: 'https://cal.com/alberto-alejandro/15-minute-meeting-quick-chat',
+    email: 'alberto196g@gmail.com',
     available: true
   },
   ui: {
@@ -21,6 +22,11 @@ export default defineAppConfig({
         container: 'py-18 sm:py-24 lg:py-32',
         title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
         description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
+      }
+    },
+    pageSection: {
+      slots: {
+        container: 'py-4 sm:py-8 lg:py-16',
       }
     }
   },
@@ -45,11 +51,13 @@ export default defineAppConfig({
         'to': 'https://discord.com/users/497789899597021189',
         'target': '_blank',
         'aria-label': 'Alberto Alejandro on Discord'
-      }, {
+      },
+      {
         'icon': 'i-simple-icons-github',
         'to': 'https://github.com/albertoalejandro10',
         'target': '_blank',
         'aria-label': 'Alberto Alejandro on GitHub'
-      }]
+      }
+    ]
   }
 })

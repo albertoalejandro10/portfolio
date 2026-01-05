@@ -1,59 +1,36 @@
-seo:
-  title: "Alberto Alejandro - Frontend Developer & Systems Engineer"
-  description: "Welcome to my portfolio! I'm Alberto Alejandro, a Frontend Developer & Systems Engineer based in Venezuela. Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps."
-title: "Hey, I'm Alberto Alejandro Frontend Developer & Systems Engineer"
-description: "Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps using modular architecture and clean, maintainable code. Based in Venezuela, creating smooth, reliable digital experiences."
-hero:
-  links:
-    - label: "Curriculum"
-      to: https://drive.google.com/file/d/1Ys0_ggN6ba93flOG6g4AmilziL9BClu7/view
-      color: "neutral"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
+title: Alberto Alejandro
 about:
-  title: "About Me"
+  title: About Me
   description: |
-    Born in Venezuela and shaped by curiosity, I've always been drawn to the way things work—especially in the digital world. Over the years, that curiosity turned into a passion for building technology that's both useful and meaningful.
-    My background in systems engineering gave me a solid foundation in logic, software development, databases, and how systems connect. What drives me most is creating tools that make everyday life smoother and solving real problems with thoughtful solutions.
-    Although I've grown into a frontend-focused role, I enjoy collaborating on backend design, participating in code reviews, and learning how every part of an application fits together. I'm always learning, always building, and always curious about what's next.
+    I'm from Venezuela with a systems engineering background and now work as a frontend developer using Vue.js and Nuxt.js. I build practical, user-focused web apps, help with backend design and code reviews when needed, and keep learning to improve how I solve real problems.
+blog:
+  title: Latest Articles
+  description: Some of my recent thoughts
+description: Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps using modular architecture and clean, maintainable code. Based in Venezuela, creating smooth, reliable digital experiences.
 experience:
   title: Work Experience
   items:
-    - position: "Nuxt Developer at"
-      date: "2024 - Present"
+    - position: Nuxt Developer at
+      date: 2024 - Present
       company:
         name: Takumi Software
         logo: /logos/takumi-software.png
-        url: "https://takumisoftware.com/"
+        url: https://takumisoftware.com/
         color: "#8f1529"
-    - position: "JavaScript Developer at"
-      date: "2022 - 2024"
+    - position: JavaScript Developer at
+      date: 2022 - 2024
       company:
         name: Softsystems SRL
-        logo: "/logos/sgnla.png"
-        url: "https://sgnla.com/"
+        logo: /logos/sgnla.png
+        url: https://sgnla.com/
         color: "#1682B0"
-    - position: "WordPress Developer at"
-      date: "2021 - 2022"
+    - position: WordPress Developer at
+      date: 2021 - 2022
       company:
         name: Evolution Advance
-        logo: "/logos/evolution-advance.jpg"
-        url: "https://www.evolutionadvance.com/"
+        logo: /logos/evolution-advance.jpg
+        url: https://www.evolutionadvance.com/
         color: "#FFFFFF"
-testimonials:
-  - quote: "Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!"
-    author:
-      name: "Lupo Burbano"
-      description: "CEO at Latlus, Italy"
-      avatar:
-        src: "https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc"
-        srcset: "https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc 2x"
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my Vue.js/Nuxt.js services, process, and approach.
@@ -91,3 +68,30 @@ faq:
         - label: How do we get started?
           content: |
             Just reach out! We’ll discuss your goals, requirements, and timeline. I’ll provide a clear plan and estimate, and we’ll move forward together to create a high-performance, visually stunning web application.
+hero:
+  links:
+    - label: Curriculum
+      icon: i-lucide-download
+      to: https://drive.google.com/file/d/17l4_4Xlp76llhkmHfRN5i47VHiIL-x5t/view?usp=sharing
+      color: neutral
+      size: sm
+  images: []
+role: Frontend Developer & Systems Engineer
+seo:
+  title: Alberto Alejandro - Frontend Developer & Systems Engineer
+  description: Welcome to my portfolio! I'm Alberto Alejandro, a Frontend Developer & Systems Engineer based in Venezuela. Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps.
+testimonials:
+  - quote: Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!
+    author:
+      name: Lupo Burbano
+      description: CEO at Latlus, Italy
+      avatar:
+        src: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&v=beta&t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg
+        srcset: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&v=beta&t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg
+  - quote: Alberto did a great job enhancing our Nuxt apps, he has learnt a lot too and is a fast paced developer always eager to listen to your feedback. I hope we can continue working together in the future if new projects come in.
+    author:
+      name: Diego Sosa
+      description: CEO at Takumi Software, Spain
+      avatar:
+        src: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
+        srcset: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
