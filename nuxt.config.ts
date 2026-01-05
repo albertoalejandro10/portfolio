@@ -40,9 +40,6 @@ export default defineNuxtConfig({
     preference: 'dark',
     fallback: 'dark'
   },
-  image: {
-    provider: 'none'
-  },
   content: {
     preview: {
       api: 'https://api.nuxt.studio',
@@ -84,6 +81,9 @@ export default defineNuxtConfig({
   icon: {
     collections: ['lucide', 'circle-flags', 'simple-icons'],
     provider: 'iconify'
+  },
+  image: {
+    provider: 'none'
   },
   ogImage: { enabled: false },
   studio: {
