@@ -17,24 +17,46 @@ about:
 experience:
   title: Experiencia Laboral
   items:
-    - position: "Nuxt Dev en"
-      date: "2024 - 2026"
+    - date: Ene. 2024 - Presente
+      title: Desarrollador Nuxt
       company:
         name: Takumi Software
         logo: /logos/takumi-software.png
         url: "https://takumisoftware.com/"
         color: "#8f1529"
-    - position: "JavaScript Dev en"
-      date: "2022 - 2024"
+      description: Desarrollé y mantuve aplicaciones web modernas usando Nuxt 3, implementé renderizado del lado del servidor para mejorar el SEO, y colaboré con equipos multifuncionales para entregar funcionalidades de alta calidad.
+      icon: i-simple-icons-nuxtdotjs
+    - date: Jun. 2022 - Dic. 2024
+      title: Desarrollador JavaScript
       company:
         name: Softsystems SRL
         logo: "/logos/sgnla.png"
         url: "https://sgnla.com/"
         color: "#1682B0"
-    - position: "WordPress Dev en"
-      date: "2021 - 2022"
+      description: Construí aplicaciones web responsivas con Vue.js, integré APIs RESTful, y participé en revisiones de código para mantener la calidad y las mejores prácticas en el equipo de desarrollo.
+      icon: i-simple-icons-javascript
+    - date: Mar. 2021 - May. 2022
+      title: Desarrollador WordPress
       company:
         name: Evolution Advance
+        logo: /logos/evolution-advance.jpg
+        url: "https://www.evolutionadvance.com/"
+        color: "#FFFFFF"
+      description: Creé temas y plugins personalizados de WordPress, optimicé el rendimiento de sitios web, y proporcioné soporte técnico a clientes para sus necesidades de gestión de contenido.
+      icon: i-simple-icons-wordpress
+education:
+  title: Educación
+  items:
+    - date: Feb. 2014 - Abr. 2020
+      title: Ingeniería de Sistemas
+      institution:
+        name: Universidad de Oriente
+        logo: /logos/udo.png
+        url: "https://www.udo.edu.ve/"
+        color: "#FFFFFF"
+      description: Completé estudios integrales en desarrollo de software, diseño de bases de datos, análisis de sistemas y gestión de proyectos. Desarrollé una sólida base en programación, algoritmos y fundamentos de ciencias de la computación.
+      icon: i-lucide-graduation-cap
+blog:
         logo: "/logos/evolution-advance.jpg"
         url: "https://www.evolutionadvance.com/"
         color: "#FFFFFF"

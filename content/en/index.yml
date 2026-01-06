@@ -3,34 +3,49 @@ about:
   title: About Me
   description: |
     I'm from Venezuela with a systems engineering background and now work as a frontend developer using Vue.js and Nuxt.js. I build practical, user-focused web apps, help with backend design and code reviews when needed, and keep learning to improve how I solve real problems.
-blog:
-  title: Latest Articles
-  description: Some of my recent thoughts
 description: Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps using modular architecture and clean, maintainable code. Based in Venezuela, creating smooth, reliable digital experiences.
 experience:
   title: Work Experience
   items:
-    - position: Nuxt Developer at
-      date: 2024 - Present
+    - date: Jan. 2024 - Present
+      title: Nuxt Developer
       company:
         name: Takumi Software
         logo: /logos/takumi-software.png
         url: https://takumisoftware.com/
         color: "#8f1529"
-    - position: JavaScript Developer at
-      date: 2022 - 2024
+      description: Developed and maintained modern web applications using Nuxt 3, implemented server-side rendering for improved SEO, and collaborated with cross-functional teams to deliver high-quality features.
+      icon: i-simple-icons-nuxtdotjs
+    - date: Jun. 2022 - Dec. 2024
+      title: JavaScript Developer
       company:
         name: Softsystems SRL
         logo: /logos/sgnla.png
         url: https://sgnla.com/
         color: "#1682B0"
-    - position: WordPress Developer at
-      date: 2021 - 2022
+      description: Built responsive web applications with Vue.js, integrated RESTful APIs, and participated in code reviews to maintain code quality and best practices across the development team.
+      icon: i-simple-icons-javascript
+    - date: Mar. 2021 - May 2022
+      title: WordPress Developer
       company:
         name: Evolution Advance
         logo: /logos/evolution-advance.jpg
         url: https://www.evolutionadvance.com/
         color: "#FFFFFF"
+      description: Created custom WordPress themes and plugins, optimized website performance, and provided technical support to clients for their content management needs.
+      icon: i-simple-icons-wordpress
+education:
+  title: Education
+  items:
+    - date: Feb. 2014 - Apr. 2020
+      title: Systems Engineering
+      institution:
+        name: Universidad de Oriente
+        logo: /logos/udo.png
+        url: https://www.udo.edu.ve/
+        color: "#FFFFFF"
+      description: Completed comprehensive studies in software development, database design, systems analysis, and project management. Developed strong foundation in programming, algorithms, and computer science fundamentals.
+      icon: i-lucide-graduation-cap
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about my Vue.js/Nuxt.js services, process, and approach.

@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <BaseTimeline
-  :title="page.experience.title"
-    :items="page.experience.items"
+    :title="page.education.title"
+    :items="page.education.items"
   />
 </template>

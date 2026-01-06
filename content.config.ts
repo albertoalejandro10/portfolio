@@ -46,10 +46,26 @@ export default defineContentConfig({
           images: z.array(createImageSchema())
         }),
         about: createBaseSchema(),
+        education: createBaseSchema().extend({
+          items: z.array(z.object({
+            date: z.string(),
+            title: z.string(),
+            description: z.string(),
+            icon: z.string(),
+            institution: z.object({
+              name: z.string(),
+              url: z.string(),
+              logo: z.string().editor({ input: 'icon' }),
+              color: z.string()
+            })
+          }))
+        }),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
+            date: z.string(),
+            title: z.string(),
+            description: z.string(),
+            icon: z.string(),
             company: z.object({
               name: z.string(),
               url: z.string(),
@@ -86,9 +102,25 @@ export default defineContentConfig({
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
+            date: z.string(),
+            title: z.string(),
+            description: z.string(),
+            icon: z.string(),
             company: z.object({
+              name: z.string(),
+              url: z.string(),
+              logo: z.string().editor({ input: 'icon' }),
+              color: z.string()
+            })
+          }))
+        }),
+        education: createBaseSchema().extend({
+          items: z.array(z.object({
+            date: z.string(),
+            title: z.string(),
+            description: z.string(),
+            icon: z.string(),
+            institution: z.object({
               name: z.string(),
               url: z.string(),
               logo: z.string().editor({ input: 'icon' }),
