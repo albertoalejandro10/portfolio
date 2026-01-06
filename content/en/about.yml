@@ -1,29 +1,39 @@
 title: About Me
-description: Learn more about my journey as a Systems Engineer & Front-End Developer, my passion for building technology, and my interests outside of work.
+description: Frontend Developer from Venezuela with a passion for building meaningful web applications and exploring new technologies.
 content: |
-  Hi, I'm **Alberto Alejandro**, a Systems Engineer and Front-End Developer based in Venezuela. Born and shaped by curiosity, I've always been drawn to the way things work—especially in the digital world. Over the years, that curiosity turned into a passion for building technology that's both useful and meaningful.
+  Hi, I'm **Alberto Alejandro**, a Frontend Developer based in Venezuela specializing in JavaScript, Vue.js and Nuxt.js.
 
-  My background in systems engineering gave me a solid foundation in logic, software development, databases, and how systems connect.
+  ### My Journey
 
-  ### What Drives Me
+  Born in Venezuela and shaped by curiosity, I've always been drawn to understanding how things work—especially in the digital world. Over the years, that curiosity evolved into a passion for building technology that's both useful and meaningful.
 
-  What drives me most is creating tools that make everyday life smoother and solving real problems with thoughtful solutions.
+  My background in Systems Engineering gave me a solid foundation in logic, software development, databases, and system architecture. I graduated in 2024 from Universidad de Oriente, where I developed strong skills in programming, algorithms, and understanding how complex systems connect and work together.
 
-  ### My Role and Interests
+  ### What I Do
 
-  Although I've grown into a frontend-focused role, I enjoy collaborating on backend design, participating in code reviews, and learning how every part of an application fits together. Lately, I've been exploring Go to better understand performance, concurrency, and clean backend architecture.
+  I specialize in **Vue.js** and **Nuxt.js**, focusing on creating user-centered web applications with clean, maintainable code. I work with modern frontend technologies including TypeScript, Vue Router, Pinia, and API integrations.
 
-  ### Outside of Work
+  ### My Approach
 
-  Outside of work, I find creativity and challenge in strategy games like Age of Empires II or the fast pace of Valorant. I stay grounded through sports—playing football or going for a run to reset and recharge.
+  What drives me most is creating tools that simplify everyday life and solving real problems with thoughtful solutions. While I've grown into a frontend-focused role, I enjoy collaborating on backend design, participating in code reviews, and understanding how every piece of an application fits together.
 
-  ### Always Learning
+  Recently, I've been exploring **Go** to deepen my knowledge of performance optimization, concurrency patterns, and clean backend architecture. I believe in understanding the full stack to build better frontend solutions.
 
-  I'm always learning, always building, and always curious about what's next.
+  ### Beyond Code
 
-  Thanks for stopping by. Feel free to browse my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  Outside of work, I find creativity and challenge in:
+
+  - **Strategy Games**: Age of Empires II helps me think tactically and plan ahead
+  - **Competitive Gaming**: Valorant keeps my reflexes sharp and teaches quick decision-making
+  - **Sports**: Playing football and tennis, or going for a run to stay grounded and recharge
+
+  I'm always learning, always building, and always curious about what's next. Whether it's a new framework, a design pattern, or a backend technology, I believe continuous growth is key to staying relevant and effective.
+
+  ### Let's Connect
+
+  Thanks for stopping by! Feel free to explore my [projects](projects), check out my [blog posts](blog), if you'd like to collaborate on something interesting.
+# images:
+#   - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+#     alt: My coffee workspace
+#   - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+#     alt: My trip to Tokyo
