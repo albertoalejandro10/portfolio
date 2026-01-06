@@ -40,11 +40,11 @@ useSeoMeta({
         container: 'pt-0!'
       }"
     >
-    <UPageGrid class="lg:grid-cols-2">
-      <LandingAbout :page class="md:col-span-2" />
-      <LandingEducationExperience :page />
-      <LandingWorkExperience :page />
-    </UPageGrid>
+      <UPageGrid class="lg:grid-cols-2">
+        <LandingAbout :page class="md:col-span-2" />
+        <LandingEducationExperience :page />
+        <LandingWorkExperience :page />
+      </UPageGrid>
     </UPageSection>
     <LandingTestimonials :page />
     <LandingFAQ :page />

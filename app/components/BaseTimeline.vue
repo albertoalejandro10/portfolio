@@ -30,7 +30,7 @@ const props = defineProps<Props>()
 const colorMode = useColorMode()
 
 const timelineItems = computed<TimelineItem[]>(() => {
-  return props.items.map((exp) => ({
+  return props.items.map(exp => ({
     date: exp.date,
     title: exp.title,
     description: exp.description,
@@ -48,15 +48,15 @@ const timelineItems = computed<TimelineItem[]>(() => {
     spotlight-color="primary"
     :ui="{
       wrapper: 'md:flex-none lg:flex-1',
-      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium',
+      title: 'text-left text-xl sm:text-xl lg:text-2xl font-medium'
     }"
   >
-  <Motion
-    :initial="{ opacity: 0, y: 20 }"
-    :while-in-view="({ opacity: 1, y: 0 } as any)"
-    :transition="{ delay: 0.4 }"
-    :in-view-options="{ once: true }"
-  >
+    <Motion
+      :initial="{ opacity: 0, y: 20 }"
+      :while-in-view="({ opacity: 1, y: 0 } as any)"
+      :transition="{ delay: 0.4 }"
+      :in-view-options="{ once: true }"
+    >
       <UTimeline
         :items="timelineItems"
         size="xs"

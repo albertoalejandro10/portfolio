@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { IndexEnCollectionItem, IndexEsCollectionItem } from '@nuxt/content'
 
-const props = defineProps<{
+defineProps<{
   page: IndexEnCollectionItem | IndexEsCollectionItem
 }>()
 </script>
