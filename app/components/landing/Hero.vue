@@ -129,10 +129,18 @@ defineProps<{
       >
         <div
           v-if="page.hero.links"
-          class="flex items-center gap-2"
+          class="flex flex-wrap items-center justify-center gap-2"
         >
-          <UButton label="Quick Chat" icon="i-mdi-chat" :to="global.quickChatLink" variant="soft" color="neutral" />
-          <UButton v-bind="page.hero.links[0]" />
+          <UButton
+            label="Quick Chat"
+            icon="i-mdi-chat"
+            :to="global.quickChatLink"
+            variant="soft"
+            color="neutral"
+          />
+          <UButton
+            v-bind="page.hero.links[0]"
+          />
           <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"

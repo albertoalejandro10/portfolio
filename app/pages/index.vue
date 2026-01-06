@@ -37,13 +37,15 @@ useSeoMeta({
     <LandingHero :page />
     <UPageSection
       :ui="{
-        container: 'pt-0! lg:grid lg:grid-cols-2 lg:gap-y-2 lg:gap-x-4'
+        container: 'pt-0!'
       }"
     >
-      <LandingAbout :page />
-      <LandingWorkExperience :page />
+      <UPageGrid class="lg:grid-cols-2">
+        <LandingAbout :page class="md:col-span-2" />
+        <LandingEducationExperience :page />
+        <LandingWorkExperience :page />
+      </UPageGrid>
     </UPageSection>
-    <LandingBlog :page />
     <LandingTestimonials :page />
     <LandingFAQ :page />
   </UPage>

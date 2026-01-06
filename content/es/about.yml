@@ -1,29 +1,35 @@
 title: Sobre mí
-description: Aprende más sobre mi trayectoria como Ingeniero de Sistemas y Desarrollador Frontend, mi pasión por construir tecnología y mis intereses fuera del trabajo.
 content: |
-  Hola, soy **Alberto Alejandro**, un Ingeniero de Sistemas y Desarrollador Frontend con sede en Venezuela. Nacido y moldeado por la curiosidad, siempre me he sentido atraído por la forma en que funcionan las cosas, especialmente en el mundo digital. Con el tiempo, esa curiosidad se convirtió en una pasión por construir tecnología que sea útil y significativa.
+  Hola, soy **Alberto Alejandro**, un Desarrollador Frontend con sede en Venezuela especializado en JavaScript, Vue.js y Nuxt.js.
 
-  Mi formación en ingeniería de sistemas me dio una base sólida en lógica, desarrollo de software, bases de datos y cómo se conectan los sistemas.
+  ### Mi Trayectoria
 
-  ### Lo que me motiva
+  Nacido en Venezuela y moldeado por la curiosidad, siempre me ha atraído entender cómo funcionan las cosas, especialmente en el mundo digital. Con los años, esa curiosidad evolucionó en una pasión por construir tecnología que sea útil y significativa.
 
-  Lo que más me motiva es crear herramientas que hagan la vida cotidiana más fluida y resolver problemas reales con soluciones reflexivas.
+  Mi formación en Ingeniería de Sistemas me dio una base sólida en lógica, desarrollo de software, bases de datos y arquitectura de sistemas. Me gradué en 2024 de la Universidad de Oriente, donde desarrollé habilidades sólidas en programación, algoritmos y comprensión de cómo los sistemas complejos se conectan y funcionan juntos.
 
-  ### Mi rol e intereses
+  ### Lo Que Hago
 
-  Aunque he evolucionado hacia un rol centrado en el frontend, disfruto colaborando en el diseño del backend, participando en revisiones de código y aprendiendo cómo encaja cada parte de una aplicación. Últimamente, he estado explorando Go para entender mejor el rendimiento, la concurrencia y la arquitectura backend limpia.
+  Me especializo en **Vue.js** y **Nuxt.js**, enfocándome en crear aplicaciones web centradas en el usuario con código limpio y mantenible. Trabajo con tecnologías frontend modernas incluyendo TypeScript, Vue Router, Pinia e integraciones de API.
 
-  ### Fuera del trabajo
+  ### Mi Enfoque
 
-  Fuera del trabajo, encuentro creatividad y desafío en juegos de estrategia como Age of Empires II o el ritmo rápido de Valorant. Me mantengo con los pies en la tierra a través del deporte: jugando al fútbol o saliendo a correr para resetearme y recargarme.
+  Lo que más me impulsa es crear herramientas que simplifiquen la vida cotidiana y resolver problemas reales con soluciones reflexivas. Aunque he crecido en un rol enfocado en frontend, disfruto colaborar en el diseño backend, participar en revisiones de código y entender cómo cada pieza de una aplicación se conecta.
 
-  ### Siempre aprendiendo
+  Recientemente, he estado explorando **Go** para profundizar mi conocimiento en optimización del rendimiento, patrones de concurrencia y arquitectura backend limpia. Creo en entender el stack completo para construir mejores soluciones frontend.
 
-  Siempre estoy aprendiendo, siempre construyendo y siempre curioso por lo que viene después.
+  ### Más Allá del Código
 
-  Gracias por pasar. Siéntete libre de explorar mis [proyectos](/projects) o [ponte en contacto](/#contact) si quieres colaborar.
-images:
-  - src: https://images.unsplash.com/photo-1744877478622-a78c7a3336f6?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My coffee workspace
-  - src: https://images.unsplash.com/photo-1744429523595-2c06b8611242?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-    alt: My trip to Tokyo
+  Fuera del trabajo, encuentro creatividad y desafío en:
+
+  - **Juegos de Estrategia**: Age of Empires II me ayuda a pensar tácticamente y planificar con anticipación
+  - **Juegos Competitivos**: Valorant mantiene mis reflejos agudos y enseña toma de decisiones rápida
+  - **Deportes**: Jugando fútbol y tenis, o saliendo a correr para mantenerme equilibrado y recargar energías
+
+  Siempre estoy aprendiendo, siempre construyendo y siempre curioso sobre lo que viene después. Ya sea un nuevo framework, un patrón de diseño o una tecnología backend, creo que el crecimiento continuo es clave para mantenerse relevante y efectivo.
+
+  ### Conectemos
+
+  ¡Gracias por pasar! Siéntete libre de explorar mis [proyectos](projects), ver mis [artículos de blog](blog), si quieres colaborar en algo interesante.
+description: Desarrollador Frontend de Venezuela con pasión por construir aplicaciones web significativas y explorar nuevas tecnologías.
+images: []

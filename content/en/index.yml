@@ -1,73 +1,94 @@
 title: Alberto Alejandro
+role: Frontend Developer & Systems Engineer
+description: Specializing in JavaScript, Vue.js and Nuxt.js. Passionate about building user-centered web applications with clean, maintainable code.
+
 about:
   title: About Me
   description: |
-    I'm from Venezuela with a systems engineering background and now work as a frontend developer using Vue.js and Nuxt.js. I build practical, user-focused web apps, help with backend design and code reviews when needed, and keep learning to improve how I solve real problems.
-blog:
-  title: Latest Articles
-  description: Some of my recent thoughts
-description: Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps using modular architecture and clean, maintainable code. Based in Venezuela, creating smooth, reliable digital experiences.
+    Specialized in JavaScript, Vue, and Nuxt. I work on SaaS applications focused on clear interfaces, maintainable code, and solid architecture. I handle API integrations, complex forms, and prioritize simple solutions that deliver real business value.
+
 experience:
   title: Work Experience
   items:
-    - position: Nuxt Developer at
-      date: 2024 - Present
+    - date: Oct. 2024 - Feb. 2026
+      title: Nuxt.js Developer
       company:
         name: Takumi Software
         logo: /logos/takumi-software.png
         url: https://takumisoftware.com/
         color: "#8f1529"
-    - position: JavaScript Developer at
-      date: 2022 - 2024
+      description: Developed and maintained multiple SaaS platforms using Nuxt.js and TypeScript. Worked with CI/CD pipelines, integrated REST APIs, and collaborated with backend teams on system architecture.
+      icon: i-simple-icons-nuxtdotjs
+    - date: Jan. 2022 - Feb. 2024
+      title: JavaScript Developer
       company:
         name: Softsystems SRL
         logo: /logos/sgnla.png
         url: https://sgnla.com/
         color: "#1682B0"
-    - position: WordPress Developer at
-      date: 2021 - 2022
+      description: Built web applications with JavaScript, created interactive forms, and integrated RESTful APIs while maintaining code quality standards.
+      icon: i-simple-icons-javascript
+    - date: May 2021 - Nov. 2021
+      title: WordPress Developer
       company:
         name: Evolution Advance
         logo: /logos/evolution-advance.jpg
         url: https://www.evolutionadvance.com/
         color: "#FFFFFF"
+      description: Created custom WordPress themes and plugins, optimized website performance and frontend functionality.
+      icon: i-simple-icons-wordpress
+
+education:
+  title: Education
+  items:
+    - date: Feb. 2014 - Apr. 2020
+      title: Systems Engineering
+      institution:
+        name: Universidad de Oriente
+        logo: /logos/udo.png
+        url: https://en.wikipedia.org/wiki/Universidad_de_Oriente_(Venezuela)
+        color: "#FFFFFF"
+      description: Bachelor of Applied Science in Systems Engineering with comprehensive studies in software development, database design, systems analysis, logic, and system architecture. Built a strong foundation in programming, algorithms, and understanding how complex systems connect and work together.
+      icon: i-lucide-graduation-cap
+
 faq:
   title: Frequently Asked Questions
-  description: Answers to common questions about my Vue.js/Nuxt.js services, process, and approach.
+  description: Answers to common questions about my experience, technical expertise, and how I work.
   categories:
-    - title: Vue.js & Nuxt.js Expertise
+    - title: Technical Expertise
       questions:
         - label: What technologies do you specialize in?
           content: |
-            I specialize in Vue.js and Nuxt.js, building highly interactive, responsive, and performance-optimized web applications. My expertise includes reusable components, Vue Router, Pinia, server-side rendering (SSR), and static site generation (SSG).
-        - label: What makes your approach unique?
+            I specialize in Vue.js and Nuxt.js with 4 years of experience building SaaS platforms and scalable web applications. My expertise includes TypeScript, Vue Router, Pinia, server-side rendering (SSR), static site generation (SSG), and API-driven architectures. I've integrated 30+ REST APIs and designed CI/CD pipelines with GitHub Actions.
+        - label: What types of projects have you worked on?
           content: |
-            I focus on modular, scalable architecture and seamless API integrations. My goal is to deliver blazing fast, modern UIs that work smoothly across all devices, with a strong emphasis on clean code and maintainability.
-        - label: Can you help with performance and SEO?
+            I've developed and maintained multiple SaaS platforms including appointment management systems, inventory solutions, payment integrations, auto-generated websites, and AI-powered features. I focus on frontend ownership while collaborating with backend teams to deliver complete, user-centered products.
+        - label: How do you ensure code quality?
           content: |
-            Absolutely! I leverage Nuxt.js SSR and SSG to boost SEO and performance, ensuring quick load times and a smooth user experience—even on mobile or slow networks.
+            I follow best practices including TypeScript for type safety, comprehensive code reviews, proactive debugging, and clean architecture principles. In my recent role, I migrated a codebase to TypeScript which reduced production errors by 30%, and performed 20+ code reviews to maintain high standards across the team.
     - title: Working Together
       questions:
-        - label: What is your process when working with clients?
+        - label: How do you collaborate with teams?
           content: |
-            My approach is client-centered: I listen carefully, communicate clearly, and tailor solutions to your specific needs. I prioritize transparency, regular updates, and collaborative problem-solving throughout the project.
-        - label: How do you ensure quality?
+            I thrive in collaborative environments, working closely with backend teams to design API contracts, participating in code reviews, and contributing to system architecture decisions. I've designed 10+ API contracts following DDD principles and actively engage in cross-functional collaboration.
+        - label: What is your approach to problem-solving?
           content: |
-            I maintain high standards through clean code, comprehensive testing, and proactive debugging. This ensures issues are caught early, resulting in faster and smoother project delivery.
-        - label: What is your availability and rate?
+            I focus on understanding the root cause and delivering thoughtful solutions. I've resolved 80+ bugs across production and staging environments, always prioritizing stability and user experience. I believe in continuous learning—currently exploring Go to better understand backend architecture and performance.
+        - label: What is your rate and availability?
           content: |
-            My standard rate is $15/hr. I am available for both short-term and long-term projects, and I’m committed to delivering value and results for every client.
-    - title: Project Details
+            My standard rate is $15/hr. I'm available for both contract and full-time opportunities, committed to delivering reliable, maintainable solutions that make a real impact.
+    - title: Development Practices
       questions:
-        - label: What types of projects do you take on?
-          content: |
-            I work on a variety of web projects, from landing pages to complex web applications. Whether you need a new build, a redesign, or performance optimization, I can help bring your vision to life.
         - label: How do you handle API integrations?
           content: |
-            I have extensive experience integrating RESTful APIs to deliver dynamic, real-time data in a flawless and responsive way, ensuring your app is both powerful and user-friendly.
-        - label: How do we get started?
+            I have extensive experience with REST APIs, having integrated over 30 endpoints with robust handling of authentication, errors, and loading states. I collaborate with backend teams from the design phase to ensure contracts are well-defined and follow best practices.
+        - label: What's your experience with CI/CD?
           content: |
-            Just reach out! We’ll discuss your goals, requirements, and timeline. I’ll provide a clear plan and estimate, and we’ll move forward together to create a high-performance, visually stunning web application.
+            I've designed and implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 60%. I focus on automating workflows, ensuring code quality through automated testing, and streamlining the release process for faster, more reliable deployments.
+        - label: How do you stay current with technology?
+          content: |
+            I'm constantly learning and exploring new technologies. Recently, I've been diving into Go to understand performance optimization, concurrency patterns, and clean backend architecture. I believe in understanding the full stack to build better frontend solutions.
+
 hero:
   links:
     - label: Curriculum
@@ -76,10 +97,11 @@ hero:
       color: neutral
       size: sm
   images: []
-role: Frontend Developer & Systems Engineer
+
 seo:
-  title: Alberto Alejandro - Frontend Developer & Systems Engineer
-  description: Welcome to my portfolio! I'm Alberto Alejandro, a Frontend Developer & Systems Engineer based in Venezuela. Specialized in Vue.js and Nuxt.js, with a focus on building fast, SEO-friendly web apps.
+  title: Alberto Alejandro - Frontend Developer specialized in Vue.js & Nuxt.js
+  description: Frontend Developer from Venezuela with 4 years of experience building SaaS platforms and scalable web applications using Vue.js and Nuxt.js. Expert in API-driven architectures and delivering user-centered digital products.
+
 testimonials:
   - quote: Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!
     author:

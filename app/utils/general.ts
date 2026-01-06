@@ -8,3 +8,22 @@ export const formatDate = (dateString: string) => {
     day: 'numeric'
   })
 }
+
+// Input: "#FFFFFF" | "white" | "#000000" | "black"
+// Output: true | false
+export const isLightColor = (color: string): boolean => {
+  const lightColors = ['#FFFFFF', '#ffffff', 'white', '#FFF', '#fff']
+  return lightColors.includes(color.toLowerCase())
+}
+
+export const getTextColor = (companyColor: string, colorMode: string) => {
+  if (isLightColor(companyColor) && colorMode === 'light') {
+    return '#000000'
+  }
+
+  if (isLightColor(companyColor) && colorMode === 'dark') {
+    return '#FFFFFF'
+  }
+
+  return companyColor
+}
