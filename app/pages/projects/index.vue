@@ -84,7 +84,7 @@ useSeoMeta({
           <UPageCard
             :title="project.title"
             :description="project.description"
-            :to="project.url"
+            :to="project.path"
             orientation="horizontal"
             variant="naked"
             :reverse="index % 2 === 1"
@@ -100,7 +100,7 @@ useSeoMeta({
             </template>
             <template #footer>
               <ULink
-                :to="project.url"
+                :to="project.path"
                 class="text-sm text-primary flex items-center"
               >
                 View Project

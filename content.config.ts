@@ -145,27 +145,47 @@ export default defineContentConfig({
       })
     }),
     projects_en: defineCollection({
-      type: 'data',
-      source: 'en/projects/*.yml',
+      type: 'page',
+      source: 'en/projects/*.md',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        url: z.string().optional(),
+        github: z.string().optional(),
+        repository: z.string().optional(),
         tags: z.array(z.string()),
-        date: z.date()
+        date: z.string(),
+        stack: z.array(z.string()).optional(),
+        owners: z.array(z.string()).optional(),
+        owner: z.string().optional(),
+        company: z.string().optional(),
+        seo: z.object({
+          title: z.string().optional(),
+          description: z.string().optional()
+        }).optional()
       })
     }),
     projects_es: defineCollection({
-      type: 'data',
-      source: 'es/projects/*.yml',
+      type: 'page',
+      source: 'es/projects/*.md',
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
         image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        url: z.string().optional(),
+        github: z.string().optional(),
+        repository: z.string().optional(),
         tags: z.array(z.string()),
-        date: z.date()
+        date: z.string(),
+        stack: z.array(z.string()).optional(),
+        owners: z.array(z.string()).optional(),
+        owner: z.string().optional(),
+        company: z.string().optional(),
+        seo: z.object({
+          title: z.string().optional(),
+          description: z.string().optional()
+        }).optional()
       })
     }),
     blog_en: defineCollection({
