@@ -1,7 +1,7 @@
 ---
 title: Inventory Management System
 description: A complete web-based inventory management system for local businesses featuring QR code scanning, sales tracking, user roles management, and comprehensive reporting capabilities.
-image: https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+image: /mockups/inventory-system/mockup-01.webp
 github: https://github.com/albertoalejandro10/inventary-system
 tags:
   - PHP

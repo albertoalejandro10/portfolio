@@ -1,7 +1,7 @@
 ---
 title: GitHub Scraper UI
 description: A powerful GitHub Profile UI that connects to the GitHub Scraper API to analyze profiles, followers, and following, identifying mutual connections to provide valuable insights into your GitHub network.
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+image: /mockups/github-scraper-ui/mockup-01.webp
 url: https://github-scraper-ui.vercel.app
 github: https://github.com/albertoalejandro10/github-scraper-ui
 tags:
