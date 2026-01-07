@@ -1,7 +1,0 @@
-title: Scraper de GitHub
-description: Una herramienta que extrae datos de repositorios de GitHub para recopilar información sobre issues, pull requests y colaboradores, ofreciendo una visión de la actividad y la salud del proyecto.
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80 # Imagen de ejemplo relacionada con código/desarrollo
-url: "#"
-tags:
-  ["Scraping Web", "API de GitHub", "Análisis de Datos", "Automatización", "Código Abierto"]
-date: "Octubre 2024"

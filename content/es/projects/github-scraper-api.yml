@@ -1,7 +1,0 @@
-title: API de GitHub Scraper
-description: Una API RESTful que ofrece endpoints para extraer datos de repositorios de GitHub sobre issues, pull requests y colaboradores, lo que permite a los desarrolladores integrar información de GitHub en sus aplicaciones.
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80 # Imagen de ejemplo relacionada con código/desarrollo
-url: "#"
-tags:
-  ["API", "Scraping Web", "API de GitHub", "Integración de Datos", "Código Abierto"]
-date: "Septiembre 2024"
