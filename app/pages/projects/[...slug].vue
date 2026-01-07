@@ -3,7 +3,7 @@ import { withLeadingSlash, joinURL } from 'ufo'
 import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
 const path = computed(() => withLeadingSlash(joinURL(locale.value, 'projects', ...slug.value)))
@@ -25,7 +25,7 @@ const { data: page } = await useAsyncData(path.value, async () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: t('error.title'),
     fatal: true
   })
 }
@@ -74,7 +74,7 @@ useSeoMeta({
           class="text-sm flex items-center gap-1"
         >
           <UIcon name="lucide:chevron-left" />
-          Projects
+          {{ t('projects.title') }}
         </ULink>
         <div class="flex flex-col gap-3 mt-8">
           <NuxtImg
@@ -111,7 +111,7 @@ useSeoMeta({
 
             <!-- Tech Stack -->
             <div v-if="page.stack && page.stack.length" class="flex flex-col items-center gap-2">
-              <span class="text-sm font-medium">Tech Stack</span>
+              <span class="text-sm font-medium">{{ t('projects.techStack') }}</span>
               <div class="flex flex-wrap gap-2 justify-center">
                 <UBadge
                   v-for="tech in page.stack"
@@ -127,7 +127,7 @@ useSeoMeta({
 
             <!-- Owners -->
             <div v-if="page.owners && page.owners.length" class="flex flex-col items-center gap-2">
-              <span class="text-sm font-medium">Team</span>
+              <span class="text-sm font-medium">{{ t('projects.team') }}</span>
               <div class="flex flex-wrap gap-2 justify-center text-sm text-muted">
                 <span v-for="(owner, index) in page.owners" :key="owner">
                   {{ owner }}<span v-if="index < page.owners.length - 1">, </span>
@@ -135,7 +135,7 @@ useSeoMeta({
               </div>
             </div>
             <div v-else-if="page.owner" class="flex flex-col items-center gap-2">
-              <span class="text-sm font-medium">Owner</span>
+              <span class="text-sm font-medium">{{ t('projects.owner') }}</span>
               <span class="text-sm text-muted">{{ page.owner }}</span>
             </div>
 
@@ -147,7 +147,7 @@ useSeoMeta({
                 target="_blank"
                 color="primary"
                 icon="i-lucide-external-link"
-                label="Live Demo"
+                :label="t('projects.liveDemo')"
               />
               <UButton
                 v-if="page.github"
@@ -156,7 +156,7 @@ useSeoMeta({
                 color="neutral"
                 variant="outline"
                 icon="i-lucide-github"
-                label="GitHub"
+                :label="t('projects.github')"
               />
               <UButton
                 v-if="page.repository && page.repository !== 'Private'"
@@ -165,7 +165,7 @@ useSeoMeta({
                 color="neutral"
                 variant="outline"
                 icon="i-lucide-code"
-                label="Repository"
+                :label="t('projects.repository')"
               />
             </div>
           </div>

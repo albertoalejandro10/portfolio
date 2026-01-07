@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const collection = computed(() => `index_${locale.value}` as keyof Collections)
 const { data: page } = await useAsyncData('index', async () => {
@@ -19,7 +19,7 @@ const { data: page } = await useAsyncData('index', async () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: t('error.title'),
     fatal: true
   })
 }

@@ -3,11 +3,13 @@ const props = defineProps<{
   type?: 'article' | 'project'
 }>()
 
+const { t } = useI18n()
+
 const pageLink = computed(() => `${window?.location}`)
 const shareText = computed(() => {
   return props.type === 'article'
-    ? 'Article link copied to clipboard'
-    : 'Project link copied to clipboard'
+    ? t('general.articleLinkCopied')
+    : t('general.projectLinkCopied')
 })
 </script>
 
@@ -17,7 +19,7 @@ const shareText = computed(() => {
       size="sm"
       variant="link"
       color="neutral"
-      label="Copy link"
+      :label="t('general.copyLink')"
       @click="copyToClipboard(pageLink, shareText)"
     />
   </div>
