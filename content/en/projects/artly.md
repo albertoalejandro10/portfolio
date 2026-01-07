@@ -1,7 +1,7 @@
 ---
 title: Artly
 description: A mobile platform where users receive AI-generated drawing prompts, create drawings daily, and log their artistic progress with a Duolingo-style streak mechanic. Users can share their drawings and connect with a creative community.
-image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80
+image: /mockups/artly/mockup-01.webp
 github: https://github.com/albertoalejandro10/artly
 tags:
   - Mobile App

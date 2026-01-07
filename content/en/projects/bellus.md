@@ -5,7 +5,7 @@ owner: Takumi Software
 date: October 2024
 url: https://bellus.app/
 repository: Private
-image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80
+image: /mockups/bellus/mockup-01.webp
 tags:
   - Nuxt
   - Vue 3
