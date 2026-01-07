@@ -1,0 +1,1 @@
+import{k as r,c,t as e,h as l,o as p,r as u,n as d}from"./CLXblBnL.js";const m={base:"bg-muted"},h={__name:"ProseThead",props:{class:{type:null,required:!1}},setup(s){const a=s,t=r(),o=c(()=>e({extend:e(m),...t.ui?.prose?.thead||{}}));return(n,i)=>(p(),l("thead",{class:d(o.value({class:a.class}))},[u(n.$slots,"default")],2))}};export{h as default};
