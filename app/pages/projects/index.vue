@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const collection = computed(() => `pages_${locale.value}` as keyof Collections)
 const { data: page } = await useAsyncData('projects-page', async () => {
@@ -19,7 +19,7 @@ const { data: page } = await useAsyncData('projects-page', async () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: t('error.title'),
     fatal: true
   })
 }
@@ -103,7 +103,7 @@ useSeoMeta({
                 :to="project.path"
                 class="text-sm text-primary flex items-center"
               >
-                View Project
+                {{ t('projects.viewProject') }}
                 <UIcon
                   name="i-lucide-arrow-right"
                   class="size-4 text-primary transition-all opacity-0 group-hover:translate-x-1 group-hover:opacity-100"

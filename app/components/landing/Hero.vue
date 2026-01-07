@@ -3,6 +3,7 @@ import type { IndexEnCollectionItem, IndexEsCollectionItem } from '@nuxt/content
 
 const { footer, global } = useAppConfig()
 const colorMode = useColorMode()
+const { t } = useI18n()
 
 const color = computed(() => (colorMode.value === 'dark' ? 'dark' : 'light'))
 
@@ -132,7 +133,7 @@ defineProps<{
           class="flex flex-wrap items-center justify-center gap-2"
         >
           <UButton
-            label="Quick Chat"
+            :label="t('hero.quickChat')"
             icon="i-mdi-chat"
             :to="global.quickChatLink"
             variant="soft"
@@ -146,7 +147,7 @@ defineProps<{
             variant="ghost"
             class="gap-2"
             :to="global.available ? global.meetingLink : ''"
-            :label="global.available ? 'Available for new projects' : 'Not available at the moment'"
+            :label="global.available ? t('hero.availableForProjects') : t('hero.notAvailable')"
           >
             <template #leading>
               <span class="relative flex size-2">

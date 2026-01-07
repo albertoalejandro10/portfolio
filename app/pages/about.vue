@@ -2,7 +2,7 @@
 import type { Collections } from '@nuxt/content'
 
 const { global } = useAppConfig()
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const collection = computed(() => `about_${locale.value}` as keyof Collections)
 const { data: page } = await useAsyncData('about', async () => {
@@ -18,7 +18,7 @@ const { data: page } = await useAsyncData('about', async () => {
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
+    statusMessage: t('error.title'),
     fatal: true
   })
 }
