@@ -71,8 +71,6 @@ useSeoMeta({
   ogDescription: description,
   ogTitle: title
 })
-
-const articleLink = computed(() => `${window?.location}`)
 </script>
 
 <template>
@@ -101,7 +99,7 @@ const articleLink = computed(() => `${window?.location}`)
           <NuxtImg
             :src="page.image"
             :alt="page.title"
-            class="rounded-lg w-full h-[300px] object-cover object-center"
+            class="rounded-lg w-full h-75 object-cover object-center"
           />
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
             {{ page.title }}
@@ -125,15 +123,7 @@ const articleLink = computed(() => `${window?.location}`)
             :value="page"
           />
 
-          <div class="flex items-center justify-end gap-2 text-sm text-muted">
-            <UButton
-              size="sm"
-              variant="link"
-              color="neutral"
-              label="Copy link"
-              @click="copyToClipboard(articleLink, 'Article link copied to clipboard')"
-            />
-          </div>
+          <SharePage type="article" />
           <UContentSurround :surround />
         </UPageBody>
       </UPage>
