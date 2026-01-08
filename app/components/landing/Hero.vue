@@ -138,6 +138,7 @@ defineProps<{
             :to="global.quickChatLink"
             variant="soft"
             color="neutral"
+            class="animate-pulse-subtle"
           />
           <UButton
             v-bind="page.hero.links[0]"

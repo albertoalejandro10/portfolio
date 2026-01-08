@@ -6,7 +6,7 @@ export default defineAppConfig({
       alt: 'My profile picture'
     },
     meetingLink: 'https://cal.com/alberto-alejandro/30-minute-meeting-consultation-work-session',
-    quickChatLink: 'https://cal.com/alberto-alejandro/15-minute-meeting-quick-chat',
+    quickChatLink: 'https://api.whatsapp.com/send/?phone=%2B584249448022',
     email: 'alberto196g@gmail.com',
     available: true
   },
