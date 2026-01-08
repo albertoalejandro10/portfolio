@@ -1,1 +1,0 @@
-import{k as r,c,t as s,h as l,o as p,r as u,n as d}from"./DvTDEdBT.js";const i={base:""},_={__name:"ProseTbody",props:{class:{type:null,required:!1}},setup(e){const o=e,a=r(),t=c(()=>s({extend:s(i),...a.ui?.prose?.tbody||{}}));return(n,m)=>(p(),l("tbody",{class:d(t.value({class:o.class}))},[u(n.$slots,"default")],2))}};export{_ as default};
