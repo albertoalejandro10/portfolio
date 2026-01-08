@@ -80,7 +80,7 @@ useSeoMeta({
           <NuxtImg
             :src="page.image"
             :alt="page.title"
-            class="rounded-lg w-full h-75 object-cover object-center"
+            class="rounded-lg w-full h-75 md:h-1/4 object-fill md:object-cover object-center"
           />
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
             {{ page.title }}
