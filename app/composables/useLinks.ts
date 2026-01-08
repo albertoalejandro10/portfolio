@@ -15,11 +15,11 @@ export function useLinks() {
       icon: 'i-lucide-folder',
       to: localePath('/projects')
     },
-    {
-      label: t('navbar.blog'),
-      icon: 'i-lucide-file-text',
-      to: localePath('/blog')
-    },
+    // {
+    //   label: t('navbar.blog'),
+    //   icon: 'i-lucide-file-text',
+    //   to: localePath('/blog')
+    // },
     {
       label: t('navbar.about'),
       icon: 'i-lucide-user',

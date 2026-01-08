@@ -38,20 +38,3 @@
 .animate-pulse-subtle {
   animation: pulse-subtle 2s ease-in-out infinite;
 }
-
-/* social network button hover animation */
-@keyframes social-glow {
-  0%,
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 var(--color-primary-500, var(--color-primary-300));
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 8px transparent;
-  }
-}
-
-.animate-social-glow {
-  animation: social-glow 2s ease-in-out infinite;
-}
