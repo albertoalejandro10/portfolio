@@ -1,0 +1,1 @@
+import{k as r,c,t as s,h as l,o as p,r as u,n as i}from"./DvTDEdBT.js";const m={base:""},g={__name:"ProseStrong",props:{class:{type:null,required:!1}},setup(e){const o=e,t=r(),a=c(()=>s({extend:s(m),...t.ui?.prose?.strong||{}}));return(n,f)=>(p(),l("strong",{class:i(a.value({class:o.class}))},[u(n.$slots,"default")],2))}};export{g as default};
