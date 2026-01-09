@@ -57,11 +57,14 @@ if (page.value.image) {
 const title = page.value?.seo?.title || page.value?.title
 const description = page.value?.seo?.description || page.value?.description
 
+// SEO meta tags - title template is applied globally in nuxt.config.ts
+// OG image is handled above via defineOgImage/defineOgImageComponent
 useSeoMeta({
   title,
   description,
   ogDescription: description,
-  ogTitle: title
+  ogTitle: title,
+  twitterCard: 'summary_large_image'
 })
 </script>
 

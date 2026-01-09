@@ -1,0 +1,83 @@
+# llms.txt - LLM Discoverability File
+# This file helps AI agents and language models understand and index this site.
+# Specification: https://llmstxt.org/
+
+## Site Information
+
+Name: Alberto Alejandro - Portfolio
+URL: https://albertoalejandro.nuxt.space
+Type: Personal Portfolio / Developer Website
+
+## Author
+
+Name: Alberto Alejandro
+Role: Frontend Developer & Systems Engineer
+Location: Venezuela
+Email: alberto196g@gmail.com
+
+## About
+
+This is a personal portfolio website showcasing professional experience,
+projects, and blog posts focused on web development.
+
+Specializations:
+- JavaScript / TypeScript
+- Vue.js / Nuxt.js
+- Frontend Architecture
+- SaaS Application Development
+- REST API Integration
+- UI/UX Implementation
+
+## Content Structure
+
+/                   - Homepage with about, experience, and testimonials
+/about              - Detailed about page with personal information
+/projects           - Portfolio of completed projects and case studies
+/projects/[slug]    - Individual project details
+/blog               - Technical blog posts and articles
+/blog/[slug]        - Individual blog post
+
+## Key Projects
+
+- Artly - Art marketplace platform
+- Bellus - Beauty services application
+- CarsWorkflow - Automotive workflow management
+- GitHub Scraper - GitHub data extraction tool
+- QRS Factory - QR code generation system
+- RealtyWeb - Real estate platform
+- Trader Buddy - Trading assistant application
+
+## Languages
+
+Primary: English (en)
+Secondary: Spanish (es)
+
+All content is available in both languages.
+
+## Contact & Social
+
+- GitHub: https://github.com/albertoalejandro10
+- LinkedIn: https://www.linkedin.com/in/albertoalejandro10/
+- Upwork: https://www.upwork.com/freelancers/~0130a269b9b034c325
+- Discord: https://discord.com/users/497789899597021189
+
+## Technical Stack
+
+This site is built with:
+- Nuxt.js 4 (Vue.js framework)
+- Nuxt Content (markdown-based CMS)
+- Nuxt UI (component library)
+- TypeScript
+
+## Robots
+
+Standard web crawlers and AI agents are welcome to index public content.
+See /robots.txt for detailed access rules.
+
+## Sitemap
+
+XML Sitemap: https://albertoalejandro.nuxt.space/sitemap_index.xml
+
+## Last Updated
+
+2026-01-08
