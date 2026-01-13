@@ -18,37 +18,6 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  // Performance optimizations
-  experimental: {
-    // Enable view transitions for smoother page navigation
-    viewTransition: true,
-    // Payload extraction for faster hydration
-    payloadExtraction: true
-  },
-
-  // Enable build optimizations
-  vite: {
-    build: {
-      // CSS code splitting for smaller initial bundles
-      cssCodeSplit: true,
-      // Minify CSS for smaller file sizes
-      cssMinify: 'lightningcss',
-      // Rollup options for better tree-shaking
-      rollupOptions: {
-        output: {
-          // Manual chunks for better caching
-          manualChunks: {
-            'motion': ['motion-v'],
-            'vue-vendor': ['vue', '@vue/shared']
-          }
-        }
-      }
-    },
-    optimizeDeps: {
-      include: ['vue', '@vueuse/core']
-    }
-  },
-
   app: {
     head: {
       // Title template applied globally; %s is replaced by page-specific title
@@ -96,7 +65,7 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap',
           media: 'print',
-          onload: "this.media='all'"
+          onload: 'this.media=\'all\''
         }
       ]
     },
@@ -136,6 +105,14 @@ export default defineNuxtConfig({
         url: 'https://github.com/albertoalejandro10/portfolio'
       }
     }
+  },
+
+  // Performance optimizations
+  experimental: {
+    // Enable view transitions for smoother page navigation
+    viewTransition: true,
+    // Payload extraction for faster hydration
+    payloadExtraction: true
   },
   compatibilityDate: '2026-01-01',
   nitro: {
@@ -180,6 +157,29 @@ export default defineNuxtConfig({
           'cache-control': 'public, max-age=3600, stale-while-revalidate=86400'
         }
       }
+    }
+  },
+
+  // Enable build optimizations
+  vite: {
+    build: {
+      // CSS code splitting for smaller initial bundles
+      cssCodeSplit: true,
+      // Minify CSS for smaller file sizes
+      cssMinify: 'lightningcss',
+      // Rollup options for better tree-shaking
+      rollupOptions: {
+        output: {
+          // Manual chunks for better caching
+          manualChunks: {
+            'motion': ['motion-v'],
+            'vue-vendor': ['vue', '@vue/shared']
+          }
+        }
+      }
+    },
+    optimizeDeps: {
+      include: ['vue', '@vueuse/core']
     }
   },
 
