@@ -225,10 +225,18 @@ export default defineNuxtConfig({
   },
   icon: {
     collections: ['lucide', 'circle-flags', 'simple-icons', 'mdi', 'material-icon-theme'],
-    serverBundle: 'auto',
+    serverBundle: 'local',
     clientBundle: {
       scan: true,
-      sizeLimitKb: 256
+      sizeLimitKb: 256,
+      icons: [
+        'lucide:sun',
+        'lucide:moon',
+        'circle-flags:en',
+        'circle-flags:es',
+        'material-icon-theme:copilot',
+        'material-icon-theme:copilot-light'
+      ]
     }
   },
   image: {
