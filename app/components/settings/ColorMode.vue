@@ -60,7 +60,7 @@ const startViewTransition = (event: MouseEvent) => {
   </ClientOnly>
 </template>
 
-<style>
+<style scoped>
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;

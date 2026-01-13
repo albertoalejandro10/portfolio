@@ -225,7 +225,7 @@ export default defineNuxtConfig({
   },
   icon: {
     collections: ['lucide', 'circle-flags', 'simple-icons', 'mdi', 'material-icon-theme'],
-    serverBundle: 'local',
+    serverBundle: 'auto',
     clientBundle: {
       scan: true,
       sizeLimitKb: 256
