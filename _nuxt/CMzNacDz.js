@@ -1,1 +1,0 @@
-import{u as n}from"./Bu4MqC5B.js";const s=t=>{const{locale:e}=n();return new Date(t).toLocaleDateString(e.value,{year:"numeric",month:"short",day:"numeric"})},r=t=>["#FFFFFF","#ffffff","white","#FFF","#fff"].includes(t.toLowerCase()),F=(t,e)=>r(t)&&e==="light"?"#000000":r(t)&&e==="dark"?"#FFFFFF":t;export{s as f,F as g};
