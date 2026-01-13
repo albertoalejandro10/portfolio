@@ -240,7 +240,7 @@ export default defineNuxtConfig({
     }
   },
   image: {
-    provider: 'ipx',
+    provider: 'none',
     quality: 80,
     format: ['webp', 'avif'],
     screens: {
