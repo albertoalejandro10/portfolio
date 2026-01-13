@@ -28,8 +28,7 @@ onMounted(() => {
     if (consent.analytics) {
       applyConsent(consent.analytics)
     }
-  }
-  else {
+  } else {
     // Show banner if no consent has been given
     showBanner.value = true
   }
@@ -120,8 +119,8 @@ function declineAll() {
                     color="primary"
                     size="sm"
                     class="justify-center"
-                    @click="acceptAll"
                     icon="i-lucide-heart"
+                    @click="acceptAll"
                   >
                     {{ t('cookies.accept') }}
                   </UButton>
@@ -130,8 +129,8 @@ function declineAll() {
                     variant="outline"
                     size="sm"
                     class="justify-center"
-                    @click="declineAll"
                     icon="i-lucide-heart-crack"
+                    @click="declineAll"
                   >
                     {{ t('cookies.decline') }}
                   </UButton>

@@ -96,6 +96,28 @@ export default defineNuxtConfig({
       crawlLinks: true
     }
   },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Google Analytics Configuration (nuxt-gtag)
+  // Uses Google Consent Mode v2 for GDPR/privacy compliance
+  // ID is loaded from NUXT_PUBLIC_GTAG_ID environment variable
+  // ─────────────────────────────────────────────────────────────────────────
+  gtag: {
+    // Only enable in production to avoid tracking during development
+    enabled: process.env.NODE_ENV === 'production',
+    // Manual initialization - script loads only after user consent
+    initMode: 'manual',
+    // Google Consent Mode v2 - all consent denied by default
+    initCommands: [
+      ['consent', 'default', {
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500
+      }]
+    ]
+  },
   i18n: {
     langDir: 'locales',
     strategy: 'prefix_and_default',
@@ -258,27 +280,5 @@ export default defineNuxtConfig({
       repo: 'portfolio',
       branch: 'main'
     }
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // Google Analytics Configuration (nuxt-gtag)
-  // Uses Google Consent Mode v2 for GDPR/privacy compliance
-  // ID is loaded from NUXT_PUBLIC_GTAG_ID environment variable
-  // ─────────────────────────────────────────────────────────────────────────
-  gtag: {
-    // Only enable in production to avoid tracking during development
-    enabled: process.env.NODE_ENV === 'production',
-    // Manual initialization - script loads only after user consent
-    initMode: 'manual',
-    // Google Consent Mode v2 - all consent denied by default
-    initCommands: [
-      ['consent', 'default', {
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        wait_for_update: 500
-      }]
-    ]
   }
 })
