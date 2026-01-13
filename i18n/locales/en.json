@@ -33,5 +33,19 @@
     "title": "Page Not Found",
     "description": "I am sorry but this page could not be found.",
     "backHome": "Go Back Home"
+  },
+  "cookies": {
+    "title": "Cookie Consent",
+    "description": "This website uses cookies to analyze traffic and improve your experience. We respect your privacy and only collect data with your explicit consent.",
+    "accept": "Accept All",
+    "decline": "Decline",
+    "learnMore": "Learn More",
+    "privacyPolicy": "Privacy Policy",
+    "settings": "Cookie Settings",
+    "necessary": "Necessary",
+    "necessaryDescription": "Essential cookies for the website to function properly.",
+    "analytics": "Analytics",
+    "analyticsDescription": "Help us understand how visitors interact with our website.",
+    "save": "Save Preferences"
   }
 }
