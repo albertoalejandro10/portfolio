@@ -33,5 +33,19 @@
     "title": "Página no encontrada",
     "description": "Lo siento, pero esta página no pudo ser encontrada.",
     "backHome": "Volver al inicio"
+  },
+  "cookies": {
+    "title": "Consentimiento de Cookies",
+    "description": "Este sitio web utiliza cookies para analizar el tráfico y mejorar tu experiencia. Respetamos tu privacidad y solo recopilamos datos con tu consentimiento explícito.",
+    "accept": "Aceptar Todo",
+    "decline": "Rechazar",
+    "learnMore": "Más Información",
+    "privacyPolicy": "Política de Privacidad",
+    "settings": "Configuración de Cookies",
+    "necessary": "Necesarias",
+    "necessaryDescription": "Cookies esenciales para el funcionamiento del sitio web.",
+    "analytics": "Analíticas",
+    "analyticsDescription": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web.",
+    "save": "Guardar Preferencias"
   }
 }

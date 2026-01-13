@@ -32,3 +32,5 @@ jobs:
 
       - name: Typecheck
         run: pnpm run typecheck
+        # env:
+        #   NUXT_PUBLIC_GTAG_ID: ${{ secrets.NUXT_PUBLIC_GTAG_ID }}
