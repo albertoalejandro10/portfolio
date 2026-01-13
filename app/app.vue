@@ -23,11 +23,10 @@ useHead({
   }
 })
 
-// TODO: Update images.
 useSeoMeta({
   titleTemplate: '%s - Alberto Alejandro',
-  ogImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
-  twitterImage: 'https://assets.hub.nuxt.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL3BvcnRmb2xpby10ZW1wbGF0ZS5udXh0LmRldiIsImlhdCI6MTc0NTkzNDczMX0.XDWnQoyVy3XVtKQD6PLQ8RFUwr4yr1QnVwPxRrjCrro.jpg?theme=light',
+  ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
+  twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png',
   twitterCard: 'summary_large_image'
 })
 
@@ -68,7 +67,8 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
       />
     </ClientOnly>
 
-    <SettingsCookieConsent />
+    <!-- Lazy load cookie consent as it's not critical for initial paint -->
+    <LazySettingsCookieConsent />
   </UApp>
 </template>
 

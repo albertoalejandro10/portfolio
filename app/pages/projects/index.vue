@@ -120,6 +120,10 @@ useSeoMeta({
             <NuxtImg
               :src="project.image"
               :alt="project.title"
+              loading="lazy"
+              format="webp"
+              quality="80"
+              sizes="sm:100vw md:50vw lg:800px"
               class="object-cover w-full lg:h-56 rounded-lg"
             />
           </UPageCard>
