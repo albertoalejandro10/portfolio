@@ -6,25 +6,25 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/udo.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/udo.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/takumi-software.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/takumi-software.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/sgnla.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/sgnla.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/evolution-advance.jpg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/evolution-advance.jpg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&amp;amp;v=beta&amp;amp;t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg</image:loc>
@@ -39,10 +39,10 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/about" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/about" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
@@ -51,13 +51,13 @@
     <url>
         <loc>https://albertoalejandro.nuxt.space/blog</loc>
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/blog" hreflang="es" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/blog" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/blog" hreflang="en" />
+        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="en" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
     </url>
     <url>
@@ -66,25 +66,25 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/udo.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/udo.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/takumi-software.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/takumi-software.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/sgnla.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/sgnla.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logos/evolution-advance.jpg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/evolution-advance.jpg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&amp;amp;v=beta&amp;amp;t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg</image:loc>
@@ -99,10 +99,10 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/projects" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/projects" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
     </url>
     <url>
@@ -111,10 +111,10 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/about" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/about" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
@@ -123,13 +123,13 @@
     <url>
         <loc>https://albertoalejandro.nuxt.space/en/blog</loc>
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/blog" hreflang="es" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/blog" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/blog" hreflang="en" />
+        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="en" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
     </url>
     <url>
@@ -138,11 +138,11 @@
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/projects" hreflang="en" />
         <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/projects" hreflang="es" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
         </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.5.2 at 2026-01-13T17:42:57.673Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.5.2 at 2026-01-13T20:26:27.034Z -->
