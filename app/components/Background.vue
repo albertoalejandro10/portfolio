@@ -12,10 +12,16 @@ const spotlightStyle = computed(() => ({
   opacity: isVisible.value ? 1 : 0
 }))
 
+// Throttle mousemove for better performance
+let rafId: number | null = null
 const handleMouseMove = (e: MouseEvent) => {
-  mouseX.value = e.clientX
-  mouseY.value = e.clientY
-  isVisible.value = true
+  if (rafId) return
+  rafId = requestAnimationFrame(() => {
+    mouseX.value = e.clientX
+    mouseY.value = e.clientY
+    isVisible.value = true
+    rafId = null
+  })
 }
 
 const handleMouseLeave = () => {
@@ -23,11 +29,13 @@ const handleMouseLeave = () => {
 }
 
 onMounted(() => {
-  window.addEventListener('mousemove', handleMouseMove)
-  window.addEventListener('mouseleave', handleMouseLeave)
+  // Use passive event listeners for better scroll performance
+  window.addEventListener('mousemove', handleMouseMove, { passive: true })
+  window.addEventListener('mouseleave', handleMouseLeave, { passive: true })
 })
 
 onUnmounted(() => {
+  if (rafId) cancelAnimationFrame(rafId)
   window.removeEventListener('mousemove', handleMouseMove)
   window.removeEventListener('mouseleave', handleMouseLeave)
 })
@@ -44,7 +52,7 @@ onUnmounted(() => {
     <!-- Spotlight effect -->
     <div
       ref="spotlightRef"
-      class="pointer-events-none fixed -z-10 transition-opacity duration-300"
+      class="pointer-events-none fixed -z-10 transition-opacity duration-300 will-change-transform"
       :style="spotlightStyle"
     >
       <div

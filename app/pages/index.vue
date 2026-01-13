@@ -30,7 +30,6 @@ useSeoMeta({
   ogTitle: page.value?.seo.title || page.value?.title,
   description: page.value?.seo.description || page.value?.description,
   ogDescription: page.value?.seo.description || page.value?.description,
-  // Static OG image from public folder (1200x630)
   ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
   twitterCard: 'summary_large_image',
   twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png'
@@ -51,7 +50,8 @@ useSeoMeta({
         <LandingWorkExperience :page />
       </UPageGrid>
     </UPageSection>
-    <LandingTestimonials :page />
-    <LandingFAQ :page />
+    <!-- Lazy load below-fold components -->
+    <LazyLandingTestimonials :page />
+    <LazyLandingFAQ :page />
   </UPage>
 </template>

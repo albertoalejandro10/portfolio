@@ -76,6 +76,9 @@ const timelineItems = computed<TimelineItem[]>(() => {
               :src="item.organization.logo"
               width="16"
               height="16"
+              loading="lazy"
+              format="webp"
+              quality="70"
               :alt="`${item.organization.name} Logo`"
               class="rounded-full"
             />
