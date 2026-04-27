@@ -1,11 +1,12 @@
 title: Alberto Alejandro
-role: Frontend Developer & Systems Engineer
-description: Specializing in JavaScript, Vue.js and Nuxt.js. Passionate about building user-centered web applications with clean, maintainable code.
+role: Full-Stack Nuxt Developer
+description: |
+  I build complete Nuxt applications: product interfaces, APIs, PostgreSQL data models, and AWS infrastructure.
 
 about:
   title: About Me
   description: |
-    Specialized in JavaScript, Vue, and Nuxt. I work on SaaS applications focused on clear interfaces, maintainable code, and solid architecture. I handle API integrations, complex forms, and prioritize simple solutions that deliver real business value.
+    I help teams turn product ideas into complete Nuxt applications, from polished interfaces and API contracts to PostgreSQL data models and AWS infrastructure. My current work is a full-stack LMS built as a reliable production platform.
 
 experience:
   title: Work Experience
@@ -59,10 +60,10 @@ faq:
       questions:
         - label: What technologies do you specialize in?
           content: |
-            I specialize in Vue.js and Nuxt.js with 4 years of experience building SaaS platforms and scalable web applications. My expertise includes TypeScript, Vue Router, Pinia, server-side rendering (SSR), static site generation (SSG), and API-driven architectures. I've integrated 30+ REST APIs and designed CI/CD pipelines with GitHub Actions.
+            I specialize in full-stack Nuxt applications with Vue, TypeScript, server routes, API integrations, PostgreSQL, Docker, GitHub Actions, and AWS infrastructure.
         - label: What types of projects have you worked on?
           content: |
-            I've developed and maintained multiple SaaS platforms including appointment management systems, inventory solutions, payment integrations, auto-generated websites, and AI-powered features. I focus on frontend ownership while collaborating with backend teams to deliver complete, user-centered products.
+            I've developed and maintained SaaS platforms, appointment systems, inventory tools, payment integrations, auto-generated websites, AI-powered features, and now a full-stack learning management system. I can own the product experience while also contributing to backend architecture, data modeling, deployments, and operational decisions.
         - label: How do you ensure code quality?
           content: |
             I follow best practices including TypeScript for type safety, comprehensive code reviews, proactive debugging, and clean architecture principles. In my recent role, I migrated a codebase to TypeScript which reduced production errors by 30%, and performed 20+ code reviews to maintain high standards across the team.
@@ -70,7 +71,7 @@ faq:
       questions:
         - label: How do you collaborate with teams?
           content: |
-            I thrive in collaborative environments, working closely with backend teams to design API contracts, participating in code reviews, and contributing to system architecture decisions. I've designed 10+ API contracts following DDD principles and actively engage in cross-functional collaboration.
+            I thrive in collaborative environments, working across product, design, frontend, backend, and infrastructure concerns. I've designed 10+ API contracts following DDD principles, participated in code reviews, and helped shape architecture decisions that keep applications maintainable after launch.
         - label: What is your approach to problem-solving?
           content: |
             I focus on understanding the root cause and delivering thoughtful solutions. I've resolved 80+ bugs across production and staging environments, always prioritizing stability and user experience. I believe in continuous learning—currently exploring Go to better understand backend architecture and performance.
@@ -81,13 +82,13 @@ faq:
       questions:
         - label: How do you handle API integrations?
           content: |
-            I have extensive experience with REST APIs, having integrated over 30 endpoints with robust handling of authentication, errors, and loading states. I collaborate with backend teams from the design phase to ensure contracts are well-defined and follow best practices.
+            I have extensive experience with REST APIs, having integrated over 30 endpoints with robust authentication, error handling, loading states, and data flows. I like to get involved early in contract design so the UI, backend, and database model support the same product goal.
         - label: What's your experience with CI/CD?
           content: |
             I've designed and implemented CI/CD pipelines using GitHub Actions, reducing deployment time by 60%. I focus on automating workflows, ensuring code quality through automated testing, and streamlining the release process for faster, more reliable deployments.
         - label: How do you stay current with technology?
           content: |
-            I'm constantly learning and exploring new technologies. Recently, I've been diving into Go to understand performance optimization, concurrency patterns, and clean backend architecture. I believe in understanding the full stack to build better frontend solutions.
+            I'm constantly learning and building production systems. Recently, I've been deepening my backend and infrastructure skills through Go, PostgreSQL, Docker, and AWS while continuing to refine my Nuxt and TypeScript workflow. I believe the strongest product developers understand the full path from interface to deployment.
 
 hero:
   links:
@@ -99,8 +100,8 @@ hero:
   images: []
 
 seo:
-  title: Alberto Alejandro - Frontend Developer specialized in Vue.js & Nuxt.js
-  description: Frontend Developer from Venezuela with 4 years of experience building SaaS platforms and scalable web applications using Vue.js and Nuxt.js. Expert in API-driven architectures and delivering user-centered digital products.
+  title: Alberto Alejandro
+  description: Full-stack Nuxt developer building complete applications with Vue, TypeScript, PostgreSQL, and AWS infrastructure.
 
 testimonials:
   - quote: Working with this freelancer was an excellent experience. They were diligent and perceptive, quickly grasping the directions provided. Their flexibility and willingness to understand the scope of the work were truly impressive. Throughout the project, they were always kind, courteous, and professional. I would not hesitate to work with them again in the future. Highly recommended!

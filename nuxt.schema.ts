@@ -7,6 +7,13 @@ export default defineNuxtSchema({
       description: 'Global website configuration',
       icon: 'lucide:settings',
       fields: {
+        appUrl: field({
+          type: 'string',
+          title: 'Application URL',
+          description: 'Canonical public URL for this portfolio.',
+          icon: 'lucide:globe',
+          default: 'https://albertoalejandro.nuxt.space'
+        }),
         meetingLink: field({
           type: 'string',
           title: 'Meeting link',

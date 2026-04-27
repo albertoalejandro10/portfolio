@@ -1,7 +1,7 @@
 title: About Me
-description: Frontend Developer from Venezuela with a passion for building meaningful web applications and exploring new technologies.
+description: Full-stack Nuxt developer from Venezuela building complete products across UI, APIs, PostgreSQL, and AWS infrastructure.
 content: |
-  Hi, I'm **Alberto Alejandro**, a Frontend Developer based in Venezuela specializing in JavaScript, Vue.js and Nuxt.js.
+  Hi, I'm **Alberto Alejandro**, a Full-Stack Nuxt Developer based in Venezuela. I build complete applications that connect thoughtful product interfaces with reliable APIs, PostgreSQL data models, and cloud infrastructure.
 
   ### My Journey
 
@@ -11,13 +11,13 @@ content: |
 
   ### What I Do
 
-  I specialize in **Vue.js** and **Nuxt.js**, focusing on creating user-centered web applications with clean, maintainable code. I work with modern frontend technologies including TypeScript, Vue Router, Pinia, and API integrations.
+  I specialize in **Nuxt.js**, **Vue.js**, **TypeScript**, **PostgreSQL**, and AWS infrastructure. My current work is a full-stack LMS built for production deployment.
 
   ### My Approach
 
-  What drives me most is creating tools that simplify everyday life and solving real problems with thoughtful solutions. While I've grown into a frontend-focused role, I enjoy collaborating on backend design, participating in code reviews, and understanding how every piece of an application fits together.
+  What drives me most is creating tools that simplify everyday life and solving real problems with thoughtful solutions. I like owning the full product path: interface design, API contracts, database structure, deployment workflows, and the small reliability details that make software feel dependable.
 
-  Recently, I've been exploring **Go** to deepen my knowledge of performance optimization, concurrency patterns, and clean backend architecture. I believe in understanding the full stack to build better frontend solutions.
+  Recently, I've been exploring **Go** to deepen my knowledge of performance optimization, concurrency patterns, and clean backend architecture. I believe full-stack work is strongest when each layer is simple, explicit, and built for the product it supports.
 
   ### Beyond Code
 

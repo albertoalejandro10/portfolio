@@ -26,20 +26,19 @@ if (!page.value) {
 
 const { data: projects } = await useAsyncData('projects', () => {
   return queryCollection(`projects_${locale.value}`).all()
+}, {
+  watch: [locale]
 })
 
 const { global } = useAppConfig()
 
 // SEO meta tags - title template is applied globally in nuxt.config.ts
+// OG image is rendered dynamically via the global OgImageDefault component (see app.vue)
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description,
-  // Static OG image from public folder (1200x630)
-  ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
-  twitterCard: 'summary_large_image',
-  twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png'
+  ogDescription: page.value?.seo?.description || page.value?.description
 })
 </script>
 

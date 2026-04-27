@@ -1,6 +1,6 @@
 title: Sobre mí
 content: |
-  Hola, soy **Alberto Alejandro**, un Desarrollador Frontend con sede en Venezuela especializado en JavaScript, Vue.js y Nuxt.js.
+  Hola, soy **Alberto Alejandro**, un Desarrollador Full-Stack Nuxt con sede en Venezuela. Construyo aplicaciones completas que conectan interfaces de producto bien pensadas con APIs confiables, modelos de datos en PostgreSQL e infraestructura en la nube.
 
   ### Mi Trayectoria
 
@@ -10,13 +10,13 @@ content: |
 
   ### Lo Que Hago
 
-  Me especializo en **Vue.js** y **Nuxt.js**, enfocándome en crear aplicaciones web centradas en el usuario con código limpio y mantenible. Trabajo con tecnologías frontend modernas incluyendo TypeScript, Vue Router, Pinia e integraciones de API.
+  Me especializo en **Nuxt.js**, **Vue.js**, **TypeScript**, **PostgreSQL** e infraestructura AWS. Mi trabajo actual es un LMS full-stack construido para despliegue en producción.
 
   ### Mi Enfoque
 
-  Lo que más me impulsa es crear herramientas que simplifiquen la vida cotidiana y resolver problemas reales con soluciones reflexivas. Aunque he crecido en un rol enfocado en frontend, disfruto colaborar en el diseño backend, participar en revisiones de código y entender cómo cada pieza de una aplicación se conecta.
+  Lo que más me impulsa es crear herramientas que simplifiquen la vida cotidiana y resolver problemas reales con soluciones reflexivas. Me gusta hacerme cargo del camino completo del producto: diseño de interfaz, contratos de API, estructura de base de datos, flujos de despliegue y los detalles de confiabilidad que hacen que el software se sienta sólido.
 
-  Recientemente, he estado explorando **Go** para profundizar mi conocimiento en optimización del rendimiento, patrones de concurrencia y arquitectura backend limpia. Creo en entender el stack completo para construir mejores soluciones frontend.
+  Recientemente, he estado explorando **Go** para profundizar mi conocimiento en optimización del rendimiento, patrones de concurrencia y arquitectura backend limpia. Creo que el trabajo full-stack es más fuerte cuando cada capa es simple, explícita y construida para el producto que sostiene.
 
   ### Más Allá del Código
 
@@ -30,5 +30,5 @@ content: |
   ### Conectemos
 
   ¡Gracias por pasar! Siéntete libre de explorar mis [proyectos](projects), ver mis [artículos de blog](blog), si quieres colaborar en algo interesante.
-description: Desarrollador Frontend de Venezuela con pasión por construir aplicaciones web significativas y explorar nuevas tecnologías.
+description: Desarrollador Full-Stack Nuxt de Venezuela que construye productos completos entre UI, APIs, PostgreSQL e infraestructura AWS.
 images: []

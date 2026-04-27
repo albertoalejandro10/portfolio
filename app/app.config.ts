@@ -1,5 +1,6 @@
 export default defineAppConfig({
   global: {
+    appUrl: 'https://albertoalejandro.nuxt.space',
     picture: {
       dark: 'https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&v=beta&t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4',
       light: 'https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&v=beta&t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4',

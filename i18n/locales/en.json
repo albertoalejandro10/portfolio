@@ -35,9 +35,9 @@
     "backHome": "Go Back Home"
   },
   "cookies": {
-    "title": "Cookie Consent",
-    "description": "This website uses cookies to analyze traffic and improve your experience. We respect your privacy and only collect data with your explicit consent.",
-    "accept": "Accept All",
+    "title": "Analytics Consent",
+    "description": "This website uses Cloudflare Web Analytics, a privacy-friendly, cookieless service. We never set tracking cookies. The script only loads if you accept.",
+    "accept": "Accept",
     "decline": "Decline",
     "learnMore": "Learn More",
     "privacyPolicy": "Privacy Policy",

@@ -25,14 +25,12 @@ if (!page.value) {
 }
 
 // SEO meta tags - title template is applied globally in nuxt.config.ts
+// OG image is rendered dynamically via the global OgImageDefault component (see app.vue)
 useSeoMeta({
   title: page.value?.seo.title || page.value?.title,
   ogTitle: page.value?.seo.title || page.value?.title,
   description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description,
-  ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
-  twitterCard: 'summary_large_image',
-  twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png'
+  ogDescription: page.value?.seo.description || page.value?.description
 })
 </script>
 

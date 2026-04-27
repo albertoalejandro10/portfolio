@@ -2,6 +2,7 @@
 import * as locales from '@nuxt/ui/locale'
 
 const { locale } = useI18n()
+const { global } = useAppConfig()
 
 const colorMode = useColorMode()
 
@@ -9,11 +10,11 @@ const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
 const navLinks = useLinks()
 
-useHead({
+useHead(() => ({
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    { key: 'theme-color', name: 'theme-color', content: color }
+    { key: 'theme-color', name: 'theme-color', content: color.value }
   ],
   link: [
     { rel: 'icon', href: '/logo.svg' }
@@ -21,14 +22,16 @@ useHead({
   htmlAttrs: {
     lang: locale.value || 'en'
   }
-})
+}))
 
 useSeoMeta({
-  titleTemplate: '%s - Alberto Alejandro',
-  ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
-  twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png',
+  titleTemplate: title => title && title !== 'Alberto Alejandro' ? `${title} - Alberto Alejandro` : 'Alberto Alejandro',
+  ogUrl: global.appUrl,
   twitterCard: 'summary_large_image'
 })
+
+// Global default OG image (overridden per-page where needed)
+defineOgImageComponent('OgImageDefault')
 
 const [{ data: navigation }, { data: files }] = await Promise.all([
   useAsyncData('navigation', () => {
@@ -36,7 +39,8 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
       queryCollectionNavigation(`blog_${locale.value}`)
     ])
   }, {
-    transform: data => data.flat()
+    transform: data => data.flat(),
+    watch: [locale]
   }),
   useLazyAsyncData('search', () => {
     return Promise.all([
@@ -44,7 +48,8 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     ])
   }, {
     server: false,
-    transform: data => data.flat()
+    transform: data => data.flat(),
+    watch: [locale]
   })
 ])
 </script>

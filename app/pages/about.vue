@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { global } = useAppConfig()
 const { locale, t } = useI18n()
 
 const collection = computed(() => `about_${locale.value}` as keyof Collections)
@@ -13,6 +12,8 @@ const { data: page } = await useAsyncData('about', async () => {
   }
 
   return content
+}, {
+  watch: [locale]
 })
 
 if (!page.value) {
@@ -24,15 +25,12 @@ if (!page.value) {
 }
 
 // SEO meta tags - title template is applied globally in nuxt.config.ts
+// OG image is rendered dynamically via the global OgImageDefault component (see app.vue)
 useSeoMeta({
-  title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description,
-  // Static OG image from public folder (1200x630)
-  ogImage: 'https://albertoalejandro.nuxt.space/og-image.png',
-  twitterCard: 'summary_large_image',
-  twitterImage: 'https://albertoalejandro.nuxt.space/og-image.png'
+  title: () => page.value?.seo?.title || page.value?.title,
+  ogTitle: () => page.value?.seo?.title || page.value?.title,
+  description: () => page.value?.seo?.description || page.value?.description,
+  ogDescription: () => page.value?.seo?.description || page.value?.description
 })
 </script>
 
@@ -48,14 +46,7 @@ useSeoMeta({
         description: 'mx-0! text-left',
         links: 'justify-start'
       }"
-    >
-      <UColorModeAvatar
-        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-bg"
-        :light="global.picture?.light!"
-        :dark="global.picture?.dark!"
-        :alt="global.picture?.alt!"
-      />
-    </UPageHero>
+    />
     <UPageSection
       :ui="{
         container: 'pt-0!'

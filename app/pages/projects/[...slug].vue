@@ -47,10 +47,8 @@ const { data: surround } = await useAsyncData(`${path.value}-surround`, async ()
 if (page.value.image) {
   defineOgImage({ url: page.value.image })
 } else {
-  defineOgImageComponent('Project', {
-    headline: page.value?.title
-  }, {
-    fonts: ['Geist:400', 'Geist:600']
+  defineOgImageComponent('OgImageDefault', {
+    description: page.value?.title || page.value?.description
   })
 }
 

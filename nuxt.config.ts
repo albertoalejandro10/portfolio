@@ -5,14 +5,14 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/eslint',
     '@nuxt/image',
-    'nuxt-og-image',
+    '@nuxt/scripts',
     '@vueuse/nuxt',
     'motion-v/nuxt',
     '@nuxtjs/i18n',
     'nuxt-studio',
     '@nuxt/hints',
     '@nuxtjs/seo',
-    'nuxt-gtag'
+    '@nuxt/a11y'
   ],
   devtools: {
     enabled: true
@@ -20,8 +20,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      // Title template applied globally; %s is replaced by page-specific title
-      titleTemplate: '%s | Alberto Alejandro',
       // Fallback title when no page title is set
       title: 'Alberto Alejandro',
       htmlAttrs: {
@@ -31,19 +29,8 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
         // Author metadata for search engines
-        { name: 'author', content: 'Alberto Alejandro' },
-        // Default OG metadata (can be overridden per-page)
-        { property: 'og:type', content: 'website' },
-        { property: 'og:locale', content: 'en' },
-        { property: 'og:site_name', content: 'Alberto Alejandro' },
-        // Static OG image - uses existing asset in public folder
-        { property: 'og:image', content: 'https://albertoalejandro.nuxt.space/og-image.png' },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        { property: 'og:image:type', content: 'image/png' },
-        // Twitter Card defaults (summary_large_image works best with 1200x630 images)
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: 'https://albertoalejandro.nuxt.space/og-image.png' }
+        { name: 'author', content: 'Alberto Alejandro' }
+        // OG/Twitter image tags are owned by @nuxtjs/seo via nuxt-og-image
       ],
       link: [
         // Preload critical fonts to reduce render-blocking
@@ -88,7 +75,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://albertoalejandro.nuxt.space',
     name: 'Alberto Alejandro',
-    description: 'Frontend Developer & Systems Engineer specializing in JavaScript, Vue.js and Nuxt.js. Building user-centered web applications with clean, maintainable code.',
+    description: 'Full-stack Nuxt developer building complete applications with Vue, TypeScript, PostgreSQL, and AWS infrastructure.',
     // Default language for SEO purposes (matches i18n.defaultLocale)
     defaultLocale: 'en'
   },
@@ -181,28 +168,6 @@ export default defineNuxtConfig({
     optimizeDeps: {
       include: ['vue', '@vueuse/core']
     }
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // Google Analytics Configuration (nuxt-gtag)
-  // Uses Google Consent Mode v2 for GDPR/privacy compliance
-  // ID is loaded from NUXT_PUBLIC_GTAG_ID environment variable
-  // ─────────────────────────────────────────────────────────────────────────
-  gtag: {
-    // Only enable in production to avoid tracking during development
-    enabled: process.env.NODE_ENV === 'production',
-    // Manual initialization - script loads only after user consent
-    initMode: 'manual',
-    // Google Consent Mode v2 - all consent denied by default
-    initCommands: [
-      ['consent', 'default', {
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        wait_for_update: 500
-      }]
-    ]
   },
   i18n: {
     langDir: 'locales',
@@ -298,12 +263,22 @@ export default defineNuxtConfig({
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // OG Image Configuration
-  // Disabled dynamic generation - using static /og-image.png instead
-  // Enable if you want runtime OG image generation in the future
+  // OG Image Configuration (nuxt-og-image, bundled with @nuxtjs/seo)
+  // Dynamic OG images rendered via Satori using OgImageDefault component.
+  // Background is /og-background.png; text layers are rendered in code.
   // ─────────────────────────────────────────────────────────────────────────
   ogImage: {
-    enabled: false // Static OG image already exists; no dynamic generation needed
+    enabled: true,
+    defaults: {
+      component: 'OgImageDefault',
+      width: 1200,
+      height: 630
+    },
+    fonts: [
+      'Public+Sans:400',
+      'Public+Sans:600',
+      'Instrument+Serif:400'
+    ]
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -368,9 +343,9 @@ export default defineNuxtConfig({
       '@type': 'Person',
       'name': 'Alberto Alejandro',
       'url': 'https://albertoalejandro.nuxt.space',
-      'image': 'https://albertoalejandro.nuxt.space/og-image.png',
-      'jobTitle': 'Frontend Developer & Systems Engineer',
-      'description': 'Specializing in JavaScript, Vue.js and Nuxt.js. Building user-centered web applications.',
+      'image': 'https://albertoalejandro.nuxt.space/og.png',
+      'jobTitle': 'Full-Stack Nuxt Developer',
+      'description': 'Building complete Nuxt applications across product UI, APIs, PostgreSQL data models, and AWS deployment.',
       // Social profiles for knowledge graph
       'sameAs': [
         'https://github.com/albertoalejandro10',
@@ -378,6 +353,23 @@ export default defineNuxtConfig({
         'https://www.upwork.com/freelancers/~0130a269b9b034c325',
         'https://discord.com/users/497789899597021189'
       ]
+    }
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Nuxt Scripts: Cloudflare Web Analytics
+  // Cookieless, privacy-friendly analytics. Loaded manually after consent.
+  // Token is read from NUXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN env var.
+  // ─────────────────────────────────────────────────────────────────────────
+  scripts: {
+    registry: {
+      cloudflareWebAnalytics: {
+        token: process.env.NUXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN,
+        scriptOptions: {
+          // Loaded explicitly from CookieConsent.vue when the visitor accepts.
+          trigger: 'manual'
+        }
+      }
     }
   },
 

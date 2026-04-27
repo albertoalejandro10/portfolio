@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { gtag, initialize } = useGtag()
 
-// Cookie consent state stored in localStorage
+// Cloudflare Web Analytics (cookieless, privacy-friendly).
+// Configured with `trigger: 'manual'` in nuxt.config.ts so the script
+// only loads after the visitor explicitly accepts.
+const cloudflareAnalytics = useScriptCloudflareWebAnalytics()
+
+// Cookie consent state stored in localStorage.
+// We keep the banner even though Cloudflare Analytics is cookieless,
+// to be transparent about loading the third-party beacon.
 const CONSENT_KEY = 'cookie-consent'
 
 interface ConsentState {
@@ -11,46 +17,23 @@ interface ConsentState {
 }
 
 const showBanner = ref(false)
-
-// Consent preferences
 const analyticsConsent = ref(false)
 
-// Initialize component on mount
 onMounted(() => {
   const storedConsent = localStorage.getItem(CONSENT_KEY)
 
   if (storedConsent) {
-    // User has already given consent - restore their preferences
     const consent: ConsentState = JSON.parse(storedConsent)
     analyticsConsent.value = consent.analytics
 
-    // Re-apply consent settings if they accepted analytics
     if (consent.analytics) {
-      applyConsent(consent.analytics)
+      cloudflareAnalytics.load()
     }
   } else {
-    // Show banner if no consent has been given
     showBanner.value = true
   }
 })
 
-// Apply consent settings to Google Tag
-function applyConsent(analytics: boolean) {
-  // Initialize gtag if consent is given
-  if (analytics) {
-    initialize()
-  }
-
-  // Update consent state
-  gtag('consent', 'update', {
-    analytics_storage: analytics ? 'granted' : 'denied',
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied'
-  })
-}
-
-// Save consent to localStorage
 function saveConsent(analytics: boolean) {
   const consent: ConsentState = {
     analytics,
@@ -59,23 +42,16 @@ function saveConsent(analytics: boolean) {
   localStorage.setItem(CONSENT_KEY, JSON.stringify(consent))
 }
 
-// Accept analytics cookies
 function acceptAll() {
   analyticsConsent.value = true
-
   saveConsent(true)
-  applyConsent(true)
-
+  cloudflareAnalytics.load()
   showBanner.value = false
 }
 
-// Decline analytics cookies
 function declineAll() {
   analyticsConsent.value = false
-
   saveConsent(false)
-  applyConsent(false)
-
   showBanner.value = false
 }
 </script>

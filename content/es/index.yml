@@ -1,11 +1,12 @@
 title: Alberto Alejandro
-role: Desarrollador Frontend e Ingeniero de Sistemas
-description: Especializado en JavaScript, Vue y Nuxt. Experiencia en aplicaciones SaaS, integración de APIs, formularios complejos y arquitectura modular.
+role: Desarrollador Full-Stack Nuxt
+description: |
+  Construyo aplicaciones Nuxt completas: interfaces de producto, APIs, modelos de datos en PostgreSQL e infraestructura AWS.
 
 about:
   title: Sobre mí
   description: |
-    Specialized in JavaScript, Vue, and Nuxt. I work on SaaS applications focused on clear interfaces, maintainable code, and solid architecture. I handle API integrations, complex forms, and prioritize simple solutions that deliver real business value.
+    Ayudo a convertir ideas de producto en aplicaciones Nuxt completas, desde interfaces pulidas y contratos de API hasta modelos de datos en PostgreSQL e infraestructura AWS. Actualmente trabajo en un LMS full-stack construido como una plataforma de producción confiable.
 
 experience:
   title: Experiencia Laboral
@@ -59,10 +60,10 @@ faq:
       questions:
         - label: ¿En qué tecnologías te especializas?
           content: |
-            Me especializo en Vue.js y Nuxt.js con 4 años de experiencia construyendo plataformas SaaS y aplicaciones web escalables. Mi experiencia incluye TypeScript, Vue Router, Pinia, renderizado del lado del servidor (SSR), generación de sitios estáticos (SSG) y arquitecturas basadas en APIs. He integrado más de 30 APIs REST y diseñado pipelines de CI/CD con GitHub Actions.
+            Me especializo en aplicaciones Nuxt full-stack con Vue, TypeScript, server routes, integraciones de API, PostgreSQL, Docker, GitHub Actions e infraestructura AWS.
         - label: ¿En qué tipos de proyectos has trabajado?
           content: |
-            He desarrollado y mantenido múltiples plataformas SaaS incluyendo sistemas de gestión de citas, soluciones de inventario, integraciones de pagos, sitios web auto-generados y funcionalidades impulsadas por IA. Me enfoco en la propiedad del frontend mientras colaboro con equipos backend para entregar productos completos y centrados en el usuario.
+            He desarrollado y mantenido plataformas SaaS, sistemas de citas, soluciones de inventario, integraciones de pagos, sitios auto-generados, funcionalidades con IA y ahora un sistema de gestión de aprendizaje full-stack. Puedo hacerme cargo de la experiencia de producto y también contribuir a arquitectura backend, modelado de datos, despliegues y decisiones operativas.
         - label: ¿Cómo aseguras la calidad del código?
           content: |
             Sigo las mejores prácticas incluyendo TypeScript para seguridad de tipos, revisiones exhaustivas de código, depuración proactiva y principios de arquitectura limpia. En mi rol más reciente, migré una base de código a TypeScript lo que redujo los errores en producción en un 30%, y realicé más de 20 revisiones de código para mantener altos estándares en el equipo.
@@ -70,7 +71,7 @@ faq:
       questions:
         - label: ¿Cómo colaboras con equipos?
           content: |
-            Prospero en entornos colaborativos, trabajando estrechamente con equipos backend para diseñar contratos de API, participando en revisiones de código y contribuyendo a decisiones de arquitectura de sistemas. He diseñado más de 10 contratos de API siguiendo principios DDD y participo activamente en colaboración multifuncional.
+            Prospero en entornos colaborativos, trabajando entre producto, diseño, frontend, backend e infraestructura. He diseñado más de 10 contratos de API siguiendo principios DDD, participo en revisiones de código y contribuyo a decisiones de arquitectura que mantienen las aplicaciones sanas después del lanzamiento.
         - label: ¿Cuál es tu enfoque para la resolución de problemas?
           content: |
             Me enfoco en entender la causa raíz y entregar soluciones reflexivas. He resuelto más de 80 bugs en entornos de producción y staging, siempre priorizando la estabilidad y experiencia del usuario. Creo en el aprendizaje continuo: actualmente estoy explorando Go para entender mejor la arquitectura backend y el rendimiento.
@@ -81,13 +82,13 @@ faq:
       questions:
         - label: ¿Cómo manejas las integraciones de API?
           content: |
-            Tengo amplia experiencia con APIs REST, habiendo integrado más de 30 endpoints con manejo robusto de autenticación, errores y estados de carga. Colaboro con equipos backend desde la fase de diseño para asegurar que los contratos estén bien definidos y sigan las mejores prácticas.
+            Tengo amplia experiencia con APIs REST, habiendo integrado más de 30 endpoints con manejo robusto de autenticación, errores, estados de carga y flujos de datos. Me gusta participar temprano en el diseño de contratos para que la UI, el backend y el modelo de base de datos apunten al mismo objetivo de producto.
         - label: ¿Cuál es tu experiencia con CI/CD?
           content: |
             He diseñado e implementado pipelines de CI/CD usando GitHub Actions, reduciendo el tiempo de despliegue en un 60%. Me enfoco en automatizar flujos de trabajo, asegurar la calidad del código a través de pruebas automatizadas y agilizar el proceso de lanzamiento para despliegues más rápidos y confiables.
         - label: ¿Cómo te mantienes actualizado con la tecnología?
           content: |
-            Estoy constantemente aprendiendo y explorando nuevas tecnologías. Recientemente, he estado profundizando en Go para entender la optimización del rendimiento, patrones de concurrencia y arquitectura backend limpia. Creo en entender el stack completo para construir mejores soluciones frontend.
+            Estoy constantemente aprendiendo y construyendo sistemas de producción. Recientemente he estado profundizando en Go, PostgreSQL, Docker y AWS mientras sigo refinando mi flujo de trabajo con Nuxt y TypeScript. Creo que los mejores desarrolladores de producto entienden todo el camino desde la interfaz hasta el despliegue.
 hero:
   links:
     - label: Currículum
@@ -96,10 +97,9 @@ hero:
       color: neutral
       size: sm
   images: []
-role: Desarrollador Frontend e Ingeniero de Sistemas
 seo:
-  title: Alberto Alejandro - Desarrollador Frontend especializado en Vue.js y Nuxt.js
-  description: Especializado en JavaScript, Vue y Nuxt. Experiencia en aplicaciones SaaS, integración de APIs, formularios complejos y arquitectura modular.
+  title: Alberto Alejandro
+  description: Desarrollador full-stack Nuxt que construye aplicaciones completas con Vue, TypeScript, PostgreSQL e infraestructura AWS.
 testimonials:
   - quote: Trabajar con este freelancer fue una excelente experiencia. Fue diligente y perceptivo, comprendiendo rápidamente las direcciones proporcionadas. Su flexibilidad y disposición para entender el alcance del trabajo fueron realmente impresionantes. A lo largo del proyecto, siempre fue amable, cortés y profesional. No dudaría en trabajar con él nuevamente en el futuro. ¡Altamente recomendado!
     author:

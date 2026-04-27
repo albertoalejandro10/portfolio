@@ -216,6 +216,7 @@ defineProps<{
       <UIcon name="i-material-icon-theme:php" class="size-10 shrink-0" />
       <UIcon name="i-simple-icons-mongodb" class="size-10 shrink-0" />
       <UIcon name="i-simple-icons-postgresql" class="size-10 shrink-0" />
+      <UIcon name="i-simple-icons-amazonwebservices" class="size-10 shrink-0" />
       <UIcon name="i-material-icon-theme:docker" class="size-10 shrink-0" />
       <UIcon :name="`i-material-icon-theme:copilot` + (color === 'light' ? '-light' : '')" class="size-10 shrink-0" />
       <UIcon name="i-material-icon-theme:vite" class="size-10 shrink-0" />

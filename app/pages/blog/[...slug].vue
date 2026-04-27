@@ -55,10 +55,8 @@ const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNa
 if (page.value.image) {
   defineOgImage({ url: page.value.image })
 } else {
-  defineOgImageComponent('Blog', {
-    headline: breadcrumb.value.map(item => item.label).join(' > ')
-  }, {
-    fonts: ['Geist:400', 'Geist:600']
+  defineOgImageComponent('OgImageDefault', {
+    description: page.value?.title || breadcrumb.value.map(item => item.label).join(' › ')
   })
 }
 
