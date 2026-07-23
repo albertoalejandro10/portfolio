@@ -10,7 +10,7 @@ tags:
   - AI Prompts
   - Social Platform
   - Creative
-date: October 2025
+date: 2025-10-01
 stack:
   - Flutter
   - Dart

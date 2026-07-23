@@ -8,7 +8,9 @@
   "general": {
     "copyLink": "Copy link",
     "articleLinkCopied": "Article link copied to clipboard",
-    "projectLinkCopied": "Project link copied to clipboard"
+    "projectLinkCopied": "Project link copied to clipboard",
+    "seeMore": "See more",
+    "seeLess": "See less"
   },
   "projects": {
     "title": "Projects",
@@ -27,7 +29,11 @@
   "hero": {
     "quickChat": "Quick Chat",
     "availableForProjects": "Available for new projects",
-    "notAvailable": "Not available at the moment"
+    "notAvailable": "Not available at the moment",
+    "topRatedPlus": "Top Rated Plus",
+    "topRatedPlusTooltip": "Upwork badge awarded to the top 3% of talent, recognizing proven success on high-value contracts.",
+    "jobSuccess": "100% Job Success",
+    "jobSuccessTooltip": "Upwork's Job Success Score reflects consistent client satisfaction across my entire contract history."
   },
   "error": {
     "title": "Page Not Found",

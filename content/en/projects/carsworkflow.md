@@ -2,7 +2,7 @@
 title: Carsworkflow
 description: Unified platform for automotive businesses with vehicle inventory management, lead CRM, appointment scheduling, and marketing site distribution
 owner: Takumi Software
-date: February 2025
+date: 2025-02-01
 url: https://carsworkflow.com/
 repository: Private
 image: /mockups/carsworkflow/mockup-01.webp

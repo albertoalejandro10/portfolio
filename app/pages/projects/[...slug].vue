@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { withLeadingSlash, joinURL } from 'ufo'
 import type { Collections } from '@nuxt/content'
+import type { ContentSurroundLink } from '@nuxt/ui'
 
 const route = useRoute()
 const { locale, t } = useI18n()
+const localePath = useLocalePath()
 
 const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
 const path = computed(() => withLeadingSlash(joinURL(locale.value, 'projects', ...slug.value)))
@@ -31,39 +33,34 @@ if (!page.value) {
 }
 
 const { data: surround } = await useAsyncData(`${path.value}-surround`, async () => {
-  const content = await queryCollectionItemSurroundings(`projects_${locale.value}`, path.value, {
-    fields: ['description']
-  })
+  // Neighbors in the same date-descending order as the projects listing
+  const getSurround = async (targetCollection: 'projects_en' | 'projects_es', targetPath: string) => {
+    const items = await queryCollection(targetCollection).order('date', 'DESC').all()
+    const index = items.findIndex(item => item.path === targetPath)
+    if (index === -1) return null
+    // [prev, next] — nulls keep the positions UContentSurround expects
+    return [items[index - 1] ?? null, items[index + 1] ?? null] as unknown as ContentSurroundLink[]
+  }
+
+  const content = await getSurround(`projects_${locale.value}`, path.value)
 
   if (!content && locale.value !== 'en') {
-    return await queryCollectionItemSurroundings('projects_en', withLeadingSlash(joinURL('en', 'projects', ...slug.value)), {
-      fields: ['description']
-    })
+    return await getSurround('projects_en', withLeadingSlash(joinURL('en', 'projects', ...slug.value)))
   }
 
   return content
 }, { watch: [locale, () => route.fullPath] })
 
-if (page.value.image) {
-  defineOgImage({ url: page.value.image })
-} else {
-  defineOgImageComponent('OgImageDefault', {
-    description: page.value?.title || page.value?.description
+usePageSeo(page)
+
+useSchemaOrg([
+  defineBreadcrumb({
+    itemListElement: [
+      { name: t('projects.title'), item: localePath('/projects') },
+      { name: page.value?.title }
+    ]
   })
-}
-
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
-
-// SEO meta tags - title template is applied globally in nuxt.config.ts
-// OG image is handled above via defineOgImage/defineOgImageComponent
-useSeoMeta({
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: title,
-  twitterCard: 'summary_large_image'
-})
+])
 </script>
 
 <template>
@@ -95,7 +92,7 @@ useSeoMeta({
             <!-- Date -->
             <div v-if="page.date" class="flex items-center gap-2 text-sm text-muted">
               <UIcon name="i-lucide-calendar" class="size-4" />
-              <span>{{ page.date }}</span>
+              <span>{{ formatMonthYear(page.date) }}</span>
             </div>
 
             <!-- Tags -->
@@ -143,7 +140,7 @@ useSeoMeta({
             <!-- Links -->
             <div class="flex items-center gap-3 mt-2">
               <UButton
-                v-if="page.url"
+                v-if="isPublicLink(page.url)"
                 :to="page.url"
                 target="_blank"
                 color="primary"
@@ -151,7 +148,7 @@ useSeoMeta({
                 :label="t('projects.liveDemo')"
               />
               <UButton
-                v-if="page.github"
+                v-if="isPublicLink(page.github)"
                 :to="page.github"
                 target="_blank"
                 color="neutral"
@@ -160,7 +157,7 @@ useSeoMeta({
                 :label="t('projects.github')"
               />
               <UButton
-                v-if="page.repository && page.repository !== 'Private'"
+                v-if="isPublicLink(page.repository)"
                 :to="page.repository"
                 target="_blank"
                 color="neutral"
@@ -179,7 +176,7 @@ useSeoMeta({
           />
 
           <SharePage type="project" />
-          <UContentSurround :surround />
+          <UContentSurround :surround="surround ?? undefined" />
         </UPageBody>
       </UPage>
     </UContainer>

@@ -2,7 +2,7 @@
 title: Bellus
 description: Unified platform for beauty and wellness businesses with service inventory management, client CRM, appointment scheduling, and marketing site distribution
 owner: Takumi Software
-date: October 2024
+date: 2024-10-01
 url: https://bellus.app/
 repository: Private
 image: /mockups/bellus/mockup-01.webp

@@ -4,7 +4,8 @@ import type { Collections } from '@nuxt/content'
 const { locale, t } = useI18n()
 
 const collection = computed(() => `index_${locale.value}` as keyof Collections)
-const { data: page } = await useAsyncData('index', async () => {
+// Key must be locale-scoped: prerendering shares payloads by key across routes
+const { data: page } = await useAsyncData(`index-${locale.value}`, async () => {
   const content = await queryCollection(collection.value).first() as Collections['index_en'] | Collections['index_es']
 
   if (!content && locale.value !== 'en') {
@@ -24,14 +25,7 @@ if (!page.value) {
   })
 }
 
-// SEO meta tags - title template is applied globally in nuxt.config.ts
-// OG image is rendered dynamically via the global OgImageDefault component (see app.vue)
-useSeoMeta({
-  title: page.value?.seo.title || page.value?.title,
-  ogTitle: page.value?.seo.title || page.value?.title,
-  description: page.value?.seo.description || page.value?.description,
-  ogDescription: page.value?.seo.description || page.value?.description
-})
+usePageSeo(page)
 </script>
 
 <template>

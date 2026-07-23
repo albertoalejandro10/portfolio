@@ -37,7 +37,7 @@ const siteName = (props.siteName || appUrl).replace(/^https?:\/\//, '').replace(
           class="text-8xl font-semibold leading-none"
           style="font-family: 'Instrument Serif', serif;"
         >
-          Alberto Alejandro
+          {{ title }}
         </h1>
         <p
           v-if="description"

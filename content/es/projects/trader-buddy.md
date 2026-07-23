@@ -1,9 +1,9 @@
 ---
 title: Trader-Buddy
 description: Plataforma de alto nivel para rendimiento de trading y diario de operaciones
-image: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80
+image: /mockups/trader-buddy/mockup-01.webp
 owner: Takumi Software
-date: Septiembre 2025
+date: 2025-09-01
 url: Privado
 repository: Privado
 tags:

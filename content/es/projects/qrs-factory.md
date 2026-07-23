@@ -2,9 +2,9 @@
 title: QRs Factory
 description: Plataforma moderna de ciclo de vida de códigos QR para crear, gestionar, versionar y analizar códigos QR y campañas con panel multi-tenant, lógica de redirección dinámica, enriquecimiento de metadatos y generación de contenido asistida por IA.
 owner: Takumi Software
-date: Agosto 2025
+date: 2025-08-01
 repository: Privado
-image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80
+image: /mockups/qrsfactory/mockup-01.webp
 tags:
   - Nuxt
   - Vue 3
