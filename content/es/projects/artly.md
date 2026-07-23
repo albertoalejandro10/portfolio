@@ -1,7 +1,7 @@
 ---
 title: Artly
 description: Una plataforma móvil donde los usuarios reciben indicaciones de dibujo generadas por IA, crean dibujos diariamente y registran su progreso artístico con una mecánica de racha al estilo Duolingo. Los usuarios pueden compartir sus dibujos y conectarse con una comunidad creativa.
-image: https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80
+image: /mockups/artly/mockup-01.webp
 github: https://github.com/albertoalejandro10/artly
 tags:
   - Aplicación Móvil
@@ -10,7 +10,7 @@ tags:
   - Indicaciones IA
   - Plataforma Social
   - Creativo
-date: Octubre 2025
+date: 2025-10-01
 stack:
   - Flutter
   - Dart

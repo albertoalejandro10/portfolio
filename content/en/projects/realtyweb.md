@@ -2,7 +2,7 @@
 title: RealtyWeb
 description: Unified platform for real estate businesses with property inventory management, lead CRM, appointment scheduling, and marketing site distribution
 owner: Takumi Software
-date: August 2025
+date: 2025-08-01
 url: https://realty-web.com/
 repository: Private
 image: /mockups/realtyweb/mockup-01.webp

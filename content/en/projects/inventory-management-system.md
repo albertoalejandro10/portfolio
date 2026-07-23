@@ -12,7 +12,7 @@ tags:
   - AdminLTE
   - QR Scanner
   - AJAX
-date: July 2020
+date: 2020-07-01
 stack:
   - PHP 7
   - MySQL

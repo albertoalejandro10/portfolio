@@ -6,7 +6,7 @@ description: |
 about:
   title: About Me
   description: |
-    I help teams turn product ideas into complete Nuxt applications, from polished interfaces and API contracts to PostgreSQL data models and AWS infrastructure. My current work is a full-stack LMS built as a reliable production platform.
+    I build and run complete Nuxt applications, from polished interfaces and API contracts to PostgreSQL data models and AWS infrastructure. I currently work part-time with Fundación América por la Infancia, maintaining and continuously improving FAI+, the subscription-based LMS I helped complete and launch to production — and I'm open to new projects.
 
 experience:
   title: Work Experience
@@ -42,7 +42,7 @@ experience:
 education:
   title: Education
   items:
-    - date: Feb. 2014 - Apr. 2020
+    - date: Feb. 2014 - 2024
       title: Systems Engineering
       institution:
         name: Universidad de Oriente
@@ -77,7 +77,7 @@ faq:
             I focus on understanding the root cause and delivering thoughtful solutions. I've resolved 80+ bugs across production and staging environments, always prioritizing stability and user experience. I believe in continuous learning—currently exploring Go to better understand backend architecture and performance.
         - label: What is your rate and availability?
           content: |
-            My standard rate is $15/hr. I'm available for both contract and full-time opportunities, committed to delivering reliable, maintainable solutions that make a real impact.
+            My standard rate is $30/hr. I'm available for both contract and full-time opportunities, committed to delivering reliable, maintainable solutions that make a real impact.
     - title: Development Practices
       questions:
         - label: How do you handle API integrations?
@@ -109,12 +109,25 @@ testimonials:
       name: Lupo Burbano
       description: CEO at Latlus, Italy
       avatar:
-        src: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&v=beta&t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg
-        srcset: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&v=beta&t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg
+        alt: Lupo Burbano
+  - quote: |-
+      Working with Alberto was an excellent experience. He successfully completed 100% of the development work and delivered everything according to the agreed requirements.
+
+      Throughout the project, Alberto was always available to answer questions, clarify any concerns, and implement the necessary adjustments. He also demonstrated great flexibility when the project requirements changed, handling each modification professionally and without creating any difficulties.
+
+      The development was carried out using Nuxt and involved database deployment and work with AWS services. Alberto handled all these technical aspects excellently, demonstrating strong technical knowledge and reliability throughout the process.
+
+      The project was completed within the agreed timeframe. Some additional adjustments required more time, but Alberto communicated this clearly, and we discussed and coordinated the necessary changes throughout the project.
+
+      Overall, we are extremely satisfied with Alberto's work and with the entire collaboration. We highly recommend him to any company or organization looking for a reliable, flexible, and highly professional developer.
+    author:
+      name: Javier Ignacio Leniz Tello
+      description: CFO at Fundación América por la Infancia, Chile
+      avatar:
+        alt: Javier Ignacio Leniz Tello
   - quote: Alberto did a great job enhancing our Nuxt apps, he has learnt a lot too and is a fast paced developer always eager to listen to your feedback. I hope we can continue working together in the future if new projects come in.
     author:
       name: Diego Sosa
       description: CEO at Takumi Software, Spain
       avatar:
-        src: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
-        srcset: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
+        alt: Diego Sosa

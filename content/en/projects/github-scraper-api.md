@@ -9,7 +9,7 @@ tags:
   - Data Analysis
   - Automation
   - Networking
-date: September 2024
+date: 2024-09-01
 stack:
   - JavaScript
   - Express

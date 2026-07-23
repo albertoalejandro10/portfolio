@@ -5,14 +5,8 @@ defineProps<{
   error: NuxtError
 }>()
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const navLinks = useLinks()
-
-useHead({
-  htmlAttrs: {
-    lang: locale.value
-  }
-})
 
 useSeoMeta({
   title: t('error.title'),

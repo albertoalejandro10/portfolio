@@ -2,7 +2,7 @@
 title: QRs Factory
 description: Modern QR lifecycle platform for creating, managing, versioning, and analyzing QR codes & campaigns with multi-tenant dashboard, dynamic redirect logic, metadata enrichment, and AI-assisted content generation.
 owner: Takumi Software
-date: August 2025
+date: 2025-08-01
 repository: Private
 image: /mockups/qrsfactory/mockup-01.webp
 tags:

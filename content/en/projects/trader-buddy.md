@@ -3,7 +3,7 @@ title: Trader-Buddy
 description: High-level trading performance & journaling platform
 image: /mockups/trader-buddy/mockup-01.webp
 owner: Takumi Software
-date: September 2025
+date: 2025-09-01
 url: Private
 repository: Private
 tags:

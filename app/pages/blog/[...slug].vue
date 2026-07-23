@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { withLeadingSlash, joinURL } from 'ufo'
 
-import type { ContentNavigationItem, Collections } from '@nuxt/content'
-import { mapContentNavigation } from '@nuxt/ui/utils/content'
-import { findPageBreadcrumb } from '@nuxt/content/utils'
+import type { Collections } from '@nuxt/content'
 
 const route = useRoute()
 const { locale, t } = useI18n()
+const localePath = useLocalePath()
 
 const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
 const path = computed(() => withLeadingSlash(joinURL(locale.value, ...slug.value)))
@@ -47,31 +46,23 @@ const { data: surround } = await useAsyncData(`${path.value}-surround`, async ()
   return content
 }, { watch: [locale, () => route.fullPath] })
 
-const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === `${locale.value}/blog`)?.children || [])
+usePageSeo(page)
 
-const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
-
-if (page.value.image) {
-  defineOgImage({ url: page.value.image })
-} else {
-  defineOgImageComponent('OgImageDefault', {
-    description: page.value?.title || breadcrumb.value.map(item => item.label).join(' › ')
+useSchemaOrg([
+  defineArticle({
+    headline: page.value?.title,
+    description: page.value?.description,
+    image: page.value?.image,
+    datePublished: page.value?.date,
+    author: page.value?.author?.name ? { name: page.value.author.name } : undefined
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: t('blog.title'), item: localePath('/blog') },
+      { name: page.value?.title }
+    ]
   })
-}
-
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
-
-// SEO meta tags - title template is applied globally in nuxt.config.ts
-// OG image is handled above via defineOgImage/defineOgImageComponent
-useSeoMeta({
-  title,
-  description,
-  ogDescription: description,
-  ogTitle: title,
-  twitterCard: 'summary_large_image'
-})
+])
 </script>
 
 <template>

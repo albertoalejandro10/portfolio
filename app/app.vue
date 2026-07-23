@@ -2,7 +2,6 @@
 import * as locales from '@nuxt/ui/locale'
 
 const { locale } = useI18n()
-const { global } = useAppConfig()
 
 const colorMode = useColorMode()
 
@@ -10,31 +9,21 @@ const color = computed(() => colorMode.value === 'dark' ? '#020618' : 'white')
 
 const navLinks = useLinks()
 
+const site = useSiteConfig()
+
 useHead(() => ({
+  titleTemplate: (title?: string) => title && title !== site.name ? `${title} - ${site.name}` : site.name,
   meta: [
-    { charset: 'utf-8' },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { key: 'theme-color', name: 'theme-color', content: color.value }
-  ],
-  link: [
-    { rel: 'icon', href: '/logo.svg' }
-  ],
-  htmlAttrs: {
-    lang: locale.value || 'en'
-  }
+  ]
 }))
 
 useSeoMeta({
-  titleTemplate: title => title && title !== 'Alberto Alejandro' ? `${title} - Alberto Alejandro` : 'Alberto Alejandro',
-  ogUrl: global.appUrl,
   twitterCard: 'summary_large_image'
 })
 
-// Global default OG image (overridden per-page where needed)
-defineOgImageComponent('OgImageDefault')
-
 const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData('navigation', () => {
+  useAsyncData(`navigation-${locale.value}`, () => {
     return Promise.all([
       queryCollectionNavigation(`blog_${locale.value}`)
     ])
@@ -42,7 +31,7 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
     transform: data => data.flat(),
     watch: [locale]
   }),
-  useLazyAsyncData('search', () => {
+  useLazyAsyncData(`search-${locale.value}`, () => {
     return Promise.all([
       queryCollectionSearchSections(`blog_${locale.value}`)
     ])
@@ -72,7 +61,6 @@ const [{ data: navigation }, { data: files }] = await Promise.all([
       />
     </ClientOnly>
 
-    <!-- Lazy load cookie consent as it's not critical for initial paint -->
     <LazySettingsCookieConsent />
   </UApp>
 </template>

@@ -6,7 +6,7 @@ description: |
 about:
   title: Sobre mí
   description: |
-    Ayudo a convertir ideas de producto en aplicaciones Nuxt completas, desde interfaces pulidas y contratos de API hasta modelos de datos en PostgreSQL e infraestructura AWS. Actualmente trabajo en un LMS full-stack construido como una plataforma de producción confiable.
+    Construyo y opero aplicaciones Nuxt completas, desde interfaces pulidas y contratos de API hasta modelos de datos en PostgreSQL e infraestructura AWS. Actualmente trabajo a medio tiempo con la Fundación América por la Infancia, manteniendo y mejorando continuamente FAI+, el LMS por suscripción que ayudé a completar y lanzar a producción — y estoy abierto a nuevos proyectos.
 
 experience:
   title: Experiencia Laboral
@@ -77,7 +77,7 @@ faq:
             Me enfoco en entender la causa raíz y entregar soluciones reflexivas. He resuelto más de 80 bugs en entornos de producción y staging, siempre priorizando la estabilidad y experiencia del usuario. Creo en el aprendizaje continuo: actualmente estoy explorando Go para entender mejor la arquitectura backend y el rendimiento.
         - label: ¿Cuál es tu tarifa y disponibilidad?
           content: |
-            Mi tarifa estándar es de $15/hora. Estoy disponible tanto para oportunidades por contrato como de tiempo completo, comprometido a entregar soluciones confiables y mantenibles que generen un impacto real.
+            Mi tarifa estándar es de $30/hora. Estoy disponible tanto para oportunidades por contrato como de tiempo completo, comprometido a entregar soluciones confiables y mantenibles que generen un impacto real.
     - title: Prácticas de Desarrollo
       questions:
         - label: ¿Cómo manejas las integraciones de API?
@@ -106,14 +106,27 @@ testimonials:
       name: Lupo Burbano
       description: CEO en Latlus, Italia
       avatar:
-        src: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc
-        srcset: https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725978748114?e=1761177600&v=beta&t=KYdfBtTYkkcsPS5KiG5F9gvvWTiQOL9XzGX73urHCAc 2x
+        alt: Lupo Burbano
+  - quote: |-
+      Trabajar con Alberto fue una excelente experiencia. Completó con éxito el 100% del trabajo de desarrollo y entregó todo conforme a los requisitos acordados.
+
+      Durante todo el proyecto, Alberto estuvo siempre disponible para responder preguntas, aclarar cualquier duda e implementar los ajustes necesarios. También demostró una gran flexibilidad cuando los requisitos del proyecto cambiaron, manejando cada modificación de manera profesional y sin generar dificultad alguna.
+
+      El desarrollo se realizó utilizando Nuxt e incluyó el despliegue de bases de datos y el trabajo con servicios de AWS. Alberto manejó todos estos aspectos técnicos de manera excelente, demostrando sólidos conocimientos técnicos y fiabilidad durante todo el proceso.
+
+      El proyecto se completó dentro del plazo acordado. Algunos ajustes adicionales requirieron más tiempo, pero Alberto lo comunicó con claridad, y discutimos y coordinamos los cambios necesarios a lo largo del proyecto.
+
+      En general, estamos sumamente satisfechos con el trabajo de Alberto y con toda la colaboración. Lo recomendamos ampliamente a cualquier empresa u organización que busque un desarrollador confiable, flexible y altamente profesional.
+    author:
+      name: Javier Ignacio Leniz Tello
+      description: CFO en Fundación América por la Infancia, Chile
+      avatar:
+        alt: Javier Ignacio Leniz Tello
   - quote: Alberto hizo un gran trabajo mejorando nuestras aplicaciones Nuxt, también ha aprendido mucho y es un desarrollador de ritmo rápido siempre dispuesto a escuchar tus comentarios. Espero que podamos seguir trabajando juntos en el futuro si surgen nuevos proyectos.
     author:
       name: Diego Sosa
       description: CEO en Takumi Software, España
       avatar:
-        src: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
-        srcset: https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&v=beta&t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE
+        alt: Diego Sosa
 navigation:
   title: ""

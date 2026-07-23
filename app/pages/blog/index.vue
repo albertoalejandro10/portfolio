@@ -4,7 +4,8 @@ import type { Collections } from '@nuxt/content'
 const { locale, t } = useI18n()
 
 const collection = computed(() => `pages_${locale.value}` as keyof Collections)
-const { data: page } = await useAsyncData('blog-page', async () => {
+// Keys must be locale-scoped: prerendering shares payloads by key across routes
+const { data: page } = await useAsyncData(`blog-page-${locale.value}`, async () => {
   const content = await queryCollection(collection.value).path(`/${locale.value}/blog`).first() as Collections['pages_en'] | Collections['pages_es']
 
   if (!content && locale.value !== 'en') {
@@ -24,7 +25,7 @@ if (!page.value) {
   })
 }
 
-const { data: posts } = await useAsyncData('blogs', async () => {
+const { data: posts } = await useAsyncData(`blogs-${locale.value}`, async () => {
   const blogs = await queryCollection(`blog_${locale.value}`).order('date', 'DESC').all()
   return blogs.map((post) => {
     post.path = post.path.replace('/en/', '/')
@@ -42,14 +43,7 @@ if (!posts.value) {
   })
 }
 
-// SEO meta tags - title template is applied globally in nuxt.config.ts
-// OG image is rendered dynamically via the global OgImageDefault component (see app.vue)
-useSeoMeta({
-  title: page.value?.seo?.title || page.value?.title,
-  ogTitle: page.value?.seo?.title || page.value?.title,
-  description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
-})
+usePageSeo(page)
 </script>
 
 <template>

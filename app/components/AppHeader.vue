@@ -4,6 +4,8 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 defineProps<{
   links: NavigationMenuItem[]
 }>()
+
+const localePath = useLocalePath()
 </script>
 
 <template>
@@ -21,12 +23,17 @@ defineProps<{
       }"
     >
       <template #list-leading>
-        <UColorModeAvatar
-          alt="logo"
-          class="bg-transparent"
-          light="/logo-dark.svg"
-          dark="/logo.svg"
-        />
+        <NuxtLink
+          :to="localePath('/')"
+          aria-label="Home"
+        >
+          <UColorModeAvatar
+            alt="logo"
+            class="bg-transparent"
+            light="/logo-dark.svg"
+            dark="/logo.svg"
+          />
+        </NuxtLink>
       </template>
       <template #list-trailing>
         <SettingsColorMode />

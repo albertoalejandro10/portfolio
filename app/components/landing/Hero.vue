@@ -39,11 +39,10 @@ defineProps<{
           delay: 0.1
         }"
       >
-        <UColorModeAvatar
+        <UAvatar
           class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
-          :light="global.picture?.light!"
-          :dark="global.picture?.dark!"
           :alt="global.picture?.alt!"
+          :ui="{ fallback: 'text-2xl' }"
         />
       </Motion>
     </template>
@@ -164,6 +163,26 @@ defineProps<{
             </template>
           </UButton>
         </div>
+      </Motion>
+
+      <Motion
+        :initial="{
+          scale: 1.1,
+          opacity: 0,
+          filter: 'blur(20px)'
+        }"
+        :animate="{
+          scale: 1,
+          opacity: 1,
+          filter: 'blur(0px)'
+        }"
+        :transition="{
+          duration: 0.6,
+          delay: 0.6
+        }"
+        class="mt-4"
+      >
+        <UpworkBadges />
       </Motion>
 
       <div class="gap-x-4 inline-flex mt-4">
