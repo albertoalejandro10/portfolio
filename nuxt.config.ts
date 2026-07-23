@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     'nuxt-studio',
     '@nuxt/hints',
     '@nuxtjs/seo',
-    '@nuxt/a11y'
+    '@nuxt/a11y',
+    '@nuxt/fonts'
   ],
   devtools: {
     enabled: true
@@ -20,40 +21,11 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      // Fallback title when no page title is set
-      title: 'Alberto Alejandro',
-      htmlAttrs: {
-        lang: 'en'
-      },
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { charset: 'utf-8' },
-        // Author metadata for search engines
         { name: 'author', content: 'Alberto Alejandro' }
-        // OG/Twitter image tags are owned by @nuxtjs/seo via nuxt-og-image
       ],
       link: [
-        // Preload critical fonts to reduce render-blocking
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.googleapis.com'
-        },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: ''
-        },
-        {
-          rel: 'preload',
-          as: 'style',
-          href: 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap',
-          media: 'print',
-          onload: 'this.media=\'all\''
-        }
+        { rel: 'icon', href: '/logo.svg' }
       ]
     },
     pageTransition: {
@@ -68,16 +40,12 @@ export default defineNuxtConfig({
     }
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Site Configuration (@nuxtjs/seo)
-  // Central source of truth for site-wide SEO metadata
-  // ─────────────────────────────────────────────────────────────────────────
   site: {
     url: 'https://albertoalejandro.nuxt.space',
     name: 'Alberto Alejandro',
     description: 'Full-stack Nuxt developer building complete applications with Vue, TypeScript, PostgreSQL, and AWS infrastructure.',
-    // Default language for SEO purposes (matches i18n.defaultLocale)
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    titleSeparator: '-'
   },
   colorMode: {
     preference: 'dark',
@@ -94,11 +62,8 @@ export default defineNuxtConfig({
     }
   },
 
-  // Performance optimizations
   experimental: {
-    // Enable view transitions for smoother page navigation
     viewTransition: true,
-    // Payload extraction for faster hydration
     payloadExtraction: true
   },
   compatibilityDate: '2026-01-01',
@@ -111,13 +76,11 @@ export default defineNuxtConfig({
     },
     compressPublicAssets: true,
     routeRules: {
-      // Static assets - long cache
       '/_nuxt/**': {
         headers: {
           'cache-control': 'public, max-age=31536000, immutable'
         }
       },
-      // Public assets - moderate cache with revalidation
       '/logos/**': {
         headers: {
           'cache-control': 'public, max-age=86400, stale-while-revalidate=604800'
@@ -138,7 +101,6 @@ export default defineNuxtConfig({
           'cache-control': 'public, max-age=86400, stale-while-revalidate=604800'
         }
       },
-      // HTML pages - short cache with revalidation
       '/**': {
         headers: {
           'cache-control': 'public, max-age=3600, stale-while-revalidate=86400'
@@ -147,27 +109,29 @@ export default defineNuxtConfig({
     }
   },
 
-  // Enable build optimizations
   vite: {
     build: {
-      // CSS code splitting for smaller initial bundles
       cssCodeSplit: true,
-      // Minify CSS for smaller file sizes
       cssMinify: 'lightningcss',
-      // Rollup options for better tree-shaking
       rollupOptions: {
         output: {
-          // Manual chunks for better caching
-          manualChunks: {
-            'motion': ['motion-v'],
-            'vue-vendor': ['vue', '@vue/shared']
-          }
+          // manualChunks: {
+          // 'motion': ['motion-v'],
+          // 'vue-vendor': ['vue', '@vue/shared']
+          // }
         }
       }
     },
     optimizeDeps: {
       include: ['vue', '@vueuse/core']
     }
+  },
+
+  fonts: {
+    families: [
+      { name: 'Public Sans', weights: [400, 500, 600, 700], global: true },
+      { name: 'Instrument Serif', weights: [400], styles: ['normal', 'italic'], global: true }
+    ]
   },
   i18n: {
     langDir: 'locales',
@@ -244,10 +208,6 @@ export default defineNuxtConfig({
     }
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Link Checker Configuration
-  // Validates internal and external links during build
-  // ─────────────────────────────────────────────────────────────────────────
   linkChecker: {
     excludeLinks: [
       'https://facebook.com/**',
@@ -262,61 +222,18 @@ export default defineNuxtConfig({
     }
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // OG Image Configuration (nuxt-og-image, bundled with @nuxtjs/seo)
-  // Dynamic OG images rendered via Satori using OgImageDefault component.
-  // Background is /og-background.png; text layers are rendered in code.
-  // ─────────────────────────────────────────────────────────────────────────
-  ogImage: {
-    enabled: true,
-    defaults: {
-      component: 'OgImageDefault',
-      width: 1200,
-      height: 630
-    },
-    fonts: [
-      'Public+Sans:400',
-      'Public+Sans:600',
-      'Instrument+Serif:400'
-    ]
-  },
+  // OG images (nuxt-og-image v6) need no config: OgImageDefault.takumi.vue is
+  // the only template (renderer picked from its suffix), 1200x630 is the default
+  // size, and fonts come from @nuxt/fonts (`fonts.families` with `global: true`).
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Robots Configuration (@nuxtjs/robots)
-  // Controls crawler access and sitemap reference
-  // ─────────────────────────────────────────────────────────────────────────
   robots: {
-    enabled: true,
-    sitemap: '/sitemap_index.xml',
-    // Allow all standard routes
-    allow: [
-      '/',
-      '/projects',
-      '/projects/*',
-      '/blog',
-      '/blog/*',
-      '/about',
-      // Allow LLM discoverability file
-      '/llms.txt'
-    ],
-    // Disallow internal/technical routes
-    disallow: [
-      '/_studio',
-      '/_nuxt',
-      '/api/'
-    ],
-    // Additional rules for specific user agents
-    // Note: Most modern LLM crawlers respect robots.txt
     groups: [
       {
-        // Standard search engines (default rules apply)
         userAgent: ['*'],
         allow: ['/'],
-        disallow: ['/_studio', '/_nuxt', '/api/']
+        disallow: ['/_studio', '/api/']
       },
       {
-        // Explicitly allow known AI/LLM crawlers for discoverability
-        // These crawlers typically index for AI training or search
         userAgent: [
           'GPTBot', // OpenAI
           'ChatGPT-User', // ChatGPT browsing
@@ -327,26 +244,20 @@ export default defineNuxtConfig({
           'Cohere-ai' // Cohere
         ],
         allow: ['/', '/llms.txt'],
-        disallow: ['/_studio', '/_nuxt', '/api/']
+        disallow: ['/_studio', '/api/']
       }
     ],
     credits: false
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Schema.org Structured Data (@nuxtjs/schema-org)
-  // Provides rich snippets for search engines
-  // ─────────────────────────────────────────────────────────────────────────
   schemaOrg: {
-    // Identity defines the primary entity (Person for a portfolio)
     identity: {
       '@type': 'Person',
       'name': 'Alberto Alejandro',
       'url': 'https://albertoalejandro.nuxt.space',
-      'image': 'https://albertoalejandro.nuxt.space/og.png',
+      'image': '/og-background.png',
       'jobTitle': 'Full-Stack Nuxt Developer',
       'description': 'Building complete Nuxt applications across product UI, APIs, PostgreSQL data models, and AWS deployment.',
-      // Social profiles for knowledge graph
       'sameAs': [
         'https://github.com/albertoalejandro10',
         'https://www.linkedin.com/in/albertoalejandro10/',
@@ -356,17 +267,11 @@ export default defineNuxtConfig({
     }
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Nuxt Scripts: Cloudflare Web Analytics
-  // Cookieless, privacy-friendly analytics. Loaded manually after consent.
-  // Token is read from NUXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN env var.
-  // ─────────────────────────────────────────────────────────────────────────
   scripts: {
     registry: {
       cloudflareWebAnalytics: {
         token: process.env.NUXT_PUBLIC_CLOUDFLARE_ANALYTICS_TOKEN,
         scriptOptions: {
-          // Loaded explicitly from CookieConsent.vue when the visitor accepts.
           trigger: 'manual'
         }
       }
@@ -378,26 +283,13 @@ export default defineNuxtConfig({
   // Auto-generates sitemap with all indexable routes
   // ─────────────────────────────────────────────────────────────────────────
   sitemap: {
-    enabled: true,
-    autoLastmod: true,
-    defaultSitemapsChunkSize: 1000,
     xslColumns: [
       { label: 'URL', width: '50%' },
       { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
       { label: 'Hreflangs', select: 'count(xhtml:link)', width: '25%' }
-    ],
-    sitemapName: 'sitemap.xml',
-    // Default values for all routes (can be overridden per-route)
-    defaults: {
-      changefreq: 'weekly',
-      priority: 0.8
-    }
+    ]
   },
 
-  // ─────────────────────────────────────────────────────────────────────────
-  // Nuxt Studio Configuration
-  // Visual editing interface for content
-  // ─────────────────────────────────────────────────────────────────────────
   studio: {
     route: '/_studio',
     repository: {
