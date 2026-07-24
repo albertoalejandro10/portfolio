@@ -1,0 +1,12 @@
+# pnpm 11 reads settings from here, not .npmrc
+shamefullyHoist: true
+allowBuilds:
+  '@parcel/watcher': true
+  better-sqlite3: true
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
+  vue-demi: true
+minimumReleaseAgeExclude:
+  - '@nuxtjs/seo@5.3.6'
+  - nuxtseo-shared@5.3.6
