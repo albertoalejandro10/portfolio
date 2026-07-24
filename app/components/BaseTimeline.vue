@@ -74,13 +74,13 @@ const timelineItems = computed<TimelineItem[]>(() => {
             <span :style="{ color: getTextColor(item.organization.color, colorMode.value) }">{{ item.organization.name }}</span>
             <NuxtImg
               :src="item.organization.logo"
-              width="16"
-              height="16"
+              width="24"
+              height="24"
               loading="lazy"
               format="webp"
               quality="70"
               :alt="`${item.organization.name} Logo`"
-              class="rounded-full"
+              class="size-6 rounded-sm"
             />
           </ULink>
         </template>
