@@ -11,6 +11,15 @@ about:
 experience:
   title: Work Experience
   items:
+    - date: Jan. 2026 - Present
+      title: Full-Stack Nuxt Developer
+      company:
+        name: Fundación América por la Infancia
+        logo: /logos/fai.svg
+        url: https://www.faiplus.com/
+        color: "#FFFFFF"
+      description: Maintain and continuously improve FAI+, a subscription-based e-learning platform (LMS), owning the full stack — the Nuxt application, PostgreSQL data models, payment integrations, and the AWS infrastructure it runs on.
+      icon: i-simple-icons-nuxtdotjs
     - date: Oct. 2024 - Feb. 2026
       title: Nuxt.js Developer
       company:
