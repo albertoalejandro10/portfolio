@@ -14,7 +14,7 @@ A modern, open-source portfolio template built with **Nuxt 4**, **Vue 3**, and *
 - **🔍 SEO Optimized** - Auto-generated OG images and meta tags
 - **✨ Smooth Animations** - Custom animations and transitions powered by Motion
 - **📦 TypeScript Ready** - Full TypeScript support
-- **🎯 Easy Customization** - Highly configurable and extendable
+- **🎯 Easy Customization** - Highly configurable and extendable.  
 
 ## 🏗️ Project Structure
 
