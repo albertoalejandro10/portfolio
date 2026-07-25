@@ -2,25 +2,10 @@ User-agent: *
 Allow: /
 Allow: /en/
 Allow: /es/
-Allow: /projects
-Allow: /en/projects
-Allow: /es/projects
-Allow: /projects/*
-Allow: /en/projects/*
-Allow: /es/projects/*
-Allow: /blog
-Allow: /en/blog
-Allow: /es/blog
-Allow: /blog/*
-Allow: /en/blog/*
-Allow: /es/blog/*
-Allow: /about
-Allow: /en/about
-Allow: /es/about
-Allow: /llms.txt
 Disallow: /_studio
-Disallow: /_nuxt
 Disallow: /api/
+Disallow: /en/api/
+Disallow: /es/api/
 
 User-agent: GPTBot
 User-agent: ChatGPT-User
@@ -33,8 +18,11 @@ Allow: /
 Allow: /en/
 Allow: /es/
 Allow: /llms.txt
+Allow: /en/llms.txt
+Allow: /es/llms.txt
 Disallow: /_studio
-Disallow: /_nuxt
 Disallow: /api/
+Disallow: /en/api/
+Disallow: /es/api/
 
 Sitemap: https://albertoalejandro.nuxt.space/sitemap_index.xml

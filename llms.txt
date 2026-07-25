@@ -11,19 +11,21 @@ Type: Personal Portfolio / Developer Website
 ## Author
 
 Name: Alberto Alejandro
-Role: Frontend Developer & Systems Engineer
+Role: Full-Stack Nuxt Developer
 Location: Venezuela
 Email: alberto196g@gmail.com
 
 ## About
 
 This is a personal portfolio website showcasing professional experience,
-projects, and blog posts focused on web development.
+projects, and blog posts focused on full-stack product development.
 
 Specializations:
 - JavaScript / TypeScript
 - Vue.js / Nuxt.js
-- Frontend Architecture
+- Full-Stack Nuxt Applications
+- PostgreSQL Data Modeling
+- AWS Infrastructure
 - SaaS Application Development
 - REST API Integration
 - UI/UX Implementation

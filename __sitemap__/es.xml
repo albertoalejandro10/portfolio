@@ -2,75 +2,42 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://albertoalejandro.nuxt.space/es</loc>
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/" hreflang="en" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es" hreflang="es" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://albertoalejandro.nuxt.space/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://albertoalejandro.nuxt.space/es" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://albertoalejandro.nuxt.space/" />
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/logos/udo.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/logos/fai.svg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/logos/takumi-software.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/udo.png</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/logos/sgnla.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/takumi-software.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/sgnla.png</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/f_webp&amp;amp;q_70&amp;amp;s_16x16/logos/evolution-advance.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://media.licdn.com/dms/image/v2/D4D03AQEPo8444ULO_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725978748136?e=1769040000&amp;amp;v=beta&amp;amp;t=ZzAlSVVyUuY9lsvUSa3LZKvW92TWX22_8_TPF0b9fVg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://media.licdn.com/dms/image/v2/C4D03AQFs1v-voFdXzQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1603271776781?e=1769040000&amp;amp;v=beta&amp;amp;t=l-WTUivzbwf6LB8P7CVGzy2ILued_sf2Nd_QijchsIE</image:loc>
+            <image:loc>https://albertoalejandro.nuxt.space/logos/evolution-advance.jpg</image:loc>
         </image:image>
     </url>
     <url>
         <loc>https://albertoalejandro.nuxt.space/es/about</loc>
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/about" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/about" hreflang="en" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/about" hreflang="es" />
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://media.licdn.com/dms/image/v2/D4E03AQGu0lpIfVRdvg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723298326277?e=1769040000&amp;amp;v=beta&amp;amp;t=2-uRuFxmIRuB08frR5vn8NYj1tXO6e8U_JiJDM6DnK4</image:loc>
-        </image:image>
+        <xhtml:link rel="alternate" hreflang="en" href="https://albertoalejandro.nuxt.space/about" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://albertoalejandro.nuxt.space/es/about" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://albertoalejandro.nuxt.space/about" />
     </url>
     <url>
         <loc>https://albertoalejandro.nuxt.space/es/blog</loc>
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/blog" hreflang="es" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/en/blog" hreflang="en" />
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
-        </image:image>
+        <xhtml:link rel="alternate" hreflang="en" href="https://albertoalejandro.nuxt.space/blog" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://albertoalejandro.nuxt.space/es/blog" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://albertoalejandro.nuxt.space/blog" />
     </url>
     <url>
         <loc>https://albertoalejandro.nuxt.space/es/projects</loc>
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/projects" hreflang="x-default" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/projects" hreflang="en" />
-        <xhtml:link rel="alternate" href="https://albertoalejandro.nuxt.space/es/projects" hreflang="es" />
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo-dark.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://albertoalejandro.nuxt.space/_ipx/q_80&amp;amp;s_32x32/logo.svg</image:loc>
-        </image:image>
+        <xhtml:link rel="alternate" hreflang="en" href="https://albertoalejandro.nuxt.space/projects" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://albertoalejandro.nuxt.space/es/projects" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://albertoalejandro.nuxt.space/projects" />
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.5.2 at 2026-01-13T20:26:27.042Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v8.3.0 at 2026-07-25T18:48:50.433Z -->
