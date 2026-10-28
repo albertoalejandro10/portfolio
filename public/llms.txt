@@ -46,7 +46,6 @@ Specializations:
 - CarsWorkflow - Automotive workflow management
 - GitHub Scraper - GitHub data extraction tool
 - QRS Factory - QR code generation system
-- RealtyWeb - Real estate platform
 - Trader Buddy - Trading assistant application
 
 ## Languages
