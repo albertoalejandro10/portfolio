@@ -32,7 +32,7 @@ Specializations:
 
 ## Content Structure
 
-/                   - Homepage with about, experience, and testimonials
+/                   - Homepage with about, experience, intro video and testimonials
 /about              - Detailed about page with personal information
 /projects           - Portfolio of completed projects and case studies
 /projects/[slug]    - Individual project details

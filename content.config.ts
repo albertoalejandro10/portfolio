@@ -74,6 +74,10 @@ export default defineContentConfig({
             })
           }))
         }),
+        video: createBaseSchema().extend({
+          youtubeId: z.string(),
+          image: createImageSchema()
+        }),
         testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
         faq: createBaseSchema().extend({
@@ -127,6 +131,10 @@ export default defineContentConfig({
               color: z.string()
             })
           }))
+        }),
+        video: createBaseSchema().extend({
+          youtubeId: z.string(),
+          image: createImageSchema()
         }),
         testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),

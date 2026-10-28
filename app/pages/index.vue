@@ -43,6 +43,7 @@ usePageSeo(page)
       </UPageGrid>
     </UPageSection>
     <!-- Lazy load below-fold components -->
+    <LazyLandingIntroVideo :page />
     <LazyLandingTestimonials :page />
     <LazyLandingFAQ :page />
   </UPage>

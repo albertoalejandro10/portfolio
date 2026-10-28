@@ -99,6 +99,14 @@ faq:
           content: |
             I'm constantly learning and building production systems. Recently, I've been deepening my backend and infrastructure skills through Go, PostgreSQL, Docker, and AWS while continuing to refine my Nuxt and TypeScript workflow. I believe the strongest product developers understand the full path from interface to deployment.
 
+video:
+  title: Meet Me in 1 Minute
+  description: A short video about what I can build for you, from the first idea to a live web app.
+  youtubeId: YynaOXiaORw
+  image:
+    src: /intro-video.jpg
+    alt: Alberto Alejandro, Full-Stack Developer. I build your whole web app.
+
 hero:
   links:
     - label: Curriculum

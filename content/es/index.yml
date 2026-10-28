@@ -109,6 +109,13 @@ hero:
 seo:
   title: Alberto Alejandro
   description: Desarrollador full-stack Nuxt que construye aplicaciones completas con Vue, TypeScript, PostgreSQL e infraestructura AWS.
+video:
+  title: Conóceme en 1 minuto
+  description: Un video corto sobre lo que puedo construir para ti, desde la primera idea hasta una aplicación web en vivo. El video está en inglés.
+  youtubeId: YynaOXiaORw
+  image:
+    src: /intro-video.jpg
+    alt: Alberto Alejandro, desarrollador Full-Stack. Construyo tu aplicación web completa.
 testimonials:
   - quote: Trabajar con este freelancer fue una excelente experiencia. Fue diligente y perceptivo, comprendiendo rápidamente las direcciones proporcionadas. Su flexibilidad y disposición para entender el alcance del trabajo fueron realmente impresionantes. A lo largo del proyecto, siempre fue amable, cortés y profesional. No dudaría en trabajar con él nuevamente en el futuro. ¡Altamente recomendado!
     author:
