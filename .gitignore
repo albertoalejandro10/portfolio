@@ -22,3 +22,11 @@ logs
 .env
 .env.*
 !.env.example
+
+# HyperFrames video projects: raw footage, renders and local working files are large
+video/**/assets/footage/
+video/**/renders/
+video/**/.hyperframes/
+
+video/
+cv/
