@@ -1,0 +1,1 @@
+html.theme-switching *{view-transition-name:none!important}html.theme-switching::view-transition-new(root){mix-blend-mode:normal;animation:none}html.theme-switching::view-transition-old(root){mix-blend-mode:normal;animation:none}

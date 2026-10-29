@@ -1,0 +1,1 @@
+import{t as e}from"./Bt_XMcFI.js";function t(t){return e(`cloudflareWebAnalytics`,e=>({scriptInput:{src:`https://static.cloudflareinsights.com/beacon.min.js`,"data-cf-beacon":JSON.stringify({token:e.token,spa:e.spa||!0}),crossorigin:!1},schema:void 0,scriptOptions:{trigger:`client`,use(){return{__cfBeacon:window.__cfBeacon}}}}),t)}export{t};

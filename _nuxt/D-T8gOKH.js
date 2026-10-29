@@ -1,0 +1,1 @@
+import{t as e}from"./Dflfh4aS.js";function t(){return e(`morph-slug`)}export{t};
