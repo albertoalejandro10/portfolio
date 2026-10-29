@@ -33,6 +33,11 @@ const { data: projects } = await useAsyncData(`projects-${locale.value}`, () => 
 
 const { global } = useAppConfig()
 
+// The card opened or returned to: its image morphs, and on Back it skips the
+// fade-up so the morph lands on a visible card
+const morphSlug = useMorphSlug()
+const slugOf = (path: string) => path.split('/').pop()
+
 usePageSeo(page)
 </script>
 
@@ -76,8 +81,8 @@ usePageSeo(page)
         <Motion
           v-for="(project, index) in projects"
           :key="project.title"
-          :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-          :while-in-view="({ opacity: 1, transform: 'translateY(0)' } as any)"
+          :initial="slugOf(project.path) === morphSlug ? false : { opacity: 0, y: 10 }"
+          :while-in-view="({ opacity: 1, y: 0 } as any)"
           :transition="{ delay: 0.2 * index }"
           :in-view-options="{ once: true }"
         >
@@ -117,7 +122,8 @@ usePageSeo(page)
               format="webp"
               quality="80"
               sizes="sm:100vw md:50vw lg:800px"
-              class="object-cover w-full lg:h-56 rounded-lg"
+              class="object-cover w-full lg:h-56 rounded-lg [view-transition-class:cover]"
+              :style="{ viewTransitionName: slugOf(project.path) === morphSlug ? `project-${morphSlug}` : undefined }"
             />
           </UPageCard>
         </Motion>

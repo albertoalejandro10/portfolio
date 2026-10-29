@@ -51,6 +51,9 @@ const { data: surround } = await useAsyncData(`${path.value}-surround`, async ()
   return content
 }, { watch: [locale, () => route.fullPath] })
 
+// Set when coming from (or going back to) the list: the image morphs into its card
+const morphSlug = useMorphSlug()
+
 usePageSeo(page)
 
 useSchemaOrg([
@@ -78,7 +81,8 @@ useSchemaOrg([
           <NuxtImg
             :src="page.image"
             :alt="page.title"
-            class="rounded-lg w-full h-75 md:h-1/4 object-fill md:object-cover object-center"
+            class="rounded-lg w-full h-75 md:h-1/4 object-fill md:object-cover object-center [view-transition-class:cover]"
+            :style="{ viewTransitionName: slug.at(-1) === morphSlug ? `project-${morphSlug}` : undefined }"
           />
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
             {{ page.title }}

@@ -38,3 +38,73 @@
 .animate-pulse-subtle {
   animation: pulse-subtle 2s ease-in-out infinite;
 }
+
+/* Page transitions (View Transitions API): the menu bar stays still */
+.vt-header {
+  view-transition-name: header;
+}
+
+::view-transition-group(header) {
+  z-index: 10;
+}
+
+/*
+ * Rotate: the screen tilts away and the next page tilts in.
+ * Root snapshots are screen-sized, so they turn around the middle of what you see,
+ * and nothing slides when you leave a page scrolled down.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  animation: page-out 250ms ease-in both;
+}
+
+::view-transition-new(root) {
+  animation: page-in 350ms cubic-bezier(0.22, 1, 0.36, 1) 150ms both;
+}
+
+@keyframes page-out {
+  to {
+    opacity: 0;
+    transform: rotate3d(1, 1, 1, 15deg);
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: rotate3d(1, 1, 1, 15deg);
+  }
+}
+
+/* Image morph: list image grows into the detail page image */
+::view-transition-group(*.cover) {
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Same picture on both pages: morph only the new one, so there's no double image */
+::view-transition-old(*.cover) {
+  animation: none;
+  opacity: 0;
+}
+
+/* List and detail images have different shapes: crop instead of stretching */
+::view-transition-new(*.cover) {
+  height: 100%;
+  object-fit: cover;
+  animation: none;
+}
+
+/* Picture on one page only (e.g. Home → Projects): move with the page */
+::view-transition-old(*.cover):only-child {
+  opacity: 1;
+  animation: page-out 150ms ease-in both;
+}
+
+::view-transition-new(*.cover):only-child {
+  animation: page-in 300ms cubic-bezier(0.22, 1, 0.36, 1) 100ms both;
+}

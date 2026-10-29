@@ -9,7 +9,7 @@ const localePath = useLocalePath()
 </script>
 
 <template>
-  <div class="fixed top-2 sm:top-4 left-0 right-0 z-10 flex justify-center">
+  <div class="vt-header fixed top-2 sm:top-4 left-0 right-0 z-10 flex justify-center">
     <UNavigationMenu
       highlight
       highlight-color="primary"

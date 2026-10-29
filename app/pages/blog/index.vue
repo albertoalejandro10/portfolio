@@ -43,6 +43,11 @@ if (!posts.value) {
   })
 }
 
+// The post opened or returned to: its image morphs, and on Back it skips the
+// fade-up so the morph lands on a visible card
+const morphSlug = useMorphSlug()
+const slugOf = (path: string) => path.split('/').pop()
+
 usePageSeo(page)
 </script>
 
@@ -68,8 +73,8 @@ usePageSeo(page)
           <Motion
             v-for="(post, index) in posts"
             :key="index"
-            :initial="{ opacity: 0, transform: 'translateY(10px)' }"
-            :while-in-view="({ opacity: 1, transform: 'translateY(0)' } as any)"
+            :initial="slugOf(post.path) === morphSlug ? false : { opacity: 0, y: 10 }"
+            :while-in-view="({ opacity: 1, y: 0 } as any)"
             :transition="{ delay: 0.2 * index }"
             :in-view-options="{ once: true }"
           >
@@ -78,6 +83,11 @@ usePageSeo(page)
               orientation="horizontal"
               :to="post.path"
               v-bind="post"
+              :image="{
+                src: post.image,
+                class: '[view-transition-class:cover]',
+                style: { viewTransitionName: slugOf(post.path) === morphSlug ? `post-${morphSlug}` : undefined }
+              }"
               :ui="{
                 root: 'md:grid md:grid-cols-2 group overflow-visible transition-all duration-300',
                 image:

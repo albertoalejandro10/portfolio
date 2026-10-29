@@ -8,7 +8,7 @@ const switchTheme = () => {
 }
 
 const startViewTransition = (event: MouseEvent) => {
-  if (!document.startViewTransition) {
+  if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     switchTheme()
     return
   }
@@ -20,9 +20,15 @@ const startViewTransition = (event: MouseEvent) => {
     Math.max(y, window.innerHeight - y)
   )
 
+  // Scopes the circle reveal styles below to theme switches only
+  const root = document.documentElement
+  root.classList.add('theme-switching')
+
   const transition = document.startViewTransition(() => {
     switchTheme()
   })
+
+  transition.finished.finally(() => root.classList.remove('theme-switching'))
 
   transition.ready.then(() => {
     const duration = 600
@@ -60,17 +66,16 @@ const startViewTransition = (event: MouseEvent) => {
   </ClientOnly>
 </template>
 
-<style scoped>
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
+<!-- Not scoped: these pseudo-elements live on <html>, which has no scope attribute -->
+<style>
+/* Capture the whole page as one layer so the circle reveals everything at once */
+html.theme-switching * {
+  view-transition-name: none !important;
 }
 
-::view-transition-new(root) {
-  z-index: 9999;
-}
-::view-transition-old(root) {
-  z-index: 1;
+html.theme-switching::view-transition-old(root),
+html.theme-switching::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 </style>

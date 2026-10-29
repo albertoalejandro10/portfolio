@@ -27,10 +27,6 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', href: '/logo.svg' }
       ]
-    },
-    pageTransition: {
-      name: 'rotate',
-      mode: 'out-in'
     }
   },
   css: ['~/assets/css/main.css'],
