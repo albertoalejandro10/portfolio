@@ -11,7 +11,7 @@ Type: Personal Portfolio / Developer Website
 ## Author
 
 Name: Alberto Alejandro
-Role: Full-Stack Nuxt Developer
+Role: Full-Stack Developer
 Location: Venezuela
 Email: alberto196g@gmail.com
 
@@ -23,7 +23,7 @@ projects, and blog posts focused on full-stack product development.
 Specializations:
 - JavaScript / TypeScript
 - Vue.js / Nuxt.js
-- Full-Stack Nuxt Applications
+- Full-Stack Web Applications
 - PostgreSQL Data Modeling
 - AWS Infrastructure
 - SaaS Application Development
