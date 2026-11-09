@@ -7,7 +7,7 @@ const props = withDefaults(defineProps<{
   siteName?: string
 }>(), {
   title: 'Alberto Alejandro',
-  description: 'Full-stack Nuxt applications, PostgreSQL, and AWS deployment'
+  description: 'Full-stack web apps, PostgreSQL, and AWS deployment'
 })
 
 const appUrl = global.appUrl || 'https://albertoalejandro.nuxt.space'
@@ -49,7 +49,7 @@ const siteName = (props.siteName || appUrl).replace(/^https?:\/\//, '').replace(
       </div>
 
       <div class="flex items-center justify-between text-xl text-white/70">
-        <span>Full-Stack Nuxt Developer</span>
+        <span>Full-Stack Developer</span>
         <span>Vue · TypeScript · PostgreSQL · AWS</span>
       </div>
     </div>

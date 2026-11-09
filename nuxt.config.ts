@@ -39,7 +39,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://albertoalejandro.nuxt.space',
     name: 'Alberto Alejandro',
-    description: 'Full-stack Nuxt developer building complete applications with Vue, TypeScript, PostgreSQL, and AWS infrastructure.',
+    description: 'Full-stack developer building complete web apps with Vue, Nuxt, TypeScript, PostgreSQL, and AWS.',
     defaultLocale: 'en',
     titleSeparator: '-'
   },
@@ -252,8 +252,8 @@ export default defineNuxtConfig({
       'name': 'Alberto Alejandro',
       'url': 'https://albertoalejandro.nuxt.space',
       'image': '/og-background.png',
-      'jobTitle': 'Full-Stack Nuxt Developer',
-      'description': 'Building complete Nuxt applications across product UI, APIs, PostgreSQL data models, and AWS deployment.',
+      'jobTitle': 'Full-Stack Developer',
+      'description': 'Building complete web apps across product UI, APIs, PostgreSQL data models, and AWS deployment.',
       'sameAs': [
         'https://github.com/albertoalejandro10',
         'https://www.linkedin.com/in/albertoalejandro10/',

@@ -1,25 +1,25 @@
 title: Alberto Alejandro
-role: Desarrollador Full-Stack Nuxt
+role: Desarrollador Full-Stack
 description: |
-  Construyo aplicaciones Nuxt completas: interfaces de producto, APIs, modelos de datos en PostgreSQL e infraestructura AWS.
+  Construyo aplicaciones web completas: interfaces de producto, APIs, modelos de datos en PostgreSQL e infraestructura AWS.
 
 about:
   title: Sobre mí
   description: |
-    Construyo y opero aplicaciones Nuxt completas, desde interfaces pulidas y contratos de API hasta modelos de datos en PostgreSQL e infraestructura AWS. Actualmente trabajo a medio tiempo con la Fundación América por la Infancia, manteniendo y mejorando continuamente FAI+, el LMS por suscripción que ayudé a completar y lanzar a producción — y estoy abierto a nuevos proyectos.
+    Construyo y opero aplicaciones web completas, desde interfaces pulidas y contratos de API hasta modelos de datos en PostgreSQL e infraestructura AWS. Actualmente trabajo a medio tiempo con la Fundación América por la Infancia, manteniendo y mejorando continuamente FAI+, el LMS por suscripción que ayudé a completar y lanzar a producción — y estoy abierto a nuevos proyectos.
 
 experience:
   title: Experiencia Laboral
   items:
     - date: Ene. 2026 - Presente
-      title: Desarrollador Full-Stack Nuxt
+      title: Desarrollador Full-Stack
       company:
         name: Fundación América por la Infancia
         logo: /logos/fai.svg
         url: https://www.faiplus.com/
         color: "#FFFFFF"
       description: Mantengo y mejoro continuamente FAI+, una plataforma de e-learning por suscripción (LMS), haciéndome cargo de todo el stack — la aplicación Nuxt, los modelos de datos en PostgreSQL, las integraciones de pago y la infraestructura AWS donde opera.
-      icon: i-simple-icons-nuxtdotjs
+      icon: i-lucide-layers
     - date: Oct. 2024 - Feb. 2026
       title: Desarrollador Nuxt.js
       company:
@@ -69,7 +69,7 @@ faq:
       questions:
         - label: ¿En qué tecnologías te especializas?
           content: |
-            Me especializo en aplicaciones Nuxt full-stack con Vue, TypeScript, server routes, integraciones de API, PostgreSQL, Docker, GitHub Actions e infraestructura AWS.
+            Construyo aplicaciones web full-stack con Nuxt, Vue, TypeScript, server routes, integraciones de API, PostgreSQL, Docker, GitHub Actions y AWS.
         - label: ¿En qué tipos de proyectos has trabajado?
           content: |
             He desarrollado y mantenido plataformas SaaS, sistemas de citas, soluciones de inventario, integraciones de pagos, sitios auto-generados, funcionalidades con IA y ahora un sistema de gestión de aprendizaje full-stack. Puedo hacerme cargo de la experiencia de producto y también contribuir a arquitectura backend, modelado de datos, despliegues y decisiones operativas.
@@ -108,7 +108,7 @@ hero:
   images: []
 seo:
   title: Alberto Alejandro
-  description: Desarrollador full-stack Nuxt que construye aplicaciones completas con Vue, TypeScript, PostgreSQL e infraestructura AWS.
+  description: Desarrollador full-stack que construye aplicaciones web completas con Vue, Nuxt, TypeScript, PostgreSQL y AWS.
 video:
   title: Conóceme en 1 minuto
   description: Un video corto sobre lo que puedo construir para ti, desde la primera idea hasta una aplicación web en vivo. El video está en inglés.
